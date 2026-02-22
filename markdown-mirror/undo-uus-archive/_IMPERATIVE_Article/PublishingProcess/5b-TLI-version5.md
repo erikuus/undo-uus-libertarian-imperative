@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/5b-TLI-version5.pdf`
 - SHA256: `f48b51aa2b2a2c80f9e57bc0d36d215312c2c8c151f4e8291ec2bb1a5573dfa9`
-- Mirror format version: `readability-v5`
+- Mirror format version: `readability-v6`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 16:51:58 UTC`
+- Generated: `2026-02-22 18:42:22 UTC`
 - Original file: `[5b-TLI-version5.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/5b-TLI-version5.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`

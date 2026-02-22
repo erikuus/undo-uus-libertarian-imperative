@@ -47,7 +47,7 @@ MIRROR_EXCLUDE_SOURCE_RELS = {
     "undo-uus-archive/1997_Libertaarimperatiiv/Akadeemia_1997_10_0001.pdf",
 }
 
-MIRROR_FORMAT_VERSION = "readability-v5"
+MIRROR_FORMAT_VERSION = "readability-v6"
 MIRROR_PROFILE = "readability-first"
 
 TESSERACT_CANDIDATES = ["tesseract", "/opt/homebrew/bin/tesseract"]
@@ -164,6 +164,10 @@ def merge_wrapped_lines(lines: list[str]) -> str:
 
     merged = re.sub(r"\s+", " ", merged).strip()
     merged = re.sub(r"\s+([,.;:!?])", r"\1", merged)
+    # Convert triple-hyphen em-dash conventions to a real em dash, but only inline.
+    # Standalone separator lines are handled elsewhere and remain `---`.
+    merged = re.sub(r"\s---\s", " — ", merged)
+    merged = re.sub(r"\s---$", " —", merged)
     return merged
 
 
@@ -219,7 +223,7 @@ def normalize_for_readability(text: str) -> str:
     return "\n".join(compact)
 
 
-ESTONIAN_TEXT_REPAIR_VERSION = "estonian-diacritics-v5"
+ESTONIAN_TEXT_REPAIR_VERSION = "estonian-diacritics-v9"
 # Some sources encode diacritics as separate “mark” characters near the base letter.
 # We repair the common cases for Estonian text.
 ESTONIAN_MARKS = {"\u00a8", "\u02dc", "\u02c6", "\u02c7"}  # diaeresis, small tilde, circumflex, caron
@@ -248,6 +252,76 @@ ESTONIAN_COMPOSED = {
 ESTONIAN_MARK_THEN_LETTER_RE = re.compile(r"([\u00a8\u02dc\u02c6\u02c7])\s*([A-Za-z])")
 ESTONIAN_LETTER_THEN_MARK_RE = re.compile(r"([A-Za-zÄÖÜÕäöüõ])\s*([\u00a8\u02dc\u02c6\u02c7])")
 ESTONIAN_SPLIT_WORD_AFTER_CAP_RE = re.compile(r"(^|[\s(\[{\"'“‘«])([ÄÖÜÕ])\s+([a-zäöüõ])", re.MULTILINE)
+ESTONIAN_SINGLE_LETTER_BEFORE_DIACRITIC_START_RE = re.compile(
+    r"\b([BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz])\s+([ÄÖÜÕäöüõ])(?=[A-Za-zÄÖÜÕäöüõ])"
+)
+ESTONIAN_TOKEN_BEFORE_DIACRITIC_START_RE = re.compile(r"\b([A-Za-z]{3,})\s+([ÄÖÜÕäöüõ])(?=[A-Za-zÄÖÜÕäöüõ])")
+ESTONIAN_DIACRITIC_JOIN_BIGRAMS = {
+    "kä",
+    "lä",
+    "nä",
+    "pä",
+    "tä",
+    "vä",
+    "jä",
+    "sä",
+    "rä",
+    "hä",
+    "mõ",
+    "võ",
+    "tõ",
+    "põ",
+    "kõ",
+    "sõ",
+    "lõ",
+    "rõ",
+    "nõ",
+    "jõ",
+    "hõ",
+    "kü",
+    "tü",
+    "pü",
+    "lü",
+    "sü",
+    "hü",
+    "nü",
+    "rü",
+    "fü",
+    "tö",
+    "kö",
+    "lö",
+    "pö",
+    "sö",
+    "rö",
+    "hö",
+    "mö",
+}
+ESTONIAN_DO_NOT_JOIN_LEFT_TOKENS = {
+    "veel",
+    "seal",
+    "siin",
+    "aga",
+    "kuid",
+    "ning",
+    "sest",
+    "enne",
+    "peale",
+    "pärast",
+    "mitte",
+    "seda",
+    "see",
+    "selle",
+    "sellest",
+    "meie",
+    "teie",
+    "nende",
+    "tema",
+    "mina",
+    "sina",
+    "siis",
+}
+ESTONIAN_SUFFIX_JOIN_RE = re.compile(r"\b([a-zäöüõ]{3,})\s+(atuse|valt|sed)\b")
+ESTONIAN_OLE_JOIN_RE = re.compile(r"\bol\s+e\b")
 
 
 def estonian_text_repair_tag(src: Path) -> str | None:
@@ -262,8 +336,6 @@ def estonian_text_repair_tag(src: Path) -> str | None:
 
 def repair_estonian_diacritics(text: str) -> str:
     if not text:
-        return text
-    if not any(mark in text for mark in ESTONIAN_MARKS):
         return text
 
     def mark_then_letter(m: re.Match[str]) -> str:
@@ -284,6 +356,21 @@ def repair_estonian_diacritics(text: str) -> str:
     repaired = ESTONIAN_MARK_THEN_LETTER_RE.sub(mark_then_letter, text)
     repaired = ESTONIAN_LETTER_THEN_MARK_RE.sub(letter_then_mark, repaired)
     repaired = ESTONIAN_SPLIT_WORD_AFTER_CAP_RE.sub(r"\1\2\3", repaired)
+    repaired = ESTONIAN_SINGLE_LETTER_BEFORE_DIACRITIC_START_RE.sub(r"\1\2", repaired)
+
+    def join_token_before_diacritic(m: re.Match[str]) -> str:
+        left, right = m.group(1), m.group(2)
+        left_lower = left.lower()
+        bigram = (left_lower[-1] + right.lower())
+        if left_lower in ESTONIAN_DO_NOT_JOIN_LEFT_TOKENS:
+            return m.group(0)
+        if bigram not in ESTONIAN_DIACRITIC_JOIN_BIGRAMS:
+            return m.group(0)
+        return f"{left}{right}"
+
+    repaired = ESTONIAN_TOKEN_BEFORE_DIACRITIC_START_RE.sub(join_token_before_diacritic, repaired)
+    repaired = ESTONIAN_SUFFIX_JOIN_RE.sub(r"\1\2", repaired)
+    repaired = ESTONIAN_OLE_JOIN_RE.sub("ole", repaired)
 
     def base_before_diacritic(m: re.Match[str]) -> str:
         base, diacritic = m.group(1), m.group(2)

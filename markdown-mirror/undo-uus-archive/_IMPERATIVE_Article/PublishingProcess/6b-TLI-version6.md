@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `tex`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6b-TLI-version6.TEX`
 - SHA256: `e446695f7f18cabab62d8ce77e256f0c464f50460350481c9e6e54277ed05799`
-- Mirror format version: `readability-v5`
+- Mirror format version: `readability-v6`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 16:51:59 UTC`
+- Generated: `2026-02-22 18:42:22 UTC`
 - Original file: `[6b-TLI-version6.TEX](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6b-TLI-version6.TEX)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 

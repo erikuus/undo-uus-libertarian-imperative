@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/Appeal.pdf`
 - SHA256: `981371710e1044757b6c9da1e18d3b309ab26f3b7f55bb104a943f21f6c4f417`
-- Mirror format version: `readability-v5`
+- Mirror format version: `readability-v6`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 16:51:56 UTC`
+- Generated: `2026-02-22 18:42:19 UTC`
 - Original file: `[Appeal.pdf](../../../undo-uus-archive/_IMPERATIVE_Article/Appeal.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`

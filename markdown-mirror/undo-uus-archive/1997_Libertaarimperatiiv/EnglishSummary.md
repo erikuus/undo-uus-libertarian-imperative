@@ -5,13 +5,13 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/1997_Libertaarimperatiiv/EnglishSummary.pdf`
 - SHA256: `31f6123c3173eafcda506739c3a2fb208f2b0b064d461fbc74aa45e9a74d6b90`
-- Mirror format version: `readability-v5`
+- Mirror format version: `readability-v6`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:19:45 UTC`
+- Generated: `2026-02-22 18:42:19 UTC`
 - Original file: `[EnglishSummary.pdf](../../../undo-uus-archive/1997_Libertaarimperatiiv/EnglishSummary.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
-- Text repair: `estonian-diacritics-v5`
+- Text repair: `estonian-diacritics-v9`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---

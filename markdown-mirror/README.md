@@ -20,6 +20,7 @@ python3 -m pip install -r requirements.txt
 ## Normalization Rules
 
 - PDF-derived text is normalized for readability (hard wraps merged into paragraphs, separator blocks normalized to `---`, and spacing cleaned). Page visual layout is not preserved.
+- Inline em-dash conventions (` --- `) are normalized to `—` where they occur within a text line.
 - Text/TeX sources are mirrored as text (line endings normalized; content preserved) and are not reflowed into paragraphs.
 
 ## Scope

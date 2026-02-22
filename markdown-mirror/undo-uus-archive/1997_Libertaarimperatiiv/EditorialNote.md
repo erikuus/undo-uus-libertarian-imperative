@@ -5,13 +5,13 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/1997_Libertaarimperatiiv/EditorialNote.pdf`
 - SHA256: `4e3df77ad39345dbfc2f4903c159ba4758700719986e951fedd47477873ccb87`
-- Mirror format version: `readability-v5`
+- Mirror format version: `readability-v6`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:19:45 UTC`
+- Generated: `2026-02-22 18:42:19 UTC`
 - Original file: `[EditorialNote.pdf](../../../undo-uus-archive/1997_Libertaarimperatiiv/EditorialNote.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
-- Text repair: `estonian-diacritics-v5`
+- Text repair: `estonian-diacritics-v9`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---

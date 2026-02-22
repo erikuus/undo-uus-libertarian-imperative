@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6f-LoweBookReview.pdf`
 - SHA256: `7ebdef21aa292c3134041fb17e98a25d9f047365f719c4fa5f47bd7450c6c92f`
-- Mirror format version: `readability-v5`
+- Mirror format version: `readability-v6`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 16:52:06 UTC`
+- Generated: `2026-02-22 18:42:28 UTC`
 - Original file: `[6f-LoweBookReview.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6f-LoweBookReview.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`

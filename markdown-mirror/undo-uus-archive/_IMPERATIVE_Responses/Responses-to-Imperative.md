@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf`
 - SHA256: `f1c550abe6440eec811c91a0351e045953480a5c172993e47bdfa4ad6d1ff83d`
-- Mirror format version: `readability-v5`
+- Mirror format version: `readability-v6`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 16:52:09 UTC`
+- Generated: `2026-02-22 18:42:32 UTC`
 - Original file: `[Responses-to-Imperative.pdf](../../../undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
@@ -285,7 +285,7 @@ In your opinion (p. 6) I think that it is pointless to try to avoid unavoidable 
 ## Page 18
 
 ```text
-life’ --- at no moment in his life --- can he, on his own initiative, deviate from it, or move along it with a different velocity than he is bound to do according to psycho-physical laws of dynamics.
+life’ — at no moment in his life — can he, on his own initiative, deviate from it, or move along it with a different velocity than he is bound to do according to psycho-physical laws of dynamics.
 ---
 If I tell mathematicians, ‘If 1+1≠2 then (1+1) ∙ 3≠6’ they will probably r eply, ‘This counterfactual conditional is true, but as the counterfactual antecedent is false, your claim doesn't make much sense.’ If I tell my fellow astronomers, ‘Had the comet Shoemaker -Levy changed somewhat its velocity a few months before crossing Jupiter's orbit, it would not have collided with Jupiter,’ they will probably answer as follows: ‘Your cou nterfactual conditional is perfectly correct, but the antecedent of the counterfa ctual is nomically impossible, for the comet could not have changed its velocity as this is prohibited by the laws of nature. Why talk about the course of events that is obviously not possible?’ And let us now think of the situation where a child, in a determini stic world, carries out some mathematical operation incorrectly, because he did not listen carefully enough to the teacher's explanation. Suppose that we both are a kind of Laplace's Demons able to observe and theoretically predict in every detail the psycho-physical dynamics of conscious creatures in the deterministic world, and that we were considering, some time before the lesson, the behaviour of this child. Although the child's psycho -physical dynamics are very much more co mplicated than the movement o f a comet, it is, in the deterministic world, as d etermined and, in principle, as predictable as the movement of a comet. If I had then said to you, ‘The child can avoid the mistake, because if he listens carefu lly enough to the teacher's explanation, he will not make the mistake,’ you would have got probably quite surprised and contended: ‘You see, we both know pe rfectly well that, given that the present total psycho -physical situation in the world is as it in fact is, the child could not, and would not, listen to the teacher, unless the psycho -physical laws that have been held hitherto would be broken. The child will make the mistake nomically necessarily, and therefore he cannot avoid the mistake.’ If my volitional activity is, and has always been, nomic, then, if I maintain that my activity is Free -Volitional, I am wrong, but I am wrong nomically ne cessarily, having been, in principle, unable to prevent my being wrong.
 ```
