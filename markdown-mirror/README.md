@@ -1,12 +1,20 @@
 # markdown-mirror
 
-This folder contains markdown browsing copies of the archival originals.
+This folder contains readability-first markdown mirrors of the archival originals.
 
 ## Purpose
 
 - Improve readability and searchability in standard git interfaces.
 - Keep all source originals untouched in their native formats.
+- Simplify text for machine reading by removing extraction noise.
 - Maintain source traceability with path and SHA256 metadata in each copy.
+
+## Normalization Rules
+
+- Hard line wraps are merged into readable paragraphs.
+- Repeated separator character blocks are normalized to `---`.
+- Excess spacing and blank lines are cleaned.
+- Meaning and textual content are preserved; page visual layout is not preserved.
 
 ## Scope
 

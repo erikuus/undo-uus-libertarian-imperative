@@ -1,6 +1,6 @@
 # markdown-mirror/undo-uus-archive/_IMPERATIVE_Responses
 
-Markdown browsing copies for `undo-uus-archive/_IMPERATIVE_Responses/*` originals.
+Readability-first markdown mirrors for `undo-uus-archive/_IMPERATIVE_Responses/*` originals.
 
 ## Current Coverage
 

@@ -1,6 +1,6 @@
 # markdown-mirror/undo-uus-archive/_IMPERATIVE_Article/PublishingProcess
 
-Markdown browsing copies for all original `PublishingProcess/*` artifacts.
+Readability-first markdown mirrors for all original `PublishingProcess/*` artifacts.
 
 ## Naming
 

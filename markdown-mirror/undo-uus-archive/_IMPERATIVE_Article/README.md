@@ -1,6 +1,6 @@
 # markdown-mirror/undo-uus-archive/_IMPERATIVE_Article
 
-Markdown browsing copies for `undo-uus-archive/_IMPERATIVE_Article/*` originals.
+Readability-first markdown mirrors for `undo-uus-archive/_IMPERATIVE_Article/*` originals.
 
 ## Includes
 
@@ -12,6 +12,6 @@ Markdown browsing copies for `undo-uus-archive/_IMPERATIVE_Article/*` originals.
 
 ## Notes
 
-- PDF copies contain extracted page text.
+- PDF copies contain cleaned extracted text for machine/human reading.
 - Image copies embed the original image and preservation metadata.
 - For canonical sources, always cite the original files in `undo-uus-archive/_IMPERATIVE_Article/`.
