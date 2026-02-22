@@ -28,7 +28,6 @@ python3 -m pip install -r requirements.txt
 The mirror covers all source files in:
 
 - `undo-uus-archive/_IMPERATIVE_Article/*`
-- `undo-uus-archive/_IMPERATIVE_Responses/*`
 - `undo-uus-archive/1997_Libertaarimperatiiv/*` (secondary-language publication context)
 
 Some canonical artifacts may be intentionally excluded from mirroring (for example, full journal-issue scans dominated by third-party content). These remain preserved under `undo-uus-archive/` and covered by fixity manifests.
@@ -69,5 +68,4 @@ python3 scripts/build_markdown_mirror.py --deterministic
 ## Folder Index
 
 - [`undo-uus-archive/_IMPERATIVE_Article/README.md`](undo-uus-archive/_IMPERATIVE_Article/README.md)
-- [`undo-uus-archive/_IMPERATIVE_Responses/README.md`](undo-uus-archive/_IMPERATIVE_Responses/README.md)
 - [`undo-uus-archive/1997_Libertaarimperatiiv/README.md`](undo-uus-archive/1997_Libertaarimperatiiv/README.md)

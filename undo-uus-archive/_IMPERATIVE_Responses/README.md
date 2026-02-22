@@ -10,7 +10,8 @@ This folder preserves the original post-publication response dossier.
 
 The dossier is essential for historical analysis because it shows reception quality: where readers understood the argument's logic and where they conflated it with other free-will positions.
 
-## Markdown Copy
+## Reading Edition
 
-Browsable markdown version:
-`../../markdown-mirror/undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.md`
+This dossier is intentionally handled as a human-edited reading edition (to reduce extraction noise and improve structure):
+
+`../../markdown-reader/undo-uus-archive/_IMPERATIVE_Responses/README.md`

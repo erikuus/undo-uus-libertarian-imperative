@@ -45,6 +45,8 @@ ALL_EXTS = PDF_EXTS | TEXT_EXTS | IMAGE_EXTS
 # contain mostly third-party content). They remain in fixity manifests.
 MIRROR_EXCLUDE_SOURCE_RELS = {
     "undo-uus-archive/1997_Libertaarimperatiiv/Akadeemia_1997_10_0001.pdf",
+    # Response dossier is intentionally handled via a human-edited reader layer.
+    "undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf",
 }
 
 MIRROR_FORMAT_VERSION = "readability-v6"

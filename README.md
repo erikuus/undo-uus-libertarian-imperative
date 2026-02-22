@@ -38,7 +38,8 @@ This moves the debate from only metaphysical speculation toward a methodological
 - Publishing workflow records: [`undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/README.md`](undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/README.md)
 - Responses dossier: [`undo-uus-archive/_IMPERATIVE_Responses/README.md`](undo-uus-archive/_IMPERATIVE_Responses/README.md)
 - Secondary-language publication (Estonian, *Akadeemia*): [`undo-uus-archive/1997_Libertaarimperatiiv/README.md`](undo-uus-archive/1997_Libertaarimperatiiv/README.md)
-- Markdown browsing copies of all originals: [`markdown-mirror/README.md`](markdown-mirror/README.md)
+- Script-generated markdown mirrors (core texts): [`markdown-mirror/README.md`](markdown-mirror/README.md)
+- Human-edited reader editions (messy secondary material): [`markdown-reader/README.md`](markdown-reader/README.md)
 
 ## Archival Principles Used
 
