@@ -40,7 +40,7 @@ TEXT_EXTS = {".txt", ".tex"}
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"}
 ALL_EXTS = PDF_EXTS | TEXT_EXTS | IMAGE_EXTS
 
-MIRROR_FORMAT_VERSION = "readability-v4"
+MIRROR_FORMAT_VERSION = "readability-v5"
 MIRROR_PROFILE = "readability-first"
 
 TESSERACT_CANDIDATES = ["tesseract", "/opt/homebrew/bin/tesseract"]
@@ -60,6 +60,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--deterministic", action="store_true", help="Use stable metadata values to avoid volatile timestamps.")
     parser.add_argument("--no-ocr", action="store_true", help="Disable OCR fallback for image-only PDF pages.")
     parser.add_argument("--ocr-lang", default="eng", help="Tesseract language for OCR fallback (default: eng).")
+    parser.add_argument(
+        "--strict-ocr-check",
+        action="store_true",
+        help="In --check mode, also require OCR mode headers to match the current local OCR environment.",
+    )
     return parser.parse_args()
 
 
@@ -347,13 +352,20 @@ def extract_pdf_pages(
     return len(reader.pages), pages, ocr_used
 
 
-def format_ocr_mode(*, ocr_enabled: bool, tesseract_cmd: str | None, ocr_lang: str, tess_version: str | None) -> str:
+def format_ocr_mode(*, ocr_enabled: bool, tesseract_cmd: str | None, ocr_lang: str) -> str:
     if not ocr_enabled:
         return "disabled"
     if not tesseract_cmd:
-        return f"image-only pages requested but unavailable (tesseract not found; lang={ocr_lang})"
-    version = tess_version or "tesseract (version unknown)"
-    return f"image-only pages via {version} (lang={ocr_lang})"
+        return f"unavailable(lang={ocr_lang})"
+    return f"enabled(lang={ocr_lang})"
+
+
+def format_ocr_provenance(*, ocr_enabled: bool, tesseract_cmd: str | None, tess_version: str | None) -> str:
+    if not ocr_enabled:
+        return "not requested"
+    if not tesseract_cmd:
+        return "tesseract not found"
+    return tess_version or "tesseract (version unknown)"
 
 
 def header_lines(
@@ -364,6 +376,7 @@ def header_lines(
     *,
     deterministic: bool,
     ocr_mode: str | None,
+    ocr_provenance: str | None,
 ) -> list[str]:
     stamp = "deterministic" if deterministic else datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     src_rel = repo_rel(src)
@@ -384,6 +397,8 @@ def header_lines(
 
     if kind == "pdf" and ocr_mode is not None:
         lines.append(f"- OCR mode: `{ocr_mode}`")
+    if kind == "pdf" and ocr_provenance is not None:
+        lines.append(f"- OCR provenance: `{ocr_provenance}`")
 
     lines.extend([
         "- Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).",
@@ -415,6 +430,10 @@ def write_pdf_copy(
         ocr_enabled=ocr_enabled,
         tesseract_cmd=tesseract_cmd,
         ocr_lang=ocr_lang,
+    )
+    ocr_provenance = format_ocr_provenance(
+        ocr_enabled=ocr_enabled,
+        tesseract_cmd=tesseract_cmd,
         tess_version=tess_version,
     )
 
@@ -425,6 +444,7 @@ def write_pdf_copy(
         checksum,
         deterministic=deterministic,
         ocr_mode=ocr_mode,
+        ocr_provenance=ocr_provenance,
     )
     lines.extend([
         f"This copy contains extracted text from {page_count} page(s).",
@@ -458,7 +478,15 @@ def write_pdf_copy(
 
 def write_text_copy(src: Path, dest: Path, checksum: str, *, deterministic: bool) -> None:
     body = normalize_text(src.read_text(encoding="utf-8", errors="replace")).strip()
-    lines = header_lines(src, dest, src.suffix.lower().lstrip("."), checksum, deterministic=deterministic, ocr_mode=None)
+    lines = header_lines(
+        src,
+        dest,
+        src.suffix.lower().lstrip("."),
+        checksum,
+        deterministic=deterministic,
+        ocr_mode=None,
+        ocr_provenance=None,
+    )
     lines.extend([
         "```text",
         body,
@@ -483,7 +511,15 @@ def image_details(src: Path) -> str:
 def write_image_copy(src: Path, dest: Path, checksum: str, *, deterministic: bool) -> None:
     dims = image_details(src)
     rel_image = rel_posix(dest, src)
-    lines = header_lines(src, dest, "image", checksum, deterministic=deterministic, ocr_mode=None)
+    lines = header_lines(
+        src,
+        dest,
+        "image",
+        checksum,
+        deterministic=deterministic,
+        ocr_mode=None,
+        ocr_provenance=None,
+    )
     lines.extend([
         f"Image dimensions: `{dims}`",
         "",
@@ -527,6 +563,8 @@ def read_existing_header(dest: Path) -> dict[str, str]:
                     fields["mirror_profile"] = line[len("- Mirror profile: `") : -1]
                 elif line.startswith("- OCR mode: `") and line.endswith("`"):
                     fields["ocr_mode"] = line[len("- OCR mode: `") : -1]
+                elif line.startswith("- OCR provenance: `") and line.endswith("`"):
+                    fields["ocr_provenance"] = line[len("- OCR provenance: `") : -1]
                 elif line.strip() == "---":
                     break
     except FileNotFoundError:
@@ -540,6 +578,7 @@ def needs_regen(
     checksum: str,
     *,
     expected_ocr_mode: str | None,
+    compare_ocr_mode: bool,
 ) -> tuple[bool, str]:
     if not dest.exists():
         return True, "missing"
@@ -553,7 +592,7 @@ def needs_regen(
         return True, "mirror format version mismatch"
     if existing.get("mirror_profile") != MIRROR_PROFILE:
         return True, "mirror profile mismatch"
-    if expected_ocr_mode is not None and existing.get("ocr_mode") != expected_ocr_mode:
+    if compare_ocr_mode and expected_ocr_mode is not None and existing.get("ocr_mode") != expected_ocr_mode:
         return True, "ocr mode mismatch"
 
     return False, "ok"
@@ -610,10 +649,16 @@ def main() -> None:
                 ocr_enabled=ocr_enabled,
                 tesseract_cmd=tesseract_cmd,
                 ocr_lang=args.ocr_lang,
-                tess_version=tess_version,
             )
 
-        regen, reason = needs_regen(src, dest, checksum, expected_ocr_mode=expected_ocr_mode)
+        compare_ocr_mode = args.check and args.strict_ocr_check
+        regen, reason = needs_regen(
+            src,
+            dest,
+            checksum,
+            expected_ocr_mode=expected_ocr_mode,
+            compare_ocr_mode=compare_ocr_mode,
+        )
 
         if args.check:
             checked += 1

@@ -5,11 +5,12 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf`
 - SHA256: `f1c550abe6440eec811c91a0351e045953480a5c172993e47bdfa4ad6d1ff83d`
-- Mirror format version: `readability-v4`
+- Mirror format version: `readability-v5`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 16:16:58 UTC`
+- Generated: `2026-02-22 16:52:09 UTC`
 - Original file: `[Responses-to-Imperative.pdf](../../../undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf)`
-- OCR mode: `image-only pages via tesseract 5.5.0 (lang=eng)`
+- OCR mode: `enabled(lang=eng)`
+- OCR provenance: `tesseract 5.5.0`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---

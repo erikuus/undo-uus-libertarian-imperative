@@ -58,7 +58,7 @@ This moves the debate from only metaphysical speculation toward a methodological
 
 - Canonical source fixity: `undo-uus-archive/manifest-sha256.txt`
 - Mirror fixity: `markdown-mirror/manifest-sha256.txt`
-- Validation command:
+- Validation command (portable across OCR environments):
   `python3 scripts/build_markdown_mirror.py --check`
 
 ## Recommended Reading Paths

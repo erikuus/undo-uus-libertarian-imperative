@@ -15,3 +15,4 @@ This log records non-original, curator-layer interventions.
 - 2026-02-22: Converted `markdown-mirror` to readability-first normalization policy.
 - 2026-02-22: Moved ingest context model to `undo-uus-archive/METADATA.md` with curator-authored disclaimer.
 - 2026-02-22: Added rights statement, citation layer, argument map, fixity manifests, OCR fallback for image-only pages, and forensics-friendly `build_markdown_mirror.py` modes (`--check`, `--deterministic`).
+- 2026-02-22: Completed article citation record with explicit absence/provenance notes for page range/DOI/ISSN and updated mirror validation behavior so `--check` is portable by default; added optional strict OCR matching (`--strict-ocr-check`).

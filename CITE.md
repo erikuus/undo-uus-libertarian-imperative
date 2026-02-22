@@ -28,8 +28,10 @@ Example BibTeX:
 - Volume: 6
 - Issue: 10
 - Year: 1999
-- Page range: not yet verified from source artifacts in this repository
-- DOI: not identified in current source artifacts
+- Publisher/imprint: Imprint Academic (publisher metadata appears in production correspondence)
+- Page range: not present in currently preserved canonical artifacts; offprint PDF carries internal pagination `1`-`17` only
+- DOI: no DOI identifier found in currently preserved canonical artifacts
+- ISSN: not identified in currently preserved canonical artifacts
 
 ### Verification Notes
 
@@ -38,5 +40,11 @@ The fields above are based on source artifacts in this repository:
 - `undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf` (author/title)
 - `undo-uus-archive/_IMPERATIVE_Article/_OffprintCover.jpg` (journal/volume/issue/year)
 - `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6g-TLIpublishing6g.pdf` (issue scheduling context)
+- `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6h-TLIpublishing6h.pdf` (publisher/workflow context)
 
-If you identify a verified page range or DOI from source materials, update this file and log the change in `CURATOR_LOG.md`.
+Additional verification checks performed on canonical artifacts:
+
+- DOI pattern scan (`10.xxxx/...`) across `_TheLibertarianImperative.pdf`, `6g-TLIpublishing6g.pdf`, and `6h-TLIpublishing6h.pdf`: no match found.
+- Page-range scan (`pp. N-N`) across the same files and offprint cover OCR: no article page-range statement found.
+
+If you identify a verified journal page range, DOI, or ISSN from source materials, update this file and log the change in `CURATOR_LOG.md`.
