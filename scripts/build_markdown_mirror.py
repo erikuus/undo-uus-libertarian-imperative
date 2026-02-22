@@ -217,6 +217,87 @@ def normalize_for_readability(text: str) -> str:
     return "\n".join(compact)
 
 
+ESTONIAN_TEXT_REPAIR_VERSION = "estonian-diacritics-v4"
+ESTONIAN_MARKS = {"\u00a8", "\u02dc"}  # diaeresis, small tilde
+ESTONIAN_DIAERESIS_LETTERS = {"Ä", "Ö", "Ü", "ä", "ö", "ü"}
+ESTONIAN_TILDE_LETTERS = {"Õ", "õ"}
+ESTONIAN_BASE_PRECEDES_DIACRITIC_RE = re.compile(r"([AaOoUu])([ÄäÖöÜüÕõ])")
+ESTONIAN_COMPOSED = {
+    ("\u00a8", "A"): "Ä",
+    ("\u00a8", "a"): "ä",
+    ("\u00a8", "O"): "Ö",
+    ("\u00a8", "o"): "ö",
+    ("\u00a8", "U"): "Ü",
+    ("\u00a8", "u"): "ü",
+    ("\u02dc", "O"): "Õ",
+    ("\u02dc", "o"): "õ",
+}
+ESTONIAN_MARK_THEN_LETTER_RE = re.compile(r"([\u00a8\u02dc])\s*([A-Za-z])")
+ESTONIAN_LETTER_THEN_MARK_RE = re.compile(r"([A-Za-zÄÖÜÕäöüõ])\s*([\u00a8\u02dc])")
+ESTONIAN_SPLIT_WORD_AFTER_CAP_RE = re.compile(r"(^|[\s(\[{\"'“‘«])([ÄÖÜÕ])\s+([a-zäöüõ])", re.MULTILINE)
+
+
+def estonian_text_repair_tag(src: Path) -> str | None:
+    try:
+        rel = src.relative_to(ROOT).as_posix()
+    except Exception:
+        return None
+    if rel.startswith("undo-uus-archive/1997_Libertaarimperatiiv/"):
+        return ESTONIAN_TEXT_REPAIR_VERSION
+    return None
+
+
+def repair_estonian_diacritics(text: str) -> str:
+    if not text:
+        return text
+    if not any(mark in text for mark in ESTONIAN_MARKS):
+        return text
+
+    def mark_then_letter(m: re.Match[str]) -> str:
+        mark, letter = m.group(1), m.group(2)
+        return ESTONIAN_COMPOSED.get((mark, letter), m.group(0))
+
+    def letter_then_mark(m: re.Match[str]) -> str:
+        letter, mark = m.group(1), m.group(2)
+        composed = ESTONIAN_COMPOSED.get((mark, letter))
+        if composed is not None:
+            return composed
+        if mark == "\u00a8" and letter in ESTONIAN_DIAERESIS_LETTERS:
+            return letter
+        if mark == "\u02dc" and letter in ESTONIAN_TILDE_LETTERS:
+            return letter
+        return m.group(0)
+
+    repaired = ESTONIAN_MARK_THEN_LETTER_RE.sub(mark_then_letter, text)
+    repaired = ESTONIAN_LETTER_THEN_MARK_RE.sub(letter_then_mark, repaired)
+    repaired = ESTONIAN_SPLIT_WORD_AFTER_CAP_RE.sub(r"\1\2\3", repaired)
+
+    def base_before_diacritic(m: re.Match[str]) -> str:
+        base, diacritic = m.group(1), m.group(2)
+        base_lower = base.lower()
+        di_lower = diacritic.lower()
+
+        required_base = "a" if di_lower == "ä" else "o" if di_lower in {"ö", "õ"} else "u" if di_lower == "ü" else None
+        if required_base != base_lower:
+            return m.group(0)
+
+        if base.isupper():
+            di_for_base = diacritic.upper()
+        else:
+            di_for_base = diacritic.lower()
+
+        return f"{di_for_base}{diacritic}"
+
+    repaired = ESTONIAN_BASE_PRECEDES_DIACRITIC_RE.sub(base_before_diacritic, repaired)
+    return repaired
+
+
+def apply_language_repairs(text: str, *, src: Path) -> str:
+    if estonian_text_repair_tag(src) is not None:
+        return repair_estonian_diacritics(text)
+    return text
+
+
 def find_tesseract_command() -> str | None:
     for candidate in TESSERACT_CANDIDATES:
         resolved = shutil.which(candidate)
@@ -342,11 +423,12 @@ def extract_pdf_pages(
 
     for idx, page in enumerate(reader.pages, start=1):
         page_text = normalize_for_readability(page.extract_text() or "")
+        page_text = apply_language_repairs(page_text, src=path)
 
         if not page_text and ocr_enabled and tesseract_cmd:
             ocr_text, conf, image_count = ocr_page_images(page, tesseract_cmd, ocr_lang)
             if ocr_text:
-                page_text = ocr_text
+                page_text = apply_language_repairs(ocr_text, src=path)
                 ocr_used.append({"page": idx, "confidence": conf, "image_count": image_count})
 
         if not page_text:
@@ -404,6 +486,9 @@ def header_lines(
         lines.append(f"- OCR mode: `{ocr_mode}`")
     if kind == "pdf" and ocr_provenance is not None:
         lines.append(f"- OCR provenance: `{ocr_provenance}`")
+    text_repair = estonian_text_repair_tag(src)
+    if text_repair is not None:
+        lines.append(f"- Text repair: `{text_repair}`")
 
     lines.extend([
         "- Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).",
@@ -483,6 +568,7 @@ def write_pdf_copy(
 
 def write_text_copy(src: Path, dest: Path, checksum: str, *, deterministic: bool) -> None:
     body = normalize_text(src.read_text(encoding="utf-8", errors="replace")).strip()
+    body = apply_language_repairs(body, src=src)
     lines = header_lines(
         src,
         dest,
@@ -531,6 +617,7 @@ def extract_docx_text(src: Path) -> str:
                 parts.append("")
 
     text = normalize_text("\n".join(parts))
+    text = apply_language_repairs(text, src=src)
     return text.strip()
 
 
@@ -627,6 +714,8 @@ def read_existing_header(dest: Path) -> dict[str, str]:
                     fields["ocr_mode"] = line[len("- OCR mode: `") : -1]
                 elif line.startswith("- OCR provenance: `") and line.endswith("`"):
                     fields["ocr_provenance"] = line[len("- OCR provenance: `") : -1]
+                elif line.startswith("- Text repair: `") and line.endswith("`"):
+                    fields["text_repair"] = line[len("- Text repair: `") : -1]
                 elif line.strip() == "---":
                     break
     except FileNotFoundError:
@@ -656,6 +745,9 @@ def needs_regen(
         return True, "mirror profile mismatch"
     if compare_ocr_mode and expected_ocr_mode is not None and existing.get("ocr_mode") != expected_ocr_mode:
         return True, "ocr mode mismatch"
+    expected_text_repair = estonian_text_repair_tag(src)
+    if expected_text_repair is not None and existing.get("text_repair") != expected_text_repair:
+        return True, "text repair tag mismatch"
 
     return False, "ok"
 
