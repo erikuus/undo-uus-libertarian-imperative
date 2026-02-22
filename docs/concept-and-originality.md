@@ -32,5 +32,5 @@ This yields a decision stance that survives both horns of the free-will dilemma.
 
 ## Primary Text
 
-- Final published article: [`../undo_uus_archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf`](../undo_uus_archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf)
-- Markdown browsing copy: [`../markdown-mirror/undo_uus_archive/_IMPERATIVE_Article/_TheLibertarianImperative.md`](../markdown-mirror/undo_uus_archive/_IMPERATIVE_Article/_TheLibertarianImperative.md)
+- Final published article: [`../undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf`](../undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf)
+- Markdown browsing copy: [`../markdown-mirror/undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.md`](../markdown-mirror/undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.md)

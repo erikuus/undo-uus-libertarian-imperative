@@ -17,8 +17,8 @@ except Exception:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIRS = [
-    ROOT / "undo_uus_archive" / "_IMPERATIVE_Article",
-    ROOT / "undo_uus_archive" / "_IMPERATIVE_Responses",
+    ROOT / "undo-uus-archive" / "_IMPERATIVE_Article",
+    ROOT / "undo-uus-archive" / "_IMPERATIVE_Responses",
 ]
 DEST_ROOT = ROOT / "markdown-mirror"
 PDF_EXTS = {".pdf"}

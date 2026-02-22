@@ -12,8 +12,8 @@ This folder contains markdown browsing copies of the archival originals.
 
 The mirror covers all source files in:
 
-- `undo_uus_archive/_IMPERATIVE_Article/*`
-- `undo_uus_archive/_IMPERATIVE_Responses/*`
+- `undo-uus-archive/_IMPERATIVE_Article/*`
+- `undo-uus-archive/_IMPERATIVE_Responses/*`
 
 ## Regeneration
 
@@ -25,5 +25,5 @@ python3 scripts/build_markdown_mirror.py
 
 ## Folder Index
 
-- [`undo_uus_archive/_IMPERATIVE_Article/README.md`](undo_uus_archive/_IMPERATIVE_Article/README.md)
-- [`undo_uus_archive/_IMPERATIVE_Responses/README.md`](undo_uus_archive/_IMPERATIVE_Responses/README.md)
+- [`undo-uus-archive/_IMPERATIVE_Article/README.md`](undo-uus-archive/_IMPERATIVE_Article/README.md)
+- [`undo-uus-archive/_IMPERATIVE_Responses/README.md`](undo-uus-archive/_IMPERATIVE_Responses/README.md)
