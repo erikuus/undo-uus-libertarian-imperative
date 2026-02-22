@@ -6,6 +6,7 @@ Features:
 - OCR fallback for image-only PDF pages.
 - `--check` mode for forensics-friendly validation.
 - Source and mirror fixity manifest generation.
+- DOCX text extraction for source `.docx` artifacts.
 """
 
 from __future__ import annotations
@@ -18,9 +19,11 @@ import re
 import shutil
 import subprocess
 import tempfile
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from xml.etree import ElementTree as ET
 
 from pypdf import PdfReader
 
@@ -33,12 +36,14 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIRS = [
     ROOT / "undo-uus-archive" / "_IMPERATIVE_Article",
     ROOT / "undo-uus-archive" / "_IMPERATIVE_Responses",
+    ROOT / "undo-uus-archive" / "1997_Libertaarimperatiiv",
 ]
 DEST_ROOT = ROOT / "markdown-mirror"
 PDF_EXTS = {".pdf"}
 TEXT_EXTS = {".txt", ".tex"}
+DOCX_EXTS = {".docx"}
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"}
-ALL_EXTS = PDF_EXTS | TEXT_EXTS | IMAGE_EXTS
+ALL_EXTS = PDF_EXTS | TEXT_EXTS | DOCX_EXTS | IMAGE_EXTS
 
 MIRROR_FORMAT_VERSION = "readability-v5"
 MIRROR_PROFILE = "readability-first"
@@ -496,6 +501,59 @@ def write_text_copy(src: Path, dest: Path, checksum: str, *, deterministic: bool
     dest.write_text("\n".join(lines), encoding="utf-8")
 
 
+def extract_docx_text(src: Path) -> str:
+    with zipfile.ZipFile(src) as zf:
+        xml_bytes = zf.read("word/document.xml")
+
+    root = ET.fromstring(xml_bytes)
+
+    ns = {
+        "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+    }
+
+    parts: list[str] = []
+    for paragraph in root.findall(".//w:p", ns):
+        chunks: list[str] = []
+        for node in paragraph.iter():
+            tag = node.tag.rsplit("}", 1)[-1]
+            if tag == "t" and node.text:
+                chunks.append(node.text)
+            elif tag == "tab":
+                chunks.append("\t")
+            elif tag == "br":
+                chunks.append("\n")
+
+        text = "".join(chunks).strip()
+        if text:
+            parts.append(text)
+        else:
+            if parts and parts[-1] != "":
+                parts.append("")
+
+    text = normalize_text("\n".join(parts))
+    return text.strip()
+
+
+def write_docx_copy(src: Path, dest: Path, checksum: str, *, deterministic: bool) -> None:
+    body = extract_docx_text(src)
+    lines = header_lines(
+        src,
+        dest,
+        "docx",
+        checksum,
+        deterministic=deterministic,
+        ocr_mode=None,
+        ocr_provenance=None,
+    )
+    lines.extend([
+        "```text",
+        body,
+        "```",
+        "",
+    ])
+    dest.write_text("\n".join(lines), encoding="utf-8")
+
+
 def image_details(src: Path) -> str:
     if Image is None:
         return "unknown"
@@ -542,7 +600,11 @@ def iter_sources() -> list[Path]:
 
 
 def dest_for(src: Path) -> Path:
-    return (DEST_ROOT / src.relative_to(ROOT)).with_suffix(".md")
+    rel = src.relative_to(ROOT)
+    if src.suffix.lower() in DOCX_EXTS:
+        # Avoid collisions with same-stem PDFs (e.g. foo.pdf and foo.docx).
+        return DEST_ROOT / rel.with_name(rel.name + ".md")
+    return (DEST_ROOT / rel).with_suffix(".md")
 
 
 def read_existing_header(dest: Path) -> dict[str, str]:
@@ -682,6 +744,8 @@ def main() -> None:
             )
         elif ext in TEXT_EXTS:
             write_text_copy(src, dest, checksum, deterministic=args.deterministic)
+        elif ext in DOCX_EXTS:
+            write_docx_copy(src, dest, checksum, deterministic=args.deterministic)
         elif ext in IMAGE_EXTS:
             write_image_copy(src, dest, checksum, deterministic=args.deterministic)
         else:

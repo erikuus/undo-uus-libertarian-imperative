@@ -12,6 +12,7 @@ This folder is a curator-level wrapper that groups the original files received f
 
 - [`_IMPERATIVE_Article/`](_IMPERATIVE_Article/)
 - [`_IMPERATIVE_Responses/`](_IMPERATIVE_Responses/)
+- Secondary-language publication (Estonian, *Akadeemia*): [`1997_Libertaarimperatiiv/`](1997_Libertaarimperatiiv/)
 
 ## Curator Metadata
 

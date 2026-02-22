@@ -7,6 +7,7 @@
 | 1995 | Early argument formulation and exchange | `Responses-to-Imperative` dossier material |
 | Mar-Jul 1997 | Pre-submission circulation and first editorial cycles | `1a`, `1b`, `2a`, `2b`, `3a`, `3b` |
 | Sep 1997 | Referee intervention and targeted cuts | `4a`, `4b` |
+| 1997 (Akadeemia #10) | Estonian-language publication context (secondary) | `undo-uus-archive/1997_Libertaarimperatiiv/Akadeemia_1997_10_0001.pdf` |
 | Jan-Feb 1998 | Late-stage revision and acceptance path | `5a`, `5b`, `5c`, `6a` |
 | Dec 1998 | Production text transfer | `6b`, `6c`, `6d` |
 | Feb-Mar 1999 | Parallel book review delivery | `6e`, `6f` |

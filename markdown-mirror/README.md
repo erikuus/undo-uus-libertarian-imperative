@@ -28,6 +28,7 @@ The mirror covers all source files in:
 
 - `undo-uus-archive/_IMPERATIVE_Article/*`
 - `undo-uus-archive/_IMPERATIVE_Responses/*`
+- `undo-uus-archive/1997_Libertaarimperatiiv/*` (secondary-language publication context)
 
 ## Regeneration
 
@@ -66,3 +67,4 @@ python3 scripts/build_markdown_mirror.py --deterministic
 
 - [`undo-uus-archive/_IMPERATIVE_Article/README.md`](undo-uus-archive/_IMPERATIVE_Article/README.md)
 - [`undo-uus-archive/_IMPERATIVE_Responses/README.md`](undo-uus-archive/_IMPERATIVE_Responses/README.md)
+- [`undo-uus-archive/1997_Libertaarimperatiiv/README.md`](undo-uus-archive/1997_Libertaarimperatiiv/README.md)

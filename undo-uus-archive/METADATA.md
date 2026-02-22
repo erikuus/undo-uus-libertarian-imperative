@@ -10,6 +10,8 @@ This overview models all files under:
 
 The material is an archival package about the conception, revision, review, production, publication, and reception of Undo Uus's philosophical position: **The Libertarian Imperative**.
 
+Related (outside this `_IMPERATIVE_*` scope): an Estonian-language publication context is preserved under `undo-uus-archive/1997_Libertaarimperatiiv/` (secondary to the English article corpus).
+
 ## High-Level Structure
 The corpus naturally groups into six connected layers:
 

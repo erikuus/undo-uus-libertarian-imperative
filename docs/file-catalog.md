@@ -29,3 +29,9 @@
 - `6f`: Lowe book review output.
 - `6g`: scheduling update and proofs trigger.
 - `6h`: final proof corrections and closure.
+
+## Secondary Language Publication (Estonian)
+
+The archive also preserves an Estonian-language publication context (secondary to the English article corpus):
+
+- `undo-uus-archive/1997_Libertaarimperatiiv/README.md`

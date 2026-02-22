@@ -37,6 +37,7 @@ This moves the debate from only metaphysical speculation toward a methodological
 - Original article corpus: [`undo-uus-archive/_IMPERATIVE_Article/README.md`](undo-uus-archive/_IMPERATIVE_Article/README.md)
 - Publishing workflow records: [`undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/README.md`](undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/README.md)
 - Responses dossier: [`undo-uus-archive/_IMPERATIVE_Responses/README.md`](undo-uus-archive/_IMPERATIVE_Responses/README.md)
+- Secondary-language publication (Estonian, *Akadeemia*): [`undo-uus-archive/1997_Libertaarimperatiiv/README.md`](undo-uus-archive/1997_Libertaarimperatiiv/README.md)
 - Markdown browsing copies of all originals: [`markdown-mirror/README.md`](markdown-mirror/README.md)
 
 ## Archival Principles Used
