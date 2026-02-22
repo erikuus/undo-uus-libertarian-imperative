@@ -7,9 +7,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - SHA256: `f7bd1805ad100b3b4ee344de22d0bc53d7201b82157bcbd1e5fe8694f2f5b94b`
 - Mirror format version: `readability-v5`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:06:29 UTC`
+- Generated: `2026-02-22 18:19:45 UTC`
 - Original file: `[_Libertaarimperatiiv.docx](../../../undo-uus-archive/1997_Libertaarimperatiiv/_Libertaarimperatiiv.docx)`
-- Text repair: `estonian-diacritics-v4`
+- Text repair: `estonian-diacritics-v5`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---
@@ -27,7 +27,7 @@ Me oleme episteemiliselt raskes olukorras.
 mõistlik uskuda, et maailm on läbinisti materiaalne:  tohutu suur süs- teem suhteliselt lihtsatest füüsikalistest elementaarkomponentidest — väljadest ja osakestest — mille käitumine allub rangelt loodusseadustele. On ju suur osa maailmas toimuvast osutunud tõepoolest seletatavaks lähtudes teesist, et reaalsus on põhiolemuselt füüsikaline. Teisest küljest on meile aga teada sellised fenomenid nagu teadvus ja tahtevabadus, mis mitte kuidagi materialistlikku ehk füsikalistlikku maailmaskeemi ei sobi, sest  neist  nähtub  eksistentsi  seda  laadi  mittetriviaalne  olemus,  mida tavatsetakse nimetada üleloomulikuks.
 Milline maailmapilt — materialistlik või mittematerialistlik — on siis õige?  See raske filosoofiline küsimus on inimesi vaevanud juba an- tiikajast  peale.   Kahetsusväärsel  kombel  on  teadus  minetanud  antud üliolulisse probleemi suhtumisel erapooletuse ning asunud kirglikult ja isegi  ebaausalt  kaitsma  materialismi,  vaikides  maha  või  eitades  neid fakte, mis seavad selle maailmavaate kahtluse alla.  Nüüdisteadus, tun- nistades ainult nn objektiivset uurimismetoodikat ja materialistlikku maailmapilti, on olnud pädev käsitlema edukalt loodusprotsesside väga laia valdkonda, mis on toonud kaasa ulatusliku teaduslik-tehnilise prog-
 ressi.	Kuid olles võtnud maailmavaatelise põhiprobleemi suhtes ühe-
-külgse seisukoha, ignoreerib teadus teadvusnähtude äärmiselt huvitavat olemust ega suuda seetõttu näha uusi fundamentaalseid uurimissuundi, mida saaks juba väga tulemuslikult arendada.  Kui teadusel õnnestuks vabaneda oma dogmaatilisest piiratusest, tõuseks väga oluliselt nii tema roll  inimühiskonna  arengut  määrava  põhijõuna  kui  ka  tema  prestiiˆz üldsuse silmis.
+külgse seisukoha, ignoreerib teadus teadvusnähtude äärmiselt huvitavat olemust ega suuda seetõttu näha uusi fundamentaalseid uurimissuundi, mida saaks juba väga tulemuslikult arendada.  Kui teadusel õnnestuks vabaneda oma dogmaatilisest piiratusest, tõuseks väga oluliselt nii tema roll  inimühiskonna  arengut  määrava  põhijõuna  kui  ka  tema  prestiiž üldsuse silmis.
 On olemas rida argumente, mis osutavad konkreetselt nüüdistea- dusliku maailmakäsituse puudustele, kuid nad toetuvad võrdlemisi kom-
 
 plitseeritud mõistetele, mistõttu ortodoksne teadus on suutnud nad üsna edukalt neutraliseerida. Tuleks püüda leida kergesti arusaadavaid arut-

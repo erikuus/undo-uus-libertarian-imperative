@@ -223,8 +223,10 @@ def normalize_for_readability(text: str) -> str:
     return "\n".join(compact)
 
 
-ESTONIAN_TEXT_REPAIR_VERSION = "estonian-diacritics-v4"
-ESTONIAN_MARKS = {"\u00a8", "\u02dc"}  # diaeresis, small tilde
+ESTONIAN_TEXT_REPAIR_VERSION = "estonian-diacritics-v5"
+# Some sources encode diacritics as separate “mark” characters near the base letter.
+# We repair the common cases for Estonian text.
+ESTONIAN_MARKS = {"\u00a8", "\u02dc", "\u02c6", "\u02c7"}  # diaeresis, small tilde, circumflex, caron
 ESTONIAN_DIAERESIS_LETTERS = {"Ä", "Ö", "Ü", "ä", "ö", "ü"}
 ESTONIAN_TILDE_LETTERS = {"Õ", "õ"}
 ESTONIAN_BASE_PRECEDES_DIACRITIC_RE = re.compile(r"([AaOoUu])([ÄäÖöÜüÕõ])")
@@ -237,9 +239,18 @@ ESTONIAN_COMPOSED = {
     ("\u00a8", "u"): "ü",
     ("\u02dc", "O"): "Õ",
     ("\u02dc", "o"): "õ",
+    # Some extraction paths emit U+02C6 (ˆ) where a caron should be applied.
+    ("\u02c6", "Z"): "Ž",
+    ("\u02c6", "z"): "ž",
+    ("\u02c6", "S"): "Š",
+    ("\u02c6", "s"): "š",
+    ("\u02c7", "Z"): "Ž",
+    ("\u02c7", "z"): "ž",
+    ("\u02c7", "S"): "Š",
+    ("\u02c7", "s"): "š",
 }
-ESTONIAN_MARK_THEN_LETTER_RE = re.compile(r"([\u00a8\u02dc])\s*([A-Za-z])")
-ESTONIAN_LETTER_THEN_MARK_RE = re.compile(r"([A-Za-zÄÖÜÕäöüõ])\s*([\u00a8\u02dc])")
+ESTONIAN_MARK_THEN_LETTER_RE = re.compile(r"([\u00a8\u02dc\u02c6\u02c7])\s*([A-Za-z])")
+ESTONIAN_LETTER_THEN_MARK_RE = re.compile(r"([A-Za-zÄÖÜÕäöüõ])\s*([\u00a8\u02dc\u02c6\u02c7])")
 ESTONIAN_SPLIT_WORD_AFTER_CAP_RE = re.compile(r"(^|[\s(\[{\"'“‘«])([ÄÖÜÕ])\s+([a-zäöüõ])", re.MULTILINE)
 
 

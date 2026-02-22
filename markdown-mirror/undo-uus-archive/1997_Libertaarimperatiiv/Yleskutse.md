@@ -7,11 +7,11 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - SHA256: `e2f4c6e3ef1b248a73a0a5d6e96a837c9e7955c5b206b2bd65a6089658fd6b4a`
 - Mirror format version: `readability-v5`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:06:29 UTC`
+- Generated: `2026-02-22 18:19:45 UTC`
 - Original file: `[Yleskutse.pdf](../../../undo-uus-archive/1997_Libertaarimperatiiv/Yleskutse.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
-- Text repair: `estonian-diacritics-v4`
+- Text repair: `estonian-diacritics-v5`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---
