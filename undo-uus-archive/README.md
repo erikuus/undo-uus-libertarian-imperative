@@ -13,6 +13,10 @@ This folder is a curator-level wrapper that groups the original files received f
 - [`_IMPERATIVE_Article/`](_IMPERATIVE_Article/)
 - [`_IMPERATIVE_Responses/`](_IMPERATIVE_Responses/)
 
+## Curator Metadata
+
+- [`METADATA.md`](METADATA.md): corpus-level context model for navigation and research orientation (curator-authored, non-original).
+
 ## Related Repository Layers
 
 - Curatorial docs: [`../docs/`](../docs/)

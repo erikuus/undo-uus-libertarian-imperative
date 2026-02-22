@@ -1,4 +1,7 @@
-# Context Model for `_IMPERATIVE_*` Corpus
+# METADATA: Context Model for `_IMPERATIVE_*` Corpus
+
+Curator note: this file is curator-authored metadata and analysis.
+It is not part of the original author-supplied source artifacts.
 
 ## Scope
 This overview models all files under:
