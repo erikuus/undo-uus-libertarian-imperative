@@ -2,11 +2,11 @@
 
 ## Primary Corpus
 
-- `_IMPERATIVE_Article/Appeal.pdf`: concise manifesto-style companion piece.
-- `_IMPERATIVE_Article/_TheLibertarianImperative.pdf`: final published article.
-- `_IMPERATIVE_Article/_JournalCover.JPG`: journal cover artifact.
-- `_IMPERATIVE_Article/_OffprintCover.jpg`: offprint cover artifact.
-- `_IMPERATIVE_Responses/Responses-to-Imperative.pdf`: responses and meta-commentary dossier.
+- `undo_uus_archive/_IMPERATIVE_Article/Appeal.pdf`: concise manifesto-style companion piece.
+- `undo_uus_archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf`: final published article.
+- `undo_uus_archive/_IMPERATIVE_Article/_JournalCover.JPG`: journal cover artifact.
+- `undo_uus_archive/_IMPERATIVE_Article/_OffprintCover.jpg`: offprint cover artifact.
+- `undo_uus_archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf`: responses and meta-commentary dossier.
 
 ## Publishing Process Sequence
 

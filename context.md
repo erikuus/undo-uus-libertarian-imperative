@@ -2,8 +2,8 @@
 
 ## Scope
 This overview models all files under:
-- `_IMPERATIVE_Article/*`
-- `_IMPERATIVE_Responses/*`
+- `undo_uus_archive/_IMPERATIVE_Article/*`
+- `undo_uus_archive/_IMPERATIVE_Responses/*`
 
 The material is an archival package about the conception, revision, review, production, publication, and reception of Undo Uus's philosophical position: **The Libertarian Imperative**.
 
@@ -17,7 +17,7 @@ The corpus naturally groups into six connected layers:
 | Peer/intellectual input | Referee critiques and exchange with philosophers | mostly inside `4a`, `5a`, `3a`, and in response dossier |
 | Related publication output | Book review commissioned during same process | `6f-LoweBookReview.pdf` (+ coordination in `6a`, `6e`) |
 | Public-facing packaging | Journal/offprint covers and final article PDF | `_JournalCover.JPG`, `_OffprintCover.jpg`, `_TheLibertarianImperative.pdf` |
-| Reception and argument audit | Compiled responses + Uus's meta-comments on whether argument was understood | `_IMPERATIVE_Responses/Responses-to-Imperative.pdf` |
+| Reception and argument audit | Compiled responses + Uus's meta-comments on whether argument was understood | `undo_uus_archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf` |
 
 ## Core Intellectual Content Model
 Across versions, the same core claim persists:
@@ -76,34 +76,34 @@ Recurring conceptual clusters:
 
 | File | Role in corpus |
 |---|---|
-| `_IMPERATIVE_Article/Appeal.pdf` | Standalone manifesto-style appeal to scientists; same anti-materialist/libertarian thrust in concise public form. |
-| `_IMPERATIVE_Article/PublishingProcess/1a-TLIpublishing1a.pdf` | Initial private pre-submission circulation and acknowledgement (Mar 1997). |
-| `_IMPERATIVE_Article/PublishingProcess/1b-TLI-Original.pdf` | Earliest full article manuscript baseline. |
-| `_IMPERATIVE_Article/PublishingProcess/2a-TLIpublishing2a.pdf` | Initial formal contacts with JCS and mailing logistics. |
-| `_IMPERATIVE_Article/PublishingProcess/2b-TLI-version2.pdf` | First major revised manuscript. |
-| `_IMPERATIVE_Article/PublishingProcess/3a-TLIpublishing3.pdf` | Long editorial exchange; strategic shaping for potential special issue. |
-| `_IMPERATIVE_Article/PublishingProcess/3b-TLI-version3.pdf` | Revision after early editorial round. |
-| `_IMPERATIVE_Article/PublishingProcess/4a-TLIpublishing4.pdf` | September 1997 exchange including detailed referee report and concrete revision directives. |
-| `_IMPERATIVE_Article/PublishingProcess/4b-TLI-version4.pdf` | Condensed manuscript responding to directive cuts. |
-| `_IMPERATIVE_Article/PublishingProcess/5a-TLIpublishing5.pdf` | Follow-up on referee guidance; delay and additional expert feedback integration. |
-| `_IMPERATIVE_Article/PublishingProcess/5b-TLI-version5.pdf` | Post-referee revision, conceptually mature late-stage manuscript. |
-| `_IMPERATIVE_Article/PublishingProcess/5c-TLI-version5-styleB.pdf` | Alternative style/layout rendering of version 5 content. |
-| `_IMPERATIVE_Article/PublishingProcess/6a-TLIpublishing6a.pdf` | Acceptance-path correspondence + transition to production + book review invitation thread. |
-| `_IMPERATIVE_Article/PublishingProcess/6b-TLI-version6.TEX` | Final typesetting source text (plain TeX). |
-| `_IMPERATIVE_Article/PublishingProcess/6c-TLIpublishing6c.pdf` | Explicit "pure text" handoff instructions to managing editor. |
-| `_IMPERATIVE_Article/PublishingProcess/6d-TLIversion6.txt` | Clean text export for production workflow. |
-| `_IMPERATIVE_Article/PublishingProcess/6e-TLIpublishing6e.pdf` | Production correspondence continuation + book review transmittal context. |
-| `_IMPERATIVE_Article/PublishingProcess/6f-LoweBookReview.pdf` | Completed review of E.J. Lowe's *Subjects of Experience*. |
-| `_IMPERATIVE_Article/PublishingProcess/6g-TLIpublishing6g.pdf` | Publication scheduling update and proof-stage trigger. |
-| `_IMPERATIVE_Article/PublishingProcess/6h-TLIpublishing6h.pdf` | Final proof corrections, author note, copyright closure. |
-| `_IMPERATIVE_Article/_JournalCover.JPG` | Journal issue visual artifact. |
-| `_IMPERATIVE_Article/_OffprintCover.jpg` | Offprint visual artifact. |
-| `_IMPERATIVE_Article/_TheLibertarianImperative.pdf` | Final published article form (offprint/article PDF). |
-| `_IMPERATIVE_Responses/Responses-to-Imperative.pdf` | Compiled response dossier with third-party reactions and Uus's meta-annotations about interpretation of the argument. |
+| `undo_uus_archive/_IMPERATIVE_Article/Appeal.pdf` | Standalone manifesto-style appeal to scientists; same anti-materialist/libertarian thrust in concise public form. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/1a-TLIpublishing1a.pdf` | Initial private pre-submission circulation and acknowledgement (Mar 1997). |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/1b-TLI-Original.pdf` | Earliest full article manuscript baseline. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/2a-TLIpublishing2a.pdf` | Initial formal contacts with JCS and mailing logistics. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/2b-TLI-version2.pdf` | First major revised manuscript. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/3a-TLIpublishing3.pdf` | Long editorial exchange; strategic shaping for potential special issue. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/3b-TLI-version3.pdf` | Revision after early editorial round. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/4a-TLIpublishing4.pdf` | September 1997 exchange including detailed referee report and concrete revision directives. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/4b-TLI-version4.pdf` | Condensed manuscript responding to directive cuts. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/5a-TLIpublishing5.pdf` | Follow-up on referee guidance; delay and additional expert feedback integration. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/5b-TLI-version5.pdf` | Post-referee revision, conceptually mature late-stage manuscript. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/5c-TLI-version5-styleB.pdf` | Alternative style/layout rendering of version 5 content. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6a-TLIpublishing6a.pdf` | Acceptance-path correspondence + transition to production + book review invitation thread. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6b-TLI-version6.TEX` | Final typesetting source text (plain TeX). |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6c-TLIpublishing6c.pdf` | Explicit "pure text" handoff instructions to managing editor. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6d-TLIversion6.txt` | Clean text export for production workflow. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6e-TLIpublishing6e.pdf` | Production correspondence continuation + book review transmittal context. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6f-LoweBookReview.pdf` | Completed review of E.J. Lowe's *Subjects of Experience*. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6g-TLIpublishing6g.pdf` | Publication scheduling update and proof-stage trigger. |
+| `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/6h-TLIpublishing6h.pdf` | Final proof corrections, author note, copyright closure. |
+| `undo_uus_archive/_IMPERATIVE_Article/_JournalCover.JPG` | Journal issue visual artifact. |
+| `undo_uus_archive/_IMPERATIVE_Article/_OffprintCover.jpg` | Offprint visual artifact. |
+| `undo_uus_archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf` | Final published article form (offprint/article PDF). |
+| `undo_uus_archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf` | Compiled response dossier with third-party reactions and Uus's meta-annotations about interpretation of the argument. |
 
 ## Practical Reading Order (for future work)
-1. `_IMPERATIVE_Article/_TheLibertarianImperative.pdf`
-2. `_IMPERATIVE_Article/PublishingProcess/1b` -> `2b` -> `3b` -> `4b` -> `5b` -> `6b`/`6d`
+1. `undo_uus_archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf`
+2. `undo_uus_archive/_IMPERATIVE_Article/PublishingProcess/1b` -> `2b` -> `3b` -> `4b` -> `5b` -> `6b`/`6d`
 3. Interleave corresponding `*publishing*` files (`1a`..`6h`) to explain each jump
-4. `_IMPERATIVE_Responses/Responses-to-Imperative.pdf`
+4. `undo_uus_archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf`
 5. `Appeal.pdf` and `6f-LoweBookReview.pdf` as related but parallel outputs
