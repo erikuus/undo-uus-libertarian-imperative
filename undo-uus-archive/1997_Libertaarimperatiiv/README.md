@@ -10,7 +10,7 @@ The **canonical, primary reading path** for the argument in this archive remains
 
 ## Contents
 
-- `Akadeemia_1997_10_0001.pdf`: journal issue scan containing the Estonian publication context.
+- `Akadeemia_1997_10_0001.pdf`: full issue scan (includes many non-archive articles). Preserved as a canonical artifact but intentionally **not mirrored** to markdown.
 - `_Libertaarimperatiiv.pdf`: Estonian-language core text as preserved in this archive.
 - `_Libertaarimperatiiv.docx`: word-processor source artifact (content mirrored to markdown for browsing).
 - `EnglishSummary.pdf`: English summary provided alongside the Estonian publication package.

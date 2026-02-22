@@ -45,6 +45,12 @@ DOCX_EXTS = {".docx"}
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"}
 ALL_EXTS = PDF_EXTS | TEXT_EXTS | DOCX_EXTS | IMAGE_EXTS
 
+# Some canonical artifacts are intentionally not mirrored (e.g., full journal-issue scans that
+# contain mostly third-party content). They remain in fixity manifests.
+MIRROR_EXCLUDE_SOURCE_RELS = {
+    "undo-uus-archive/1997_Libertaarimperatiiv/Akadeemia_1997_10_0001.pdf",
+}
+
 MIRROR_FORMAT_VERSION = "readability-v5"
 MIRROR_PROFILE = "readability-first"
 
@@ -676,7 +682,7 @@ def write_image_copy(src: Path, dest: Path, checksum: str, *, deterministic: boo
     dest.write_text("\n".join(lines), encoding="utf-8")
 
 
-def iter_sources() -> list[Path]:
+def iter_source_artifacts() -> list[Path]:
     files: list[Path] = []
     for source_dir in SOURCE_DIRS:
         for path in source_dir.rglob("*"):
@@ -684,6 +690,15 @@ def iter_sources() -> list[Path]:
                 files.append(path)
     files.sort(key=lambda p: p.as_posix())
     return files
+
+
+def iter_mirror_sources(artifacts: list[Path]) -> list[Path]:
+    sources: list[Path] = []
+    for path in artifacts:
+        if repo_rel(path) in MIRROR_EXCLUDE_SOURCE_RELS:
+            continue
+        sources.append(path)
+    return sources
 
 
 def dest_for(src: Path) -> Path:
@@ -776,9 +791,10 @@ def update_or_check_manifest(path: Path, expected_content: str, *, check_only: b
 def main() -> None:
     args = parse_args()
 
-    files = iter_sources()
-    if not files:
+    artifacts = iter_source_artifacts()
+    if not artifacts:
         raise SystemExit("No archival source files found.")
+    files = iter_mirror_sources(artifacts)
 
     ocr_enabled = not args.no_ocr
     tesseract_cmd = find_tesseract_command() if ocr_enabled else None
@@ -847,7 +863,7 @@ def main() -> None:
 
     # Fixity manifests
     source_manifest_path = ROOT / "undo-uus-archive" / "manifest-sha256.txt"
-    source_manifest = build_manifest_lines(files)
+    source_manifest = build_manifest_lines(artifacts)
     ok, msg = update_or_check_manifest(source_manifest_path, source_manifest, check_only=args.check)
     if not ok:
         failures.append(msg)

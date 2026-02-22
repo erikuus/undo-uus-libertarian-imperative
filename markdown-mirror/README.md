@@ -30,6 +30,8 @@ The mirror covers all source files in:
 - `undo-uus-archive/_IMPERATIVE_Responses/*`
 - `undo-uus-archive/1997_Libertaarimperatiiv/*` (secondary-language publication context)
 
+Some canonical artifacts may be intentionally excluded from mirroring (for example, full journal-issue scans dominated by third-party content). These remain preserved under `undo-uus-archive/` and covered by fixity manifests.
+
 ## Regeneration
 
 Run:

@@ -7,4 +7,4 @@ Notes:
 
 - PDF copies contain extracted text; OCR is applied only when a page has no extractable text.
 - The original artifacts remain canonical; these mirrors are for browsing and search.
-
+- `Akadeemia_1997_10_0001.pdf` is a full-issue scan and is intentionally not mirrored.
