@@ -5,8 +5,11 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/3b-TLI-version3.pdf`
 - SHA256: `1ea885b7e9380015e334a05fb552bfd3823826136102aeacf038f27bf6398328`
-- Generated: `2026-02-22 14:17:34 UTC`
+- Mirror format version: `readability-v4`
+- Mirror profile: `readability-first`
+- Generated: `2026-02-22 16:16:47 UTC`
 - Original file: `[3b-TLI-version3.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/3b-TLI-version3.pdf)`
+- OCR mode: `image-only pages via tesseract 5.5.0 (lang=eng)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---

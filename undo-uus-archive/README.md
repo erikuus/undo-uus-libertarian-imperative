@@ -16,9 +16,13 @@ This folder is a curator-level wrapper that groups the original files received f
 ## Curator Metadata
 
 - [`METADATA.md`](METADATA.md): corpus-level context model for navigation and research orientation (curator-authored, non-original).
+- `manifest-sha256.txt`: fixity manifest for canonical source artifacts.
 
 ## Related Repository Layers
 
 - Curatorial docs: [`../docs/`](../docs/)
 - Markdown browsing copies: [`../markdown-mirror/`](../markdown-mirror/)
 - Mirror generation script: [`../scripts/build_markdown_mirror.py`](../scripts/build_markdown_mirror.py)
+- Rights statement: [`../RIGHTS.md`](../RIGHTS.md)
+- Citation guidance: [`../CITE.md`](../CITE.md)
+- Curator log: [`../CURATOR_LOG.md`](../CURATOR_LOG.md)

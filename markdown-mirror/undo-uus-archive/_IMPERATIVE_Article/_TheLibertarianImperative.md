@@ -5,8 +5,11 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf`
 - SHA256: `16c03a7067c6903ac57b49c8b6a163d465f3b0cdef0d8474502384ed0a81ee63`
-- Generated: `2026-02-22 14:17:35 UTC`
+- Mirror format version: `readability-v4`
+- Mirror profile: `readability-first`
+- Generated: `2026-02-22 16:16:55 UTC`
 - Original file: `[_TheLibertarianImperative.pdf](../../../undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf)`
+- OCR mode: `image-only pages via tesseract 5.5.0 (lang=eng)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---

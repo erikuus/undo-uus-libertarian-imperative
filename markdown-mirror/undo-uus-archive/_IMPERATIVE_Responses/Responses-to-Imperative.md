@@ -5,13 +5,19 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf`
 - SHA256: `f1c550abe6440eec811c91a0351e045953480a5c172993e47bdfa4ad6d1ff83d`
-- Generated: `2026-02-22 14:17:36 UTC`
+- Mirror format version: `readability-v4`
+- Mirror profile: `readability-first`
+- Generated: `2026-02-22 16:16:58 UTC`
 - Original file: `[Responses-to-Imperative.pdf](../../../undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf)`
+- OCR mode: `image-only pages via tesseract 5.5.0 (lang=eng)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---
 
 This copy contains extracted text from 21 page(s).
+
+OCR applied on image-only pages:
+- p.9 (1 image(s), avg conf 93.90); p.21 (1 image(s), avg conf 83.17)
 
 ## Page 1
 
@@ -144,7 +150,14 @@ Keith Sutherland
 ## Page 9
 
 ```text
-(No extractable text on this page. This page may be image-only.)
+Supreme Court of NSW
+Queens Square
+Sydney, NSW 2000 AUSTRALIA
+Phone (02) 230 8752
+20 September, 1997 eee Dr. Undo Uus
+Tartu Observatory
+EE 2444 Estonia Dear Dr. Uus, Thank you for your letter of 21 April, and the enclosed article on free will. I agree with virtually all of it. I liked your argument that we should seek to avoid avoidable error, and that therefore we should try to believe in free will. However, I think the mainstream response might be that the argument assumes an incompatibilist view of what it means to be able to do otherwise. There is a vast philosophical literature on whether free will is compatible with determinism. As appears from the Introduction and Section 4.4 of a book I have just written (enclosed), I think compatibilism is sophistry - but many people disagree. With best wishes, Mev oe
+David Hodgson
 ```
 
 ## Page 10
@@ -298,5 +311,14 @@ Thank you very much for your letter of July 10. You discuss in this letter the m
 ## Page 21
 
 ```text
-(No extractable text on this page. This page may be image-only.)
+Subject: The Blindness of Modern Science
+
+Date: Mon, 29 Jul 2002 20:58:45 +0200
+
+From: alex.batt@magnet.at (Alexander Batthyany)
+
+To: uus@obs.ee
+Dear Dr. Uus, a few yedrs ago, John Beloff of Edinburgh recommended your book "The blindness: of Modern Science" to me. I didn't really follow this up, but recently I came across your highly interesting article on "The libertarian imperative" in an 1999 issue of JCS. Your article really and finally arose my interest in your book and work. I'd therefore like to ask where and how to get a copy of your book (since, according to amazon.com, it is either out of print or rather hard to find) « I am very much looking forward to hearing from you and remain, with kind regards,
+Alexander Batthyany
+CELEVVES ASV IEEVA CS et Univ.-Lekt. Dr. Alexander Batthyany Institut flir Wissenschaftstheorie und -forschung der Universitat Wien VEEP evEPErererTPErEre = MAIL ADRESS:. a Prinz Eugenstr.14 / 28 | A-1040 Wien 3 Tel. G1 = 505 23 32. Tel. 0676-9345 750 alexander.batthyany@univie.ac.at alex.batt@magnet.at. “* ebow morta rot; sest wocturtabiytibla Whose: vi tobi laoigucbada |
 ```

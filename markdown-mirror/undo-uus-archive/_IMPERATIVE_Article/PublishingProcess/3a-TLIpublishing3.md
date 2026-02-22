@@ -5,13 +5,19 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/3a-TLIpublishing3.pdf`
 - SHA256: `3c441a4e0af5dfc43f4b1f73e9bab31164ddd17bf16a4ed9e544eb0201d48ca2`
-- Generated: `2026-02-22 14:17:34 UTC`
+- Mirror format version: `readability-v4`
+- Mirror profile: `readability-first`
+- Generated: `2026-02-22 16:16:46 UTC`
 - Original file: `[3a-TLIpublishing3.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/3a-TLIpublishing3.pdf)`
+- OCR mode: `image-only pages via tesseract 5.5.0 (lang=eng)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---
 
 This copy contains extracted text from 23 page(s).
+
+OCR applied on image-only pages:
+- p.23 (1 image(s), avg conf 91.88)
 
 ## Page 1
 
@@ -432,5 +438,25 @@ WWW: http://www.zynet.co.uk/imprint
 ## Page 23
 
 ```text
-(No extractable text on this page. This page may be image-only.)
+From:
+Dr. Undo Uus
+Tartar Observatory
+BE 2444
+Estonia E-raail: uus@obs.ee Dr. Keith Sutherland, Publisher
+Journal of Consciousness Studies
+Imprint Academic
+PO Box 1
+Thorverton EX5 5YX
+U.K.
+
+August 11, 1997 Dear Keith,
+
+Herewith I send you three copies — one JCS-formatted and two double-spaced — of the revised manuscript of my article.
+
+The section “Private Honesty and Scientific Progress” (length: 1 JCS-format page) may well be omitted.
+
+One minor comment. The expression ‘the obscure and panicky metaphysics of libertarianism’ which I use in my article is a clause from P. F. Strawson’s book “Freedom and Resentment” (1974, p. 25), and is referred to by Dennett in his “Elbow Room” (1984, p. 76}.
+
+Yours,
+Nlrdo
 ```

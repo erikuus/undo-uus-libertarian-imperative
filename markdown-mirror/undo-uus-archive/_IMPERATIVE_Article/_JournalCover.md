@@ -5,7 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `image`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/_JournalCover.JPG`
 - SHA256: `d624ff5377500d12a1a4ba7ea9ff16ec5830341be6f8fc5680dfe59b37d218fc`
-- Generated: `2026-02-22 14:17:35 UTC`
+- Mirror format version: `readability-v4`
+- Mirror profile: `readability-first`
+- Generated: `2026-02-22 16:16:54 UTC`
 - Original file: `[_JournalCover.JPG](../../../undo-uus-archive/_IMPERATIVE_Article/_JournalCover.JPG)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 

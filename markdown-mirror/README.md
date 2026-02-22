@@ -9,12 +9,18 @@ This folder contains readability-first markdown mirrors of the archival original
 - Simplify text for machine reading by removing extraction noise.
 - Maintain source traceability with path and SHA256 metadata in each copy.
 
+## Dependencies
+
+To regenerate the mirror locally:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
 ## Normalization Rules
 
-- Hard line wraps are merged into readable paragraphs.
-- Repeated separator character blocks are normalized to `---`.
-- Excess spacing and blank lines are cleaned.
-- Meaning and textual content are preserved; page visual layout is not preserved.
+- PDF-derived text is normalized for readability (hard wraps merged into paragraphs, separator blocks normalized to `---`, and spacing cleaned). Page visual layout is not preserved.
+- Text/TeX sources are mirrored as text (line endings normalized; content preserved) and are not reflowed into paragraphs.
 
 ## Scope
 
@@ -30,6 +36,23 @@ Run:
 ```bash
 python3 scripts/build_markdown_mirror.py
 ```
+
+Validation-only mode:
+
+```bash
+python3 scripts/build_markdown_mirror.py --check
+```
+
+Deterministic metadata mode:
+
+```bash
+python3 scripts/build_markdown_mirror.py --deterministic
+```
+
+## Fixity
+
+- `manifest-sha256.txt` in this folder records checksums for markdown mirror files.
+- `../undo-uus-archive/manifest-sha256.txt` records checksums for canonical source artifacts.
 
 ## Folder Index
 

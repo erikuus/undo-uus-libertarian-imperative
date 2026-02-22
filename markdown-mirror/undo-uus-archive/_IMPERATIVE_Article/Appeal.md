@@ -5,8 +5,11 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/Appeal.pdf`
 - SHA256: `981371710e1044757b6c9da1e18d3b309ab26f3b7f55bb104a943f21f6c4f417`
-- Generated: `2026-02-22 14:17:33 UTC`
+- Mirror format version: `readability-v4`
+- Mirror profile: `readability-first`
+- Generated: `2026-02-22 16:16:44 UTC`
 - Original file: `[Appeal.pdf](../../../undo-uus-archive/_IMPERATIVE_Article/Appeal.pdf)`
+- OCR mode: `image-only pages via tesseract 5.5.0 (lang=eng)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
 ---

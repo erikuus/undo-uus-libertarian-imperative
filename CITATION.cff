@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "The Libertarian Imperative Archive"
+message: "Please cite this archive using commit hash and access date."
+type: dataset
+version: 1.0.0
+date-released: 2026-02-22
+license: NOASSERTION
+authors:
+  - family-names: Uus
+    given-names: Erik
+abstract: "Curated archival repository preserving Undo Uus source materials and readability-first markdown mirrors for research use."
+keywords:
+  - archive
+  - philosophy
+  - free will
+  - libertarian imperative
+  - consciousness studies
