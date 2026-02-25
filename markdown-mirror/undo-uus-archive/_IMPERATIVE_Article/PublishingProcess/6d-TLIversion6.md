@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `txt`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6d-TLIversion6.txt`
 - SHA256: `1abf289ecdc0e918dcea6050c5de3b149c4728c6874cfc363bb31c148401c119`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:22 UTC`
+- Generated: `2026-02-25 09:12:06 UTC`
 - Original file: `[6d-TLIversion6.txt](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6d-TLIversion6.txt)`
 - Normalization: line-wrap unwrapping, separator simplification, and spacing cleanup (content preserved).
 
@@ -38,12 +38,12 @@ basis for free action. Regrettably, no objective evidence testifies
 for this possibility. In this paper I shall explain that if we
 seek the truth we must for purely logical reasons, irrespective
 of theoretical ideas and empirical data about the origin of our
-activity, follow the {Libertarian Imperative} --- the 
+activity, follow the {Libertarian Imperative} --- the
 demand to try always to act in accord with the belief that one
 exercises the {incompatibilist} free volition. The Libertarian
 Imperative urges us to try to reject any conception about our nature
 --- including the modern scientific picture of human beings --- which
-claims that we are entirely law-governed creatures. 
+claims that we are entirely law-governed creatures.
 ------------------------------------------------------------------
 
 Our epistemic situation is agonising. On one hand, scientific
@@ -74,7 +74,7 @@ insuperable obstacle to these aspirations: the phenomenal qualitative
 character or {qualia} of conscious experiences. The attempts to
 treat qualia in the language of orthodox physics are utterly
 unconvincing and doomed to failure because qualia --- including the
-most general quale {experientialness} or 
+most general quale {experientialness} or
 {something-it-is-like-to-be-ness} which is inherent to every
 phenomenon of consciousness --- and the formal-structural concepts of
 physics --- whether about simple or extremely complicated systems and
@@ -89,7 +89,7 @@ and above the physical fields and particles (see Libet, 1994), or it
 is the intrinsic qualitative essence of physical entities themselves,
 as panpsychists have always suggested (see Griffin, 1997). Both these
 positions amount to the abandoning of the belief that the world is
-ontologically thoroughly physical in the traditional sense.  
+ontologically thoroughly physical in the traditional sense.
 
 Regrettably, the rehabilitation of consciousness has become tangled
 as the majority of scholars who acknowledge the existence of
@@ -132,7 +132,7 @@ consciousness can serve as an {empirical basis} for our
 theoretical speculations about it, or that we can make reports of
 {evidential value} about the existence and content of such
 a consciousness. A defender of epiphenomenal consciousness is
-justified to contend, as Chalmers (1996, p. 198) does: 
+justified to contend, as Chalmers (1996, p. 198) does:
 
 [quotation begins]
 I {know} I am conscious, and the knowledge is based solely on my
@@ -145,7 +145,7 @@ But, on pain of self-contradiction, he cannot assure us that
 he asserts he knows he is conscious {because} he knows he is
 conscious. He has to concede that according to his own views his
 statement has been produced by his psychological (neurophysiological)
-functioning no matter whether he in fact {knows} he is conscious. 
+functioning no matter whether he in fact {knows} he is conscious.
 
 The belief in the autonomy of the physical world spoils the
 endeavours to rehabilitate phenomenal consciousness. If a champion of
@@ -167,13 +167,13 @@ explained `easily' as being the result of the neurophysiological
 processes alone, and that therefore (ii) the concept of epiphenomenal
 experiences presents only as negligible an interest to sciences as a
 hypothesis about the physical fields which surround material
-particles but exert no impact on anything.  
+particles but exert no impact on anything.
 
 The proponents of phenomenal consciousness hold overwhelmingly to the
 view that the nonphysical is causally idle, and for that reason most
 of the modern theories of phenomenal consciousness are demolished by
 materialists before they really get off the ground. The philosophy of
-consciousness is in a stalemate. 
+consciousness is in a stalemate.
 
 
 
@@ -186,7 +186,7 @@ of the causal closure of the physical universe as we know it.
 possible only if the physical world as conceptualised by modern
 materialistic philosophy is causally open.} This proposition must be
 regarded as the cornerstone of any logically sound philosophy of
-phenomenal consciousness.  
+phenomenal consciousness.
 
 Those who assume that the fact-based science of phenomenal
 consciousness is possible are usually not aware that this assumption
@@ -221,7 +221,7 @@ have any factual evidence in support of it. Amazingly, there {is}
 sufficient ground for preferring the second option --- the view that
 we and other conscious creatures are free agents --- to materialism,
 even though the concept of free volition is supernatural, hard to
-comprehend, and logically problematic. I shall show in this paper 
+comprehend, and logically problematic. I shall show in this paper
 that for simple logical reasons we are justified in trying
 always to follow the thesis of being free agents.
 
@@ -240,12 +240,12 @@ possibilities, as the ability, for anything one tries to do,
 always to have tried to do otherwise. Free will in this strong,
 libertarian sense is incompatible with causal determinism, for
 the latter rules out the possibility of a person's trying to do
-other than what he does try. 
+other than what he does try.
 
 The other, modern tendency is to designate by `freedom of will' the
 creature's property to function autonomously, to be free of
 {outside} coercion and constraint. The freedom thus defined is
-compatible with the complete causal necessitation of behaviour. A 
+compatible with the complete causal necessitation of behaviour. A
 decision is free in this compatibilist sense simply because it is
 one's {own} decision, no matter how rigidly determined by one's
 own internal state.
@@ -253,24 +253,24 @@ own internal state.
 To avoid terminological equivocation, I shall refer to the property
 {free in the libertarian sense} by the term `Free-Will', and to
 the property {free in the compatibilist sense} by the term
-`Self-Willed'. 
+`Self-Willed'.
 
 We are, undoubtedly, quite autonomous Self-Willed beings. But are we
 {Free} agents, and what consequences would our admittance of
 having Free Will have for our conduct and undertakings? In particular,
-how is the Free Will problem related to consciousness studies? 
+how is the Free Will problem related to consciousness studies?
 
 We, people of modern scientific education predominantly regard
 ourselves as material creatures lacking supernatural Free Volition.
 What would be different if we accepted the belief of being Free
 agents? Our everyday behaviour would probably not change at all:
-maybe we would only feel a bit more responsible for our deeds. 
+maybe we would only feel a bit more responsible for our deeds.
 However, our philosophical apprehension of the general character
 of the world and our own basic nature would certainly undergo a
 radical change. The belief in Free Will would also have a strong
 impact upon one essential field of our scientific endeavours ---
 upon consciousness studies in general and investigations of
-conscious activities in particular. 
+conscious activities in particular.
 
 If we hold of being Free agents, we have to discard the
 materialist notion of ourselves, so that there would be no
@@ -278,7 +278,7 @@ ideological pressure any more to construe at whatever cost the
 phenomenal experiences as specific physical brain processes
 explaining away the existence of phenomenal qualia, and we can
 then analyse the enigmatic qualitative character of the content
-of consciousness with due scientific impartiality. 
+of consciousness with due scientific impartiality.
 
 If we hold that we are Free agents, we must substantially revise
 also the methodological basis of the current research into the
@@ -287,7 +287,7 @@ aimed at finding out where the neurons responsible for conscious
 awareness are located in the brain, and in what way they are firing.
 It is taken for granted (Crick and Koch, 1995) that the causal chain
 {stimulus-evoked brain processes---phenomenal
-experiences---behavioural reaction to phenomenal experiences} is 
+experiences---behavioural reaction to phenomenal experiences} is
 realised physiologically, by neural networks. It is argued that if a
 group of neurons does not project to the brain's motor areas
 responsible for our reporting on what we experience then the
@@ -296,16 +296,16 @@ experiences directly. But if we accept the view that the impact of
 phenomenal experiences upon the creature's overt behaviour is
 mediated by his Free Will, we must admit that a distinctive feature
 of consciousness-evoking brain processes is that normally they do not
-cause our behaviour via neural (purely physical) mechanisms. This 
+cause our behaviour via neural (purely physical) mechanisms. This
 implication sharply contradicts the basic assumptions of current,
-materialistically motivated consciousness and brain research 
+materialistically motivated consciousness and brain research
 programs.
 
 If we hold of being Free agents, we have to acknowledge that the
 most fundamentally important of all presently conceivable scientific
 inquiries is elucidating which brain events the Free-Will efforts
 evoke: how the Will modifies the activity of neuronal networks in
-defiance of natural causes.  
+defiance of natural causes.
 
 Hence, the Free Will problem is of utmost scientific import and is
 most intimately related to questions about the ontological status and
@@ -316,7 +316,7 @@ an esoteric metaphysical puzzle of academic interest for only a small
 group of philosophers. That is why I decided to add to the exposition
 of the title thesis this lengthy introduction, and preferred to
 submit the present article to the Journal of Consciousness Studies
-rather than to some `purely' philosophical journal. 
+rather than to some `purely' philosophical journal.
 
 
 
@@ -329,7 +329,7 @@ lawful regularities present in the world. With the rise of
 modern science when more and more laws holding in nature were
 discovered, and partly as an overreaction to religious
 dogmatism, the `scientific' dogma of nomism --- the view that
-the dynamics of the world are {thoroughly} law-governed --- 
+the dynamics of the world are {thoroughly} law-governed ---
 began to gain popularity. Already many scholars of the early modern
 scientific era, among them Spinoza, Hobbes, Leibniz and Kant,
 accepted this view, and in recent times the doctrine of the universal
@@ -339,13 +339,13 @@ us mention, for example, Albert Einstein's firm antilibertarian
 convictions. In modern times only very few scientists have dared to
 defend the explicitly libertarian views. True, among those few have
 been such world-famous scholars as Sir Arthur Eddington, Sir Charles
-Sherrington and Sir John Eccles.  
+Sherrington and Sir John Eccles.
 
 Some scientists, finding it implausible to deny our being Free agents
 responsible for our conduct, but believing at the same time that the
 dynamics of the physical world are entirely regular, have suggested
 that even a truly Free-Will activity may be compatible with the
-universality of lawful dynamics.  
+universality of lawful dynamics.
 
 One of ideas aimed at justifying this suggestion has been proposed by
 Erwin Schro"dinger (1977). He sought to avoid a contradiction
@@ -354,7 +354,7 @@ incontrovertible direct experience that one oneself commands one's
 motions, feeling full responsibility for them, by assuming that every
 conscious mind controls the motion of the atoms according to the laws
 of nature. However, if this thesis were true, then whatever claims
-that we are aware of nonphysical aspects of our existence --- 
+that we are aware of nonphysical aspects of our existence ---
 including the claim that we, following our Free decision, direct the
 motion of the atoms according to the laws of nature --- would be of
 no evidential import, because everything that we as material beings
@@ -364,7 +364,7 @@ creatures lacking phenomenal consciousness and Free Will. Our
 producing assertions that we are introspectively aware of possessing
 Free Will could be explained then as a result of {lawful}
 functioning of our material bodies regardless of whether this lawful
-functioning is deterministic or Freely evoked. 
+functioning is deterministic or Freely evoked.
 
 The other idea about how Free Will can be compatible with universally
 lawful dynamics is more sophisticated. It is argued (see, e.g.,
@@ -384,13 +384,13 @@ chance in its own aims, the lawful statistics of quantum events would
 be violated --- if not the low-order, then certainly the higher-order
 probability distribution functions: the correlations of outcomes of
 individual quantum events with the brain's global state as it is
-represented in the content of consciousness evoked by the brain. 
+represented in the content of consciousness evoked by the brain.
 
 The Free-Will behaviour I have in view when formulating a libertarian
 imperative is the {truly} Free-Will behaviour which is not
 compatible with any kind of physically lawful functioning of our
 bodies (brains). Our having of such Free Will is resolutely denied
-by modern science. 
+by modern science.
 
 
 
@@ -409,13 +409,13 @@ the Libertarian Imperative. The Imperative is a normative requirement
 that is reasonable or unreasonable relative to general aims of
 behaviour. In formulating the Libertarian Imperative I assume that
 the supreme principle of the person's conduct is absolute honesty so
-that any intentional lying, even by noble motives, is excluded. 
+that any intentional lying, even by noble motives, is excluded.
 
 By definition, the Libertarian Imperative is the requirement:
 
        {One must always try to act in accord with the}
 
-       {thesis that one has the libertarian Free Will.} 
+       {thesis that one has the libertarian Free Will.}
 
 I am not entirely content with the given wording of the
 Imperative. Although I assure that by Freedom of Will I mean the
@@ -424,7 +424,7 @@ afraid of claims that any kind of Free Will may be compatible
 with universal determinism and that therefore the Imperative
 need not work against the doctrine of nomism. I will therefore
 rephrase the Libertarian Imperative so that it would be firmly
-safeguarded against such misconstruings. 
+safeguarded against such misconstruings.
 
 In principle, the Free-Will activity may be strictly regular, but it
 is natural to think that a Free agent will hardly give up the
@@ -432,10 +432,10 @@ possibility to act Freely rather than, without exception,
 according to certain rigorous universal rules. Hence, we can
 regard the Free-Will activity as a non-nomic activity, i.e. an
 activity that is not universally lawful, and reformulate the
-Libertarian Imperative as follows: 
+Libertarian Imperative as follows:
       {One must always try to act in accord with the}
 
-     {thesis that one is not a law-governed creature.} 
+     {thesis that one is not a law-governed creature.}
 
 The Imperative expressed in this form is narrower by its content
 than it is in its original formulation for it does not cover the
@@ -447,7 +447,7 @@ obey at some basic level certain rigorous deterministic or
 probabilistic laws of dynamics. It would be even better to call
 the Libertarian Imperative so formulated an Anti-Nomic Imperative.
 It is just this Anti-Nomic Imperative that I have in view when I
-speak about the Libertarian Imperative below.  
+speak about the Libertarian Imperative below.
 
 
 
@@ -457,7 +457,7 @@ In order to understand the explanation why the Libertarian Imperative
 must be observed one has to master only two simple concepts: one of
 the basic concepts used by science --- the meaning of `lawful
 dynamics' --- and one of the basic commonsense concepts --- the
-meaning of `to try' in everyday practical sense. 
+meaning of `to try' in everyday practical sense.
 
 
 
@@ -485,7 +485,7 @@ free themselves from the laws of physics by being coherent wholes
 whose parts participate in the coordinated action. But however
 `dynamic' or `holistic' a {deterministic} process may be, at the
 basic level it is always determined by blind following of fundamental
-rules --- the laws of nature. 
+rules --- the laws of nature.
 
 A vigorous effort to argue for compatibilism is made by Dennett
 (1984). His tactics are ingenious. Not believing in libertarian
@@ -507,7 +507,7 @@ varieties of open future: the epistemic one (being nescient of what
 will happen) and the probabilistic one (being dynamically partly
 stochastic). To be free is to be ignorant or at the mercy of blind
 chance --- that is how we can have free will and science too, in
-Dennett's opinion.  
+Dennett's opinion.
 
 If one's behaviour is deterministic, then at {every} moment one
 has only {one} option of acting, for this is what determinism
@@ -520,11 +520,11 @@ produces also purely random acts. In principle, one can, without
 violating the probabilistic law of dynamics, behave in very many
 different ways, provided, however, that the actual behavioural
 pattern produced would have a blind-chance character satisfying this
-law. 
+law.
 
 Consequently, if one's decision-making and other behavioural acts are
 law-governed, one cannot prevent their regular or purely random
-occurrence. 
+occurrence.
 
 
 
@@ -537,7 +537,7 @@ fallacious'; Try to imagine a circle; etc. This presupposes
 possessing practical abilities to evoke various volitional
 efforts. This does {not} presuppose having any knowledge
 about the brain processes (or soul processes if such exist)
-involved in voluntary acts of trying. 
+involved in voluntary acts of trying.
 
 
 
@@ -546,13 +546,13 @@ involved in voluntary acts of trying.
 The scheme of argumentation I will apply in justifying the
 Libertarian Imperative doesn't belong amongst standard methods
 of scientific ratiocination. Therefore many scholars may
-overlook the argument altogether, and others may wonder why the 
+overlook the argument altogether, and others may wonder why the
 pragmatic and narrowly logical mode of reasoning is used instead
 of approaching the problem from a natural science perspective.
 It is necessary to explain in what sense the scheme of reasoning
 applied is peculiar. Due to its distinctive character this mode
 of arguing enables one to arrive at conclusions not attainable
-by traditional scientific methods. 
+by traditional scientific methods.
 
 The natural scientific approach to the world is, in principle,
 quite simple. By means of observations a set of empirical data
@@ -565,13 +565,13 @@ the empirically established structure. The natural scientific
 treatment of the Free Will problem would consist in
 investigating the spatiotemporal structure of brain processes,
 and in elucidating whether it obeys the laws of physical
-dynamics at atomic level. 
+dynamics at atomic level.
 
 A characteristic feature of the natural scientific method is its
 applicability from the third-person point of view. If I want my
 own brain processes studied, it is scientifically preferable
 to let that be done by other persons --- by a team of skilled
-neuroscientists --- than by myself. 
+neuroscientists --- than by myself.
 
 It may seem that any scientific justification of the conformity
 of our behaviour with the thesis of our having Free Will must be
@@ -584,13 +584,13 @@ unbelievable that there can be a class of situations when it is
 unconditionally reasonable to act on the basis of the thesis
 {A}, while having no reason for holding that {A}
 rather than {not-A} is true. But there are such
-situations. Here is a simple example.  
+situations. Here is a simple example.
 
 Suppose an expedition has been sent to an alien planet with a task to
 explore its ionosphere. By accident, all measuring equipment gets
 crushed in landing. However, in spite of having learned absolutely
 nothing about the physical characteristics of the planet's
-ionosphere, the research team is, nevertheless, justified to try to 
+ionosphere, the research team is, nevertheless, justified to try to
 forward to the Earth the reports of the following type about these
 characteristics: `The planet's ionosphere transmits radio waves of
 the frequency used in sending this message'. The issuing of such
@@ -598,7 +598,7 @@ messages is justified because they don't reach the addressee if
 false. The attempts to send such messages can make things in the
 world only better (if the messages are true) in the sense of how much
 true knowledge its inhabitants possess, but not worse (if the
-messages are false). 
+messages are false).
 
 The reason why in specific cases it is unquestionably sound to perform
 certain acts in accordance with a premise of which we don't know if
@@ -607,7 +607,7 @@ affairs are in these cases such that our premise is wrong, these same
 states of affairs prevent our acts from being efficacious. In
 such a case a proposition can be accepted as a basis for sensible
 behaviour solely because of the situation's specific logical
-structure {regardless of any knowledge as to whether this 
+structure {regardless of any knowledge as to whether this
 proposition is true or false}. This logical structure is
 rendered peculiar by a self-referentiality present in it.
 
@@ -616,7 +616,7 @@ rather than {natural} scientific, but as far as it is
 based on sound logic, and logic is deemed a scientific
 discipline, it is definitely a specific variety of
 {scientific} justification. The ideal limit of the cases where
-such kind of substantiation of behaviour is possible is the 
+such kind of substantiation of behaviour is possible is the
 unique situation of being faced with the problem of {one's
 own} Freedom of the Will. In this case the peculiarity of the
 logical structure of the situation --- the presence of
@@ -626,23 +626,23 @@ relevant reasoning can be performed only from the first-person
 point of view --- it can be used for justifying only one's own
 behaviour --- and so it contrasts sharply with standard
 scientific argumenting which can always be applied from the
-third-person perspective. 
+third-person perspective.
 
 
 {Why the Libertarian Imperative should be obeyed}
 
 The reason why we should always try to act as if we knew that we are
-Free agents even if we actually don't know this, is rather simple. 
+Free agents even if we actually don't know this, is rather simple.
 I think most people are aware of that reason subconsciously. Such
 awareness is implicitly evident in claims like: `Any discussion is
 meaningless if there are no freely willing agents', `Be kind to the
 determinists for they have had no choice about what they think and
-write', etc. I shall explicate this reason as clearly as I can.  
+write', etc. I shall explicate this reason as clearly as I can.
 Any of our volitional efforts is either a nomic process obeying
 at some fundamental level definite deterministic or
 probabilistic laws of dynamics, or it is a non-nomic, Free act
 exempt at any fundamental level of description from the laws of
-nature. 
+nature.
 
 If our volitional activity is, and has always been, nomic, then:
 (i) if we maintain that our activity is nomic, we are right; and
@@ -656,14 +656,14 @@ place. And if the laws of dynamics are, at least partly,
 fundamentally probabilistic, various courses of our behaviour
 might have realised, but then only by pure chance over which
 nothing and nobody can have control in order to avoid any
-particular way of behaviour. 
+particular way of behaviour.
 
 If our volitional activity is not nomic, then: (i) if we
 maintain that our activity is not nomic, we are right; and
 (ii) if we maintain that our activity is nomic, we are wrong,
 {yet we are wrong not unavoidably}, because as Free agents
 we could have behaved otherwise, i.e. could have maintained that
-our volitional activity is not nomic.  
+our volitional activity is not nomic.
 
 Consequently, in order to behave in the most reasonable way
 possible (provided we seek the truth) in respect to the Free
@@ -690,7 +690,7 @@ one's trying to deny that one's behaviour is lawful (unavoidable),
 and the concept of lawful dynamics is much more easily comprehensible
 than that of Free-Will activity. The simplicity of justification of
 the Imperative may even create an impression that it is a cheap
-sophistry.  
+sophistry.
 
 The Libertarian Imperative is not an epistemic statement: it
 doesn't assert that one {knows} that his activity is not
@@ -698,13 +698,13 @@ law-governed. However, for the reason that the Imperative
 requires one to try to behave on the basis of the thesis that he
 possesses Free Will, obeying the Imperative is by its
 consequences to one's activity equivalent to the acceptance by
-him of the belief that he {knows} he has Free Will.  
+him of the belief that he {knows} he has Free Will.
 
 The Libertarian Imperative is ontologically general in the sense that
 it requires the attempting to deny not only the {physical}
 (materialistic) universal determinateness of one's behaviour, but
 also {any other kind} of such determinateness, be it purely
-spiritual, or forced by some kind of divine power, or whatever. 
+spiritual, or forced by some kind of divine power, or whatever.
 
 From the logical form of the justification scheme of the
 Libertarian Imperative it is evident that it can be applied
@@ -744,10 +744,10 @@ difference is a rather subtle one, therefore I will not object
 much if one says that I argue like James for justifiability of
 accepting belief in certain propositions the truth value of
 which is not known. But with this the similarities between
-James's and my positions end.  
+James's and my positions end.
 
-There are two substantial differences between James's and my 
-arguments. 
+There are two substantial differences between James's and my
+arguments.
 
 (1) James claims that our passional nature is a lawful
 determinant of our choice if there is a genuine option that
@@ -768,7 +768,7 @@ the problem I address is {intellectually} decidable,
 without any need to let our {passional nature} decide the
 answer. The James's sort of argument justifies belief in Free
 Will on {pragmatic/psychological} grounds, while my
-defence of the Libertarian Imperative is purely {logical}.  
+defence of the Libertarian Imperative is purely {logical}.
 
 (2) The realm of problems to which James's approach is
 applicable is rather wide, whereas my way of argumentation can
@@ -780,7 +780,7 @@ reasoning derives its logical power from the fact that it
 selects as the proposition {A} in the task `Please justify
 a voluntary acceptance of belief in proposition {A}' the
 precondition of this task itself: `you have a power of voluntary
-decision-making'. 
+decision-making'.
 
 Since my way of argumentation addresses a judging mind, it is
 also apt to compare it with Pascal's Wager type of reasoning
@@ -790,10 +790,10 @@ Pascal advised us to believe in God, for if we did and God
 indeed exists, we would gain eternal beatitude, while we risk
 only a finite loss if God does not exist, and a possible finite
 loss is reasonable, if there is but the probability of infinite
-gain. 
+gain.
 
 The arguments of Pascal's Wager type are entirely sensible.
-Particularly, Pascal's Wager type argument in defence of Free 
+Particularly, Pascal's Wager type argument in defence of Free
 Will is quite powerful. Free Will is so important phenomenon
 that even if one has not yet any convincing evidence for its
 existence, it is unreasonable to ignore the possibility that
@@ -805,15 +805,15 @@ Pascal's Wager type. My logic of reasoning may seem to be
 closely related to the logic of Pascal's Wager because I stress
 a truism that the Free Will issue is not an unimportant minor
 problem that doesn't deserve serious attention. But here the
-resemblance ends.  
+resemblance ends.
 
 There are two essential differences between my argumentation and
-Pascal's Wager type of reasoning.  
+Pascal's Wager type of reasoning.
 
 (1) Pascal's Wager type of reasoning consists in weighing gains
 and losses of alternative decisions, and its conclusions depend
 on how large or small are those gains and losses, and how
-reliable is our assessment of them. Such reasoning is of 
+reliable is our assessment of them. Such reasoning is of
 game-theoretical type. My argumentation is not of
 game-theoretical type. Its conclusion doesn't depend at all on
 how large or small are gains and losses of alternative
@@ -830,7 +830,7 @@ that God exists, or that people have immaterial souls, or that
 there is afterlife, etc., but one is asked to {choose}
 whether he believes or not that he is {able to choose}. Just
 owing to this self-referentiality present in the task it is
-possible to solve it by purely logical means. 
+possible to solve it by purely logical means.
 
 
 Complementarity of Logical and Natural Scientific
@@ -842,7 +842,7 @@ replace the natural scientific research into the general
 character of living beings' functioning. The logical reasoning,
 unlike empirical investigations, cannot give us any
 {knowledge} about whether our functioning, or that of other
-creatures, is lawful. This truth is very easy to understand. 
+creatures, is lawful. This truth is very easy to understand.
 
 It is not so easy to see, however, that natural scientific
 studies of our activity cannot, in turn, replace the narrowly
@@ -851,7 +851,7 @@ logical approach to it.
 Let us consider first the case when our activity is non-nomic at
 any level of description. Can we ascertain this fact by means of
 empirical inquiries? Obviously not. Suppose it has been
-established that at the most basic level accessible to 
+established that at the most basic level accessible to
 investigations at a given time our functioning is not entirely
 nomic. This gives us, however, no guarantee that at some deeper
 level of description our dynamics may not be fully lawful. By
@@ -861,7 +861,7 @@ law-governed. If we remain satisfied with natural scientific
 reasoning only, we will never have a firm justification for
 behaving in accordance with the view that our activity is not
 nomic. The logical approach to the problem does give us such
-a basis. 
+a basis.
 
 But how would the matters stand if the empirical research showed
 our functioning to be fully lawful? It may seem that in this
@@ -877,10 +877,10 @@ nomically determined. Since an act of trying one is going to
 evoke is not an accomplished event about which there can be
 scientific knowledge, the acceptance of conclusions of the
 logical argument can bring one into conflict not with
-empirically established facts, but at worst only with a 
+empirically established facts, but at worst only with a
 hypothetical suggestion that one's activity which has been
 law-governed in the past would remain law-governed also in the
-future. 
+future.
 
 The thesis `It is always reasonable to try to behave as a
 libertarian' should not be interpreted as follows: Of all
@@ -902,10 +902,10 @@ alternatives to one's factual behaviour.
 The praxeological approach, complementary to the natural
 scientific one, to the problem of one's own Freedom of Will is
 possible for the reason that we can exercise our Freedom of
-Choice, if we have it, even while ignorant of whether we have it.  
+Choice, if we have it, even while ignorant of whether we have it.
 Such an approach --- trying to obey the Libertarian Imperative
 --- is, in essence, an {experimental} settling of the Free
-Will controversy. The Imperative can be viewed as the following 
+Will controversy. The Imperative can be viewed as the following
 call: let us not speculate whether Free Will is theoretically
 possible; let us also not ask whether we have any empirical
 evidence in support of or against our possessing of Free Will;
@@ -916,7 +916,7 @@ subject to a reliable protection mechanism: if it is foredoomed
 to failure, it spoils nothing because it can't be then executed
 at all. If our behaviour is law-governed, we cannot experiment
 with it because we cannot then act otherwise than we are forced
-to act according to these laws. 
+to act according to these laws.
 
 
 
@@ -934,7 +934,7 @@ actions which are not necessitated by prior states of the world have
 no cause and are thus fortuitous, and a fortuitous event is no kind
 of Free choice. The libertarian view that a choice is Free only if it
 is not causally determined by preceding events is regarded as obscure
-and obscurantic, if not incoherent. 
+and obscurantic, if not incoherent.
 
 I shall combat the metaphysical argument against Free Will from two
 angles. First, I stress that the impossibility of devising an easily
@@ -946,7 +946,7 @@ natural causation, even if applied to the most simple cases of the
 physically deterministic causation processes, is rather
 controversial, and that a relevant analysis reveals that the concept
 of natural causation is closely reminiscent of the concept of
-agent-causation used to explain the meaning of Free-Will activity.  
+agent-causation used to explain the meaning of Free-Will activity.
 
 
 
@@ -960,7 +960,7 @@ higher-grade concepts such as infinity, time, consciousness,
 Free-Will activity, omnipotence. It is impossible to downgrade the
 high-grade concepts to the level of low-grade ones. This
 impossibility must not be regarded as a mark of incoherence of
-high-grade concepts. I shall give an example. 
+high-grade concepts. I shall give an example.
 
 It is easy to understand what `to be actually the case' means. The
 concept of {actual existence} is easily comprehended. But if we
@@ -968,7 +968,7 @@ try to explain what time is, we have to use, in addition, the concept
 of {past existence}. Now, everything that belongs to the past
 does not exist actually, in the same sense as what belongs to the
 present does. Neither is the past a mere fabrication of fantasy. Some
-philosophers insist that there can be no third possibility between 
+philosophers insist that there can be no third possibility between
 actual existence and nonexistence, and therefore time cannot have the
 property commonly regarded as intrinsic to it: that only the present
 exists actually, while the past does not exist {any more} and the
@@ -979,7 +979,7 @@ is no reason to think that from the irreducibility of high-grade
 concepts of past and future existence to the level of lower-grade
 concepts of actual existence and nonexistence it follows that the
 traditional intuitively well-comprehensible concept of time is
-incoherent and therefore only the continua of spatial type can exist. 
+incoherent and therefore only the continua of spatial type can exist.
 
 Likewise, there is no reason to think that from the irreducibility
 of the high-grade concept of Free-Will behaviour to the level of
@@ -989,7 +989,7 @@ Will is incoherent. It is illegitimate to maintain that all basic
 aspects of reality {must} be categorially trivial. Longing for
 a categorially simple world must not blind us to the extent that we
 deny our most subtle intellectual capacities --- our abilities to
-comprehend the content of high-grade concepts. 
+comprehend the content of high-grade concepts.
 
 
 
@@ -1000,10 +1000,10 @@ because the only intelligible varieties of behaviour are allegedly
 the deterministic and random ones, think that the concept of causally
 deterministic dynamics is simple. They have hardly ever been
 interested in what causality really means and how it is
-metaphysically possible.  
+metaphysically possible.
 
 The objective, natural sciences explore only the spatiotemporal
-formal structure of the world: its abstract form and not its content 
+formal structure of the world: its abstract form and not its content
 (see Russell, 1927, p. 163; Carnap, 1969, pp. 19, 28, 107). The task
 of sciences is to discover the laws of nature --- the universal
 structural regularities present in the world --- whereas the problem
@@ -1018,11 +1018,11 @@ world's order, including the causal one, is guaranteed by the
 material substance itself. As the fundamental laws of physics are
 relatively simple, people consider this belief to be reasonable, yet
 they never wonder seriously how the causal process might work. Let us
-ask this question then.  
+ask this question then.
 
 The causal sequence of the simplest type can be conceived as follows.
 There is some state of affairs S1 at the moment t1. Because of
-causality, S1 gives rise to the state S2 an instant later, at the 
+causality, S1 gives rise to the state S2 an instant later, at the
 moment t2. How can this happen? Will S1 cease to exist at t1 and S2
 arise from nothing at t2, so that cause and effect would be
 temporally separated?  Hardly so. Rather, it is reasonable to assume
@@ -1038,7 +1038,7 @@ the causality in its substantial sense concerning the physical causal
 determining one aspect of the state --- its pace of change --- by
 other aspects of that state {at the very same moment}. All
 fundamental equations of physical dynamics express just this
-dependence, both sides of the equations referring to the physical 
+dependence, both sides of the equations referring to the physical
 situation at one and the same moment. {The substantial causal
 process consists not in the determination of the present by the past,
 but in the self-determination of the present independently of
@@ -1056,7 +1056,7 @@ of their antecedent properties, being the prime movers or first
 causes of their own actions. The libertarian Free activity is not so
 disparate from the natural causal process as it seems to be at the
 first glance. Causation may well be compatible not only with the
-deterministic choice but also with the Free-Will choice. 
+deterministic choice but also with the Free-Will choice.
 
 
 
@@ -1066,13 +1066,13 @@ There are various empirically grounded arguments which question the
 validity of materialism (see, e.g., Lowe, 1996; Uus, 1994). The
 argumentation used in justifying the Libertarian Imperative gives us,
 in addition, a firm {logical} basis for challenging
-materialistic ideology.  
+materialistic ideology.
 
 The Libertarian Imperative requires us to try to reject any
 philosophy about our nature which claims that we are entirely
 lawfully functioning creatures. This means that we must also try to
 regard materialism as fallacious. Such abandoning of materialism, if
-we succeed in it, would not be epistemic: the Imperative is not based 
+we succeed in it, would not be epistemic: the Imperative is not based
 on {knowledge} that our behaviour is not law-governed. Rather,
 such discarding of materialism may be called {peirastic} (from
 the Greek word {peirastikos}: involving, or performing, an
@@ -1086,25 +1086,25 @@ spoil the materialistically lawful character of the world's dynamics.
 
 The Libertarian Imperative urges us to discard the materialistic
 world view together with its dogmatic impact upon our scientific
-research programs. In particular, the Imperative urges us to try 
+research programs. In particular, the Imperative urges us to try
 to reject the thesis that brains are just very complicated physical
 organs whose dynamics obey the laws of physics, and accept, instead,
 the view that the impact of phenomenal experiences upon the
 creature's overt behaviour is mediated by his Free Will.
 
 We have nothing to lose but we may gain immensely if we dare to try
-to discard materialism and profess libertarianism.  
+to discard materialism and profess libertarianism.
 
 
 
 References
 
 Beloff, J. (1994), `Minds and machines: A radical dualist
-perspective', {Journal of Consciousness Studies}, 1 (1), 
-pp. 32--7. 
+perspective', {Journal of Consciousness Studies}, 1 (1),
+pp. 32--7.
 
 Carnap, R. (1969), {The Logical Structure of the World}
-(Berkeley: University of California Press). 
+(Berkeley: University of California Press).
 
 Chalmers, D. (1995), `Facing up to the problem of consciousness',
 {Journal of Consciousness Studies}, 2 (3), pp. 200--19.
@@ -1116,26 +1116,26 @@ Churchland, P. (1995), {The Engine of Reason, The Seat of the
 Soul} (Cambridge, MA: The MIT Press).
 
 Crick, F. (1994), {The Astonishing Hypothesis: The Scientific
-Search for the Soul} (London: Simon & Schuster).  
+Search for the Soul} (London: Simon & Schuster).
 
 Crick, F. and Koch, C. (1995), `Are we aware of neural activity in
-primary visual cortex?', {Nature}, 375, pp. 121--3. 
+primary visual cortex?', {Nature}, 375, pp. 121--3.
 
 Dennett, D. (1984), {Elbow Room: The Varieties of Free Will
 Worth Wanting} (Cambridge, MA: The MIT Press).
 
 Dennett, D. (1991), {Consciousness Explained} (Boston: Little,
-Brown & Co.) 
+Brown & Co.)
 
 Elitzur, A. (1995), `Consciousness can no more be ignored',
-{Journal of Consciousness Studies}, 2 (4), pp. 353--8. 
+{Journal of Consciousness Studies}, 2 (4), pp. 353--8.
 
 Griffin, D.R. (1997), `Panexperientialist physicalism and the
 mind-body problem', {Journal of Consciousness Studies},
-4 (3), pp. 248--68.  
+4 (3), pp. 248--68.
 
 Hardcastle, V. (1995), {Locating Consciousness} (Amsterdam &
-Philadelphia: John Benjamins). 
+Philadelphia: John Benjamins).
 
 Ho, M.W. (1996), `The biology of free will', {Journal of
 Consciousness Studies}, 3 (3), pp. 231--44.
@@ -1160,17 +1160,17 @@ Lewis, D. (1995), `What experience teaches', in {Mind and
 Cognition}, ed. W.G. Lycan (Oxford: Blackwell).
 
 Libet, B. (1994), `A testable field theory of mind--brain
-interaction', {Journal of Consciousness Studies}, 1 (1), 
+interaction', {Journal of Consciousness Studies}, 1 (1),
 pp. 119--26.
 
-Lowe, E.J. (1995), `There are no easy problems of consciousness', 
+Lowe, E.J. (1995), `There are no easy problems of consciousness',
 {Journal of Consciousness Studies}, 2 (3), pp. 266--71.
 
 Lowe, E.J. (1996), {Subjects of Experience} (Cambridge:
 Cambridge University Press).
 
 Russell, B. (1927), {An Outline of Philosophy} (London: Allen &
-Unwin). 
+Unwin).
 
 Schro"dinger, E. (1977), {What Is Life?} (Cambridge:
 Cambridge University Press).
@@ -1179,10 +1179,10 @@ Searle, J. (1992), {The Rediscovery of the Mind} (Cambridge,
 MA: The MIT Press).
 
 Smythies, J. (1994), {The Walls of Plato's Cave} (Aldershot:
-Avebury). 
+Avebury).
 
 Uus, U. (1994), {Blindness of Modern Science} (Tartu: Tartu
-Observatory). 
+Observatory).
 
 Van Inwagen, P. (1983), {An Essay on Free Will} (Oxford:
 Clarendon Press).

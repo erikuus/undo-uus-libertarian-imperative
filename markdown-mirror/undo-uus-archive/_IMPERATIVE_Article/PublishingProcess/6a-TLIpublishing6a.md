@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6a-TLIpublishing6a.pdf`
 - SHA256: `3e7bedceeb80a7acb175cda8c4cbe03466ec9d4b116b4a3f8f3394cdc224c8b0`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:22 UTC`
+- Generated: `2026-02-25 09:12:06 UTC`
 - Original file: `[6a-TLIpublishing6a.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6a-TLIpublishing6a.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
@@ -34,10 +34,16 @@ From keith@imprint.co.uk Wed Jan 28 16:56:02 1998
 From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: The Libertarian Imperative
 
-In message <Pine.LNX.3.95.980128144355.32626A-100000@cathy.obs.ee>, Undo
+In message <Pine. LNX.3.95.980128144355.32626A-100000@cathy.obs.ee>, Undo
 UUS <uus@cathy.obs.ee> writes
 >Dear Keith:
->I posted today a copy of the last version of my paper on Free Will >for Prof. Libet, and four copies (one regularly spaced and three >double-spaced) for you. In revising the article I responded/reacted >to virtually every point in the report (which I add to this message) >on my paper by the anonymous referee. > >Undo
+> I posted today a copy of the last version of my paper on Free Will
+> for Prof. Libet, and four copies (one regularly spaced and three
+> double-spaced) for you. In revising the article I responded/reacted
+> to virtually every point in the report (which I add to this message)
+> on my paper by the anonymous referee.
+>
+> Undo
 
 look forward to it. --
 Keith Sutherland
@@ -73,11 +79,16 @@ Subject: Re: book review
 In message <199802051020.MAA05329@cathy.obs.ee>, Undo Uus
 <uus@cathy.obs.ee> writes
 >Dear Keith:
-> >I considered your proposal to write a review of Lowe's book >"Subjects of Experience" for JCS, and I think I would like >to try to do it. The reasonable length of the review would >probably be 1.5 JCS pages -- the average length of JCS book >reviews. I have a copy of Lowe's book.
+>
+> I considered your proposal to write a review of Lowe's book
+> "Subjects of Experience" for JCS, and I think I would like
+> to try to do it. The reasonable length of the review would
+> probably be 1.5 JCS pages -- the average length of JCS book
+> reviews. I have a copy of Lowe's book.
 
 That sounds about right. Can you email it to Anthony when it's ready.
 
->Have you received the final version of my article on Free Will?
+> Have you received the final version of my article on Free Will?
 
 Yes thanks very much. I'm saving reading it until we get to the proof stage (assuming it passes the final hurdles).
 
@@ -96,7 +107,9 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: book review
 
 In message <199802051020.MAA05329@cathy.obs.ee>, Undo Uus
-<uus@cathy.obs.ee> writes >Have you received the final version of my article on Free Will? >
+<uus@cathy.obs.ee> writes
+
+> Have you received the final version of my article on Free Will? >
 >Undo Uus
 
 Libet has just given the go-ahead for your revised paper (in fact he was quite enthusiastic, which is unusual, as he can't stand philosophers!)
@@ -127,7 +140,9 @@ Thanking you in advance,
 
 Anthony Freeman.
 ---
-Anthony Freeman (UK Managing Editor, Journal of Consciousness Studies) Imprint Academic, PO Box 1, Thorverton, Devon EX5 5YX, UK Tel. +44 (0)1392 841600 Fax. +44 (0)1392 841478 Email: anthony@imprint.co.uk
+Anthony Freeman (UK Managing Editor, Journal of Consciousness Studies) Imprint Academic, PO Box 1, Thorverton, Devon EX5 5YX, UK Tel. +44 (0)1392 841600 Fax. +44 (0)1392 841478
+
+Email: anthony@imprint.co.uk
 ---
 
 From uus Fri Dec 18 13:43:26 1998
@@ -150,7 +165,14 @@ From: Anthony Freeman <Anthony@imprint.co.uk>
 Subject: Re: JCS Paper
 
 In message <199812181143.NAA14600@cathy.obs.ee>, Undo Uus
-<uus@cathy.obs.ee> writes >Dear Anthony, > >I will send to you by email the text of my JCS paper >on the Libertarian Imperative tomorrow. > >With best wishes,
+<uus@cathy.obs.ee> writes
+
+> Dear Anthony,
+>
+> I will send to you by email the text of my JCS paper
+> on the Libertarian Imperative tomorrow.
+>
+> With best wishes,
 >Undo Uus
 >
 
@@ -158,7 +180,9 @@ Many thanks.
 
 Anthony.
 ---
-Anthony Freeman (UK Managing Editor, Journal of Consciousness Studies) Imprint Academic, PO Box 1, Thorverton, Devon EX5 5YX, UK Tel. +44 (0)1392 841600 Fax. +44 (0)1392 841478 Email: anthony@imprint.co.uk
+Anthony Freeman (UK Managing Editor, Journal of Consciousness Studies) Imprint Academic, PO Box 1, Thorverton, Devon EX5 5YX, UK Tel. +44 (0)1392 841600 Fax. +44 (0)1392 841478
+
+Email: anthony@imprint.co.uk
 ---
 
 From uus@cathy.obs.ee Sat Dec 19 12:32:27 1998

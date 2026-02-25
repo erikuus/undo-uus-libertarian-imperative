@@ -10,14 +10,6 @@ The Libertarian Imperative is not presented only as a metaphysical statement abo
 
 This yields a decision stance that survives both horns of the free-will dilemma.
 
-## Core Conceptual Blocks
-
-- Consciousness versus strict materialism.
-- Rejection of epiphenomenal consciousness as research-deadening.
-- Nomological (law-governed) causality and its explanatory limits.
-- Free will as a methodological imperative for inquiry and conduct.
-- Distinction from Pascal's Wager and from a purely pragmatic belief gamble.
-
 ## Why The Argument Is Highly Original
 
 - It relocates the free-will issue from "what exists" to "how we must proceed under uncertainty."

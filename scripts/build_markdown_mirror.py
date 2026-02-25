@@ -49,7 +49,7 @@ MIRROR_EXCLUDE_SOURCE_RELS = {
     "undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf",
 }
 
-MIRROR_FORMAT_VERSION = "readability-v6"
+MIRROR_FORMAT_VERSION = "readability-v13"
 MIRROR_PROFILE = "readability-first"
 
 TESSERACT_CANDIDATES = ["tesseract", "/opt/homebrew/bin/tesseract"]
@@ -66,6 +66,11 @@ TITLE_CONNECTORS = {"a", "an", "and", "as", "at", "be", "can", "for", "in", "is"
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate readability-first markdown mirrors.")
     parser.add_argument("--check", action="store_true", help="Validate expected mirror headers/manifests without rewriting files.")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Regenerate mirror files even if they appear up to date (refreshes the `Generated` timestamp).",
+    )
     parser.add_argument("--deterministic", action="store_true", help="Use stable metadata values to avoid volatile timestamps.")
     parser.add_argument("--no-ocr", action="store_true", help="Disable OCR fallback for image-only PDF pages.")
     parser.add_argument("--ocr-lang", default="eng", help="Tesseract language for OCR fallback (default: eng).")
@@ -96,7 +101,110 @@ def repo_rel(path: Path) -> str:
 def normalize_text(text: str) -> str:
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     normalized = normalized.replace("\u00a0", " ")
+    normalized = normalized.translate(_UNICODE_LIGATURE_TRANSLATION)
     return normalized
+
+
+_UNICODE_LIGATURE_TRANSLATION = str.maketrans(
+    {
+        # Common PDF extraction artifacts: Latin presentation-form ligatures.
+        "\ufb00": "ff",   # ﬀ
+        "\ufb01": "fi",   # ﬁ
+        "\ufb02": "fl",   # ﬂ
+        "\ufb03": "ffi",  # ﬃ
+        "\ufb04": "ffl",  # ﬄ
+        "\ufb05": "ft",   # ﬅ (rare)
+        "\ufb06": "st",   # ﬆ (rare)
+    }
+)
+
+
+_LATIN_LETTER_CLASS = r"A-Za-zÀ-ÖØ-öø-ÿÕÄÖÜõäöü"
+_LATIN_LOWER_CLASS = r"a-zà-öø-ÿõäöü"
+_LATIN_UPPER_CLASS = r"A-ZÀ-ÖÕÄÖÜ"
+
+
+def repair_common_extracted_text_artifacts(text: str) -> str:
+    """Repair common OCR/PDF-extraction artifacts without changing semantics."""
+    repaired = normalize_text(text)
+    repaired = re.sub(rf",(?=[{_LATIN_LETTER_CLASS}])", ", ", repaired)
+    repaired = re.sub(rf"([{_LATIN_LOWER_CLASS}])\.([{_LATIN_UPPER_CLASS}])", r"\1. \2", repaired)
+    return repaired
+
+
+def strip_trailing_page_number_line(text: str, *, page_num: int) -> str:
+    """Remove a trailing footer page number line when it matches the PDF page index."""
+    lines = text.splitlines()
+    if not lines:
+        return text
+
+    last_idx = None
+    for idx in range(len(lines) - 1, -1, -1):
+        if lines[idx].strip() != "":
+            last_idx = idx
+            break
+    if last_idx is None:
+        return text
+
+    candidate = lines[last_idx].strip()
+    if candidate.isdigit() and int(candidate) == page_num and len(candidate) <= 3:
+        del lines[last_idx]
+        return "\n".join(lines).rstrip("\n")
+    return text
+
+
+def repair_pdf_page_boundaries(pages: list[tuple[int, str]]) -> list[tuple[int, str]]:
+    """Join hyphen-broken words and remove footer page numbers across PDF pages."""
+    if not pages:
+        return pages
+
+    page_nums = [num for num, _ in pages]
+    texts = [repair_common_extracted_text_artifacts(text) for _, text in pages]
+    texts = [strip_trailing_page_number_line(text, page_num=page_num) for text, page_num in zip(texts, page_nums)]
+
+    def last_nonempty(lines: list[str]) -> int | None:
+        for idx in range(len(lines) - 1, -1, -1):
+            if lines[idx].strip() != "":
+                return idx
+        return None
+
+    def first_nonempty(lines: list[str]) -> int | None:
+        for idx, line in enumerate(lines):
+            if line.strip() != "":
+                return idx
+        return None
+
+    for i in range(len(texts) - 1):
+        prev_lines = texts[i].splitlines()
+        next_lines = texts[i + 1].splitlines()
+
+        prev_last = last_nonempty(prev_lines)
+        next_first = first_nonempty(next_lines)
+        if prev_last is None or next_first is None:
+            continue
+
+        prev_line = prev_lines[prev_last]
+        next_line = next_lines[next_first].lstrip()
+        if not next_line:
+            continue
+
+        # Join only likely word-break hyphens (letters + '-' + next page starts lowercase),
+        # but keep page segmentation by moving only the continuation fragment.
+        if prev_line.endswith("-") and len(prev_line) >= 2 and prev_line[-2].isalpha() and next_line[0].islower():
+            m = re.match(rf"^([{_LATIN_LOWER_CLASS}]+)(.*)$", next_line)
+            if not m:
+                continue
+            continuation, rest = m.group(1), m.group(2)
+            prev_lines[prev_last] = prev_line[:-1] + continuation
+            rest = rest.lstrip()
+            if rest:
+                next_lines[next_first] = rest
+            else:
+                del next_lines[next_first]
+            texts[i] = "\n".join(prev_lines)
+            texts[i + 1] = "\n".join(next_lines)
+
+    return list(zip(page_nums, texts))
 
 
 def clean_line(line: str) -> str:
@@ -173,6 +281,113 @@ def merge_wrapped_lines(lines: list[str]) -> str:
     return merged
 
 
+UMLAUT_COMPOSED = {
+    "A": "Ä",
+    "a": "ä",
+    "O": "Ö",
+    "o": "ö",
+    "U": "Ü",
+    "u": "ü",
+}
+
+
+def repair_decomposed_umlauts(text: str) -> str:
+    # Common PDF extraction artifact: `¨ o` / `o ¨` style decomposed umlauts.
+    # Keep conservative: only compose A/O/U (German/Scandinavian/Estonian overlap).
+    text = re.sub(r"\u00a8\s*([AaOoUu])", lambda m: UMLAUT_COMPOSED[m.group(1)], text)
+    text = re.sub(r"([AaOoUu])\s*\u00a8", lambda m: UMLAUT_COMPOSED[m.group(1)], text)
+    return text
+
+
+def split_editorial_note(text: str) -> list[str]:
+    m = re.match(r"^(Editorial note)\s+(.*)$", text, flags=re.IGNORECASE | re.DOTALL)
+    if not m:
+        return [text]
+    label = m.group(1)
+    rest = m.group(2).strip()
+    if not rest:
+        return [label]
+    return [label, rest]
+
+
+def split_inline_footer_blocks(text: str) -> list[str]:
+    # Journals often carry "Correspondence:" / "E-mail:" blocks that get merged into
+    # surrounding prose during extraction. Split them into their own paragraphs.
+    repaired = re.sub(r"\.(E-?mail:)", r". \1", text)
+    repaired = re.sub(r"\.\s*;\s*(\d{3,4})\.?$", r".\n\n\1", repaired)
+
+    tokens = [r"\bCorrespondence:", r"\bE-?mail:"]
+    parts: list[str] = [repaired]
+    for token in tokens:
+        next_parts: list[str] = []
+        for part in parts:
+            m = re.search(token, part)
+            if m and m.start() > 0:
+                before = part[: m.start()].rstrip()
+                after = part[m.start() :].lstrip()
+                if before:
+                    next_parts.append(before)
+                if after:
+                    next_parts.append(after)
+            else:
+                next_parts.append(part)
+        parts = next_parts
+
+    return parts
+
+
+QUOTE_ANCHOR_RE = re.compile(r">\s*(Dear|From:|To:|Subject:|Many\s+thanks|Thanks|Hi|Hello)\b", re.IGNORECASE)
+QUOTE_CONTEXT_RE = re.compile(r"\b(wrote|writes)\b", re.IGNORECASE)
+
+
+def reflow_inline_quotes_to_lines(text: str) -> list[str]:
+    # Email quote markers sometimes collapse into a single line, e.g.:
+    # `writes >Dear ... > >Many ... Undo >`
+    if text.count(">") < 2 or (
+        not QUOTE_ANCHOR_RE.search(text) and not QUOTE_CONTEXT_RE.search(text) and not text.lstrip().startswith(">")
+    ):
+        return [text]
+
+    s = text
+    s = re.sub(r"\s+(>+)\s*(?=\S)", r"\n\1 ", s)
+    while True:
+        new = re.sub(r">\s+>", ">\n>", s)
+        if new == s:
+            break
+        s = new
+    s = re.sub(r"(?m)^(>+)(?=\S)", r"\1 ", s)
+
+    raw_lines = [ln.rstrip() for ln in s.splitlines()]
+    lines: list[str] = []
+    for ln in raw_lines:
+        if not lines:
+            lines.append(ln)
+            continue
+
+        if ln.lstrip().startswith(">") and lines[-1] and not lines[-1].lstrip().startswith(">"):
+            lines.append("")
+        lines.append(ln)
+
+    return lines
+
+
+def paragraph_to_lines(paragraph: list[str]) -> list[str]:
+    merged = merge_wrapped_lines(paragraph)
+    merged = repair_decomposed_umlauts(merged)
+    merged = re.sub(r"^(>+)(?=\S)", r"\1 ", merged)
+    merged = repair_common_extracted_text_artifacts(merged)
+
+    out: list[str] = []
+    for block in split_inline_footer_blocks(merged):
+        for part in split_editorial_note(block):
+            out.extend(reflow_inline_quotes_to_lines(part))
+        out.append("")
+
+    while out and out[-1] == "":
+        out.pop()
+    return out
+
+
 def normalize_for_readability(text: str) -> str:
     lines = normalize_text(text).split("\n")
     out: list[str] = []
@@ -180,7 +395,7 @@ def normalize_for_readability(text: str) -> str:
 
     def flush_paragraph() -> None:
         if paragraph:
-            out.append(merge_wrapped_lines(paragraph))
+            out.extend(paragraph_to_lines(paragraph))
             paragraph.clear()
 
     for raw in lines:
@@ -199,7 +414,7 @@ def normalize_for_readability(text: str) -> str:
 
         if is_structural_line(line):
             flush_paragraph()
-            out.append(line)
+            out.append(repair_decomposed_umlauts(line))
             continue
 
         if out and SIGNOFF_RE.match(out[-1]) and re.fullmatch(r"[A-Za-z][A-Za-z .'-]{0,39}", line):
@@ -526,11 +741,13 @@ def extract_pdf_pages(
     for idx, page in enumerate(reader.pages, start=1):
         page_text = normalize_for_readability(page.extract_text() or "")
         page_text = apply_language_repairs(page_text, src=path)
+        page_text = repair_common_extracted_text_artifacts(page_text)
 
         if not page_text and ocr_enabled and tesseract_cmd:
             ocr_text, conf, image_count = ocr_page_images(page, tesseract_cmd, ocr_lang)
             if ocr_text:
                 page_text = apply_language_repairs(ocr_text, src=path)
+                page_text = repair_common_extracted_text_artifacts(page_text)
                 ocr_used.append({"page": idx, "confidence": conf, "image_count": image_count})
 
         if not page_text:
@@ -538,6 +755,7 @@ def extract_pdf_pages(
 
         pages.append((idx, page_text))
 
+    pages = repair_pdf_page_boundaries(pages)
     return len(reader.pages), pages, ocr_used
 
 
@@ -656,6 +874,8 @@ def write_pdf_copy(
         ])
 
     for page_num, text in pages:
+        # Ensure code blocks never contain trailing spaces.
+        text = "\n".join(ln.rstrip() for ln in text.splitlines()).rstrip("\n")
         lines.extend([
             f"## Page {page_num}",
             "",
@@ -671,6 +891,7 @@ def write_pdf_copy(
 def write_text_copy(src: Path, dest: Path, checksum: str, *, deterministic: bool) -> None:
     body = normalize_text(src.read_text(encoding="utf-8", errors="replace")).strip()
     body = apply_language_repairs(body, src=src)
+    body = repair_common_extracted_text_artifacts(body)
     lines = header_lines(
         src,
         dest,
@@ -682,7 +903,7 @@ def write_text_copy(src: Path, dest: Path, checksum: str, *, deterministic: bool
     )
     lines.extend([
         "```text",
-        body,
+        "\n".join(ln.rstrip() for ln in body.splitlines()).rstrip("\n"),
         "```",
         "",
     ])
@@ -828,6 +1049,8 @@ def update_or_check_manifest(path: Path, expected_content: str, *, check_only: b
 
 def main() -> None:
     args = parse_args()
+    if args.check and args.force:
+        raise SystemExit("--force cannot be combined with --check.")
 
     artifacts = iter_source_artifacts()
     if not artifacts:
@@ -867,6 +1090,8 @@ def main() -> None:
             expected_ocr_mode=expected_ocr_mode,
             compare_ocr_mode=compare_ocr_mode,
         )
+        if args.force:
+            regen, reason = True, "forced"
 
         if args.check:
             checked += 1

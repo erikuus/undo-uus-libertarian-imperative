@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/5a-TLIpublishing5.pdf`
 - SHA256: `1965aebb7038a50ef5b218aea0d46e1188623e2e67f623c6cc626b2ab626198a`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:21 UTC`
+- Generated: `2026-02-25 09:12:05 UTC`
 - Original file: `[5a-TLIpublishing5.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/5a-TLIpublishing5.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
@@ -43,7 +43,13 @@ Subject: Re: JCS Referee report
 In message <199709120941.MAA04116@cathy.obs.ee>, Undo Uus <uus@obs.ee>
 writes
 >Dear Keith:
-> >I very much appreciate the valuable criticisms and suggestions >made by a referee. I will revise my article accordingly. I think >I will cut back somewhat the first part (directly related to >consciousness) of the paper and will stress more strongly the >connection between the problems of consciousness studies and >free will.
+>
+> I very much appreciate the valuable criticisms and suggestions
+> made by a referee. I will revise my article accordingly. I think
+> I will cut back somewhat the first part (directly related to
+> consciousness) of the paper and will stress more strongly the
+> connection between the problems of consciousness studies and
+> free will.
 
 Many thanks for being so understanding, and look forward to your revised submission in due course -- no great hurry. Am I not right though in thinking the referee recommended to extend and develop the first part, or did I get that wrong? And of course it's up to you to decide what strategy suits you best. -- Keith
 
@@ -98,15 +104,22 @@ Subject: Re: The Libertarian Imperative
 In message <199801260804.KAA19960@cathy.obs.ee>, Undo Uus
 <uus@cathy.obs.ee> writes
 >Dear Keith:
-> >You couldn't have found the last version of my paper on your desk >because I have only just now completed it.
+>
+> You couldn't have found the last version of my paper on your desk
+> because I have only just now completed it.
 
 Phew, that's a relief -- I thought I'd lost it!
 
-> I am very sorry for >delaying so long with it, but I have waited for prof-s Timothy >Sprigge's and Robert Kane's comments on my paper and then revised >it quite substantially. I will send the copies of the last version >of the paper to you and prof. Libet within a few days.
+> I am very sorry for
+> delaying so long with it, but I have waited for prof-s Timothy
+> Sprigge's and Robert Kane's comments on my paper and then revised
+> it quite substantially. I will send the copies of the last version
+> of the paper to you and prof. Libet within a few days.
 
 That's great, thanks. I'm particularly glad that you have consulted Sprigge.
 
->I will consider also your inviting proposal to write a review of >Lowe's book, and will tell you about my decision soon.
+> I will consider also your inviting proposal to write a review of
+> Lowe's book, and will tell you about my decision soon.
 
 Thanks. I can return the book for you to have another look. -- Keith
 
@@ -133,7 +146,9 @@ Undo
 From:
 Dr. Undo Uus
 Tartu Observatory
-Estonia E-mail: uus@obs.ee
+Estonia
+
+E-mail: uus@obs.ee
 Professor Benjamin Libet
 Department of Physiology
 University of California, San Francisco CA 94143-0444

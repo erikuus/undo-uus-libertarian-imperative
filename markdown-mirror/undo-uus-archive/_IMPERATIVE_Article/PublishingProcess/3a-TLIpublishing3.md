@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/3a-TLIpublishing3.pdf`
 - SHA256: `3c441a4e0af5dfc43f4b1f73e9bab31164ddd17bf16a4ed9e544eb0201d48ca2`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:21 UTC`
+- Generated: `2026-02-25 09:12:04 UTC`
 - Original file: `[3a-TLIpublishing3.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/3a-TLIpublishing3.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
@@ -47,7 +47,11 @@ Subject: Re: The Libertarian Imperative
 In message <199706110856.LAA05838@cathy.obs.ee>, Undo Uus <uus@obs.ee>
 writes
 >Dear Keith Sutherland:
-> >Thank you very much for valuable suggestions concerning my paper on >free volition. I will consider various possibilities of modifying >the paper, and would like to ask your advice before making final >selection between different alternatives.
+>
+> Thank you very much for valuable suggestions concerning my paper on
+> free volition. I will consider various possibilities of modifying
+> the paper, and would like to ask your advice before making final
+> selection between different alternatives.
 
 OK thanks. I got the Lowe book in the post to you yesterday -- I think you'll find it very helpful. I did a review of it for the Times Higher
 Education Supplement:
@@ -118,7 +122,13 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: The Libertarian Imperative
 
 In message <199706120955.MAA07839@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >As I understand, you know well Schrödinger's philosophical views. >Could you tell is his position on free will problem persistently >compatibilistic or has he occasionally doubted whether free will >is at all possible if persons' bodies function as pure mechanisms >according to the laws of nature?
+writes
+
+> As I understand, you know well Schrödinger's philosophical views.
+> Could you tell is his position on free will problem persistently
+> compatibilistic or has he occasionally doubted whether free will
+> is at all possible if persons' bodies function as pure mechanisms
+> according to the laws of nature?
 
 I have to confess that my knowledge is second-hand -- through book reviews and other articles. I think you need to have a look at "What is life" for yourself (this should be widely available in most libraries). It was republished by CUP fairly recently along with another essay.
 
@@ -152,7 +162,7 @@ You made a number of suggestions concerning my paper on free will. To meet these
 
 (a) I will omit entirely the paragraph "On the metaphysical possibility of Free Will"; (b) I will revise substantially the section on private honesty;
 
->From the paragraph "The implications of the Libertarian Imperative for consciousness studies" (c) I will exclude the passage on Crick's and Koch's studies, and (d) I will exclude the passage on free will and quantum indeterminism.
+> From the paragraph "The implications of the Libertarian Imperative for consciousness studies" (c) I will exclude the passage on Crick's and Koch's studies, and (d) I will exclude the passage on free will and quantum indeterminism.
 
 I would like to know your opinion about these proposals. Particularly, I am interested whether you think (i) that the entire paragraph "The implications of the Libertarian Imperative for consciousness studies" should better be withdrawn, and (ii) that the problem of private honesty need not be considered at all.
 
@@ -168,23 +178,33 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: The Libertarian Imperative
 
 In message <199706131122.OAA10390@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >(a) I will omit entirely the paragraph "On the metaphysical >possibility of Free Will";
+writes
+
+> (a) I will omit entirely the paragraph "On the metaphysical
+> possibility of Free Will";
 
 I rather liked this section, and it seems to me quite legitimate to discuss the metaphysical possibility of free will; I just felt that you need not ally yourself too much to some of the attempts to explain free will (QM etc.). Possibility is one thing, substantive explanation another, and I'm not sure that its necessary for one short paper to address both issues. Tell me if I am being inconsistent here?
 
->(b) I will revise substantially the section on private honesty;
+> (b) I will revise substantially the section on private honesty;
 
 Good, this is the area where you might cause unnecessary offence to a lot of good scientists.
 
->From the paragraph "The implications of the Libertarian Imperative >for consciousness studies" >(c) I will exclude the passage on Crick's and Koch's studies, and >(d) I will exclude the passage on free will and quantum indeterminism.
+> From the paragraph "The implications of the Libertarian Imperative
+> for consciousness studies"
+> (c) I will exclude the passage on Crick's and Koch's studies, and
+> (d) I will exclude the passage on free will and quantum indeterminism.
 
 Good idea
 
->I would like to know your opinion about these proposals. Particularly, >I am interested whether you think (i) that the entire paragraph "The >implications of the Libertarian Imperative for consciousness studies" >should better be withdrawn,
+> I would like to know your opinion about these proposals. Particularly,
+> I am interested whether you think (i) that the entire paragraph "The
+> implications of the Libertarian Imperative for consciousness studies"
+> should better be withdrawn,
 
 I think that may well be wise.
 
-> and (ii) that the problem of private >honesty need not be considered at all.
+> and (ii) that the problem of private
+> honesty need not be considered at all.
 ```
 
 ## Page 9
@@ -223,7 +243,11 @@ Subject: Re: Thanks
 In message <199706181124.OAA05657@cathy.obs.ee>, Undo Uus <uus@obs.ee>
 writes
 >Dear Keith:
-> >Thank you very much for your e-mail of June 16 and for Lowe's >book I received yesterday. I will make necessary copies and >will return the book soon. I am also grateful for your correcting >my manuscript.
+>
+> Thank you very much for your e-mail of June 16 and for Lowe's
+> book I received yesterday. I will make necessary copies and
+> will return the book soon. I am also grateful for your correcting
+> my manuscript.
 
 No hurry to return the book -- take as long as you like. -- Keith
 
@@ -287,7 +311,14 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: The Libertarian Imperative
 
 In message <199707231200.PAA16925@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >(b) I will retain these introductory paragraphs as well as the >present form of the heading (The Libertarian Imperative and its >implications for consciousness studies), and in order to justify >the heading and introduction, I will point at the end of the article >very briefly to main implications of the Imperative for consciousness >studies.
+writes
+
+> (b) I will retain these introductory paragraphs as well as the
+> present form of the heading (The Libertarian Imperative and its
+> implications for consciousness studies), and in order to justify
+> the heading and introduction, I will point at the end of the article
+> very briefly to main implications of the Imperative for consciousness
+> studies.
 
 I think this is the best option. I confess I can't remember why this is an issue (presumably in response to something I said earlier) -- sorry to be vague, but there are so many submissions going through. Of course we are interested in the implications for consciousness studies, one just needs to be sure that the argument is expressed in the best way and without causing gratuitous offence to people who sincerely hold a different viewpoint.
 
@@ -384,7 +415,20 @@ Many thanks for your very careful analysis of the arguments in Lowe's book. I su
 
 I think its important to at least refer to his book in your article. If you preferred you could just add in a few citations where they support your own argument, rather than a full critical analysis.
 
->A few words about Schroedinger's views on free will. Schroedinger defends >the existence of free will, but tries to avoid a contradiction with the >principle of the causal closure of the physical world by admitting >that the dynamics of atoms, though under our voluntary control, are >always lawful. But if one holds to such a view, one must concede that >then whatever our claims that we are aware of nonphysical aspects of >our existence (including the claim that one knows, by incontrovertible >direct experience, that one is freely directing the motions of one's body) >are of no empirical (evidential) value, because everything that we in >this case do would be done by us in absolutely the same way also in the >case if we were purely physical and purely physically functioning >creatures lacking any freedom of the will and any kind of phenomenal >consciousness. I will discuss briefly Schroedinger's position on free >will in the revised version of my article.
+> A few words about Schroedinger's views on free will. Schroedinger defends
+> the existence of free will, but tries to avoid a contradiction with the
+> principle of the causal closure of the physical world by admitting
+> that the dynamics of atoms, though under our voluntary control, are
+> always lawful. But if one holds to such a view, one must concede that
+> then whatever our claims that we are aware of nonphysical aspects of
+> our existence (including the claim that one knows, by incontrovertible
+> direct experience, that one is freely directing the motions of one's body)
+> are of no empirical (evidential) value, because everything that we in
+> this case do would be done by us in absolutely the same way also in the
+> case if we were purely physical and purely physically functioning
+> creatures lacking any freedom of the will and any kind of phenomenal
+> consciousness. I will discuss briefly Schroedinger's position on free
+> will in the revised version of my article.
 
 As I mentioned earlier, I haven't read Schrodinger in the original. As I understand it (from the secondary sources I've seen) the problem would have to be rephrased in terms of divine freedom, as "we" are the same being who created the laws of nature in the first place. So in this sense God has no freedom, once he has set the ball rolling.
 
@@ -429,7 +473,13 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: Lowe's book
 
 In message <199707311144.OAA04048@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >Thank you for your message of July 29. I found it appropriate to >refer to some of Lowe's views presented in his book in my article >since what concerns the character of conscious experiences and the >nature of "I", our positions are very similar. (By the way, have >you got back your copy of the book I posted for you a week ago?)
+writes
+
+> Thank you for your message of July 29. I found it appropriate to
+> refer to some of Lowe's views presented in his book in my article
+> since what concerns the character of conscious experiences and the
+> nature of "I", our positions are very similar. (By the way, have
+> you got back your copy of the book I posted for you a week ago?)
 
 Yes, thanks very much. I'm on holiday next week, so no great rush to get the revised article in. -- Keith JKB SUTHERLAND, PUBLISHER JOURNAL OF CONSCIOUSNESS STUDIES HISTORY OF POLITICAL THOUGHT IMPRINT ACADEMIC, PO BOX 1, THORVERTON EX5 5YX, UK TEL: +44 (0)1392 841600. Fax: 841478. EMAIL: keith@imprint.co.uk
 

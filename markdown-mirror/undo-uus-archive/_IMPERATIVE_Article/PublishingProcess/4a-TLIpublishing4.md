@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/4a-TLIpublishing4.pdf`
 - SHA256: `ef2ac1429f80b5e8815aa7ec51d66e1861e71cce6f7b184cae3a9b3304d79b15`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:21 UTC`
+- Generated: `2026-02-25 09:12:05 UTC`
 - Original file: `[4a-TLIpublishing4.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/4a-TLIpublishing4.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
@@ -37,7 +37,13 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: the Libertarian Imperative
 
 In message <199709080729.KAA12770@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >Dear Keith, > >Have you received 3 copies of the revised version of my article >on the Libertarian Imperative I posted for you 4 weeks ago? Do >you need any additional copies?
+writes
+
+> Dear Keith,
+>
+> Have you received 3 copies of the revised version of my article
+> on the Libertarian Imperative I posted for you 4 weeks ago? Do
+> you need any additional copies?
 
 Yes thanks, read it on the plane to Denmark, and I did have a couple of comments, which I'll send on later today (been a bit busy since I returned!) -- Keith
 
@@ -54,7 +60,14 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: the Libertarian Imperative
 
 In message <199709080729.KAA12770@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >Dear Keith, > >Have you received 3 copies of the revised version of my article >on the Libertarian Imperative I posted for you 4 weeks ago? Do >you need any additional copies? > I read the piece carefully and I think it is just about right, with only
+writes
+
+> Dear Keith,
+>
+> Have you received 3 copies of the revised version of my article
+> on the Libertarian Imperative I posted for you 4 weeks ago? Do
+> you need any additional copies?
+> I read the piece carefully and I think it is just about right, with only
 three further comments:
 
 1) The JCS house-style does not lend itself to a large number of subheadings, so almost all of these would need to be removed. I agree that it makes for a nice punchy reading style, but more conservative scholars will say that this is too polemical, too journalistic and interrupts the flow of the argument. So we need to have only the main headings and essential subheadings (have a look at typical JCS articles to see what I mean here).
@@ -102,7 +115,13 @@ From: Keith Sutherland <keith@imprint.co.uk>
 Subject: Re: the Libertarian Imperative
 
 In message <199709081230.PAA13549@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >Dear Keith, > >Thank you for the suggestions concerning my article. I think all >these suggestions are reasonable. I hope I will be able to send >you the respectively revised version of the article next week. >
+writes
+
+> Dear Keith,
+>
+> Thank you for the suggestions concerning my article. I think all
+> these suggestions are reasonable. I hope I will be able to send
+> you the respectively revised version of the article next week. >
 
 Thank you for being so understanding about the constraints that we have to work within! -- Keith
 
@@ -126,13 +145,72 @@ I appreciate that it's very difficult to know how best to proceed when critiques
 
 keith
 
->I've read "The libertarian imperative and its implications for consciousness >studies," and am of two minds -- but in balance feel I have to recommend >re-submission. > >On the one hand, I think it is certainly an interesting piece of work, >occasionally obscure, but usually straightforward, well written and to the >point. I am in great sympathy with many of the ideas it touches on. They >are, I think, crucial but rarely discussed, and are right up JCS's alley. I >especially like the early sections running from _Dennett's Dictum_ through >_The unjustified denial of the phenomenological evidence for free will_. For >me, the most important point here is its (much too brief) direct attack on >"the 'scientific' dogma of nomism -- the view that the world is *thoroughly* >law governed". The logic of the standard arguments against free will, as >Uus' summary in the first part of the paper shows, hinges on the nomist >assumption; once introduced, I thought that an attack on the nomist >assumption would be the point Uus was going to develop. I was surprised >that it was raised only to be passed over quickly, and it turns out to play >a fairly minor role in the overall argument. My reaction here might be >suspect: ever since reading a draft of what was to became Chalmers' book, I >have been convinced that what Uus calls the nomist assumption is at the root
+> I've read "The libertarian imperative and its implications for consciousness
+> studies," and am of two minds -- but in balance feel I have to recommend
+> re-submission.
+>
+> On the one hand, I think it is certainly an interesting piece of work,
+> occasionally obscure, but usually straightforward, well written and to the
+> point. I am in great sympathy with many of the ideas it touches on. They
+> are, I think, crucial but rarely discussed, and are right up JCS's alley. I
+> especially like the early sections running from _Dennett's Dictum_ through
+> _The unjustified denial of the phenomenological evidence for free will_. For
+> me, the most important point here is its (much too brief) direct attack on
+> "the 'scientific' dogma of nomism -- the view that the world is *thoroughly*
+> law governed". The logic of the standard arguments against free will, as
+> Uus' summary in the first part of the paper shows, hinges on the nomist
+> assumption; once introduced, I thought that an attack on the nomist
+> assumption would be the point Uus was going to develop. I was surprised
+> that it was raised only to be passed over quickly, and it turns out to play
+> a fairly minor role in the overall argument. My reaction here might be
+> suspect: ever since reading a draft of what was to became Chalmers' book, I
+> have been convinced that what Uus calls the nomist assumption is at the root
 ```
 
 ## Page 6
 
 ```text
->of much confusion in consciousness studies, and needs a very careful and >very critical look. I think that given the first part of the paper, the >natural continuation would be to focus on the shortcomings of this >assumption. At the very least, the reader should hear more about the >objections raised by Eddington and Sherrington. > >My problem, then, is that while I find the treatment of The Libertarian >Imperative in the second half of the paper to be good in isolation, it seems >to me a weak continuation of the exposition that lead up to it, and to be >rather obliquely related to consciousness research *per se*. It is almost as >if the second half of the paper were written independently, and then a long >introduction related to consciousness were attached later as a sort of >sustained after-thought. > >The treatment of the Libertarian position in the second half of the paper >seems to me to be closely related to the logic of Pascal's Wager or to >William James' stance toward free-will: "My first act of free will is to >believe in free will." The James sort of argument justifies free will on >pragmatic/psychological grounds. It would be helpful for Uus to spell out >the relation of his proposal to these classical positions with which he >seems, on the surface, to have much in common. > >I feel there are really two papers here, with only the first half directly >related to consciousness, and that this part should be fleshed out for >re-submission. The second half could easily stand on its own without any >specific consideration of consciousness, and the force of the second half of >the paper, if *only* concerned with the questions about consciousness and >free will raised in the first half, could be adequately conveyed in page or >two. There is also a problematic change of "stance" (can't think of a good >way to put this) between the first half of the paper (which more or less >takes up a natural science perspective) and the second half (which shifts to >a very different mode of argument, one that is at once pragmatic and >narrowly logical). My own feeling (again, perhaps being a hostage to my own >views) is that the nomist assumption is at the heart of the matter, and that >if possible it is best attacked directly, and within the scope of standard >methods of scientific reasoning. Uus just started to do this, but then >abruptly moved to a very different "stance" in his argument for the >Libertarian Imperative. From the standpoint of JCS (as distinct from a >philosophy journal), it is the development of the first half of the paper >that holds the promise. In the event of a decision to re-submit, I have >some relatively minor stylistic and expositional points that might be of help.
+> of much confusion in consciousness studies, and needs a very careful and
+> very critical look. I think that given the first part of the paper, the
+> natural continuation would be to focus on the shortcomings of this
+> assumption. At the very least, the reader should hear more about the
+> objections raised by Eddington and Sherrington.
+>
+> My problem, then, is that while I find the treatment of The Libertarian
+> Imperative in the second half of the paper to be good in isolation, it seems
+> to me a weak continuation of the exposition that lead up to it, and to be
+> rather obliquely related to consciousness research *per se*. It is almost as
+> if the second half of the paper were written independently, and then a long
+> introduction related to consciousness were attached later as a sort of
+> sustained after-thought.
+>
+> The treatment of the Libertarian position in the second half of the paper
+> seems to me to be closely related to the logic of Pascal's Wager or to
+> William James' stance toward free-will: "My first act of free will is to
+> believe in free will." The James sort of argument justifies free will on
+> pragmatic/psychological grounds. It would be helpful for Uus to spell out
+> the relation of his proposal to these classical positions with which he
+> seems, on the surface, to have much in common.
+>
+> I feel there are really two papers here, with only the first half directly
+> related to consciousness, and that this part should be fleshed out for
+> re-submission. The second half could easily stand on its own without any
+> specific consideration of consciousness, and the force of the second half of
+> the paper, if *only* concerned with the questions about consciousness and
+> free will raised in the first half, could be adequately conveyed in page or
+> two. There is also a problematic change of "stance" (can't think of a good
+> way to put this) between the first half of the paper (which more or less
+> takes up a natural science perspective) and the second half (which shifts to
+> a very different mode of argument, one that is at once pragmatic and
+> narrowly logical). My own feeling (again, perhaps being a hostage to my own
+> views) is that the nomist assumption is at the heart of the matter, and that
+> if possible it is best attacked directly, and within the scope of standard
+> methods of scientific reasoning. Uus just started to do this, but then
+> abruptly moved to a very different "stance" in his argument for the
+> Libertarian Imperative. From the standpoint of JCS (as distinct from a
+> philosophy journal), it is the development of the first half of the paper
+> that holds the promise. In the event of a decision to re-submit, I have
+> some relatively minor stylistic and expositional points that might be of help.
 ```
 
 ## Page 7
@@ -152,7 +230,9 @@ WWW: http://www.zynet.co.uk/imprint
 From:
 Dr. Undo Uus
 Tartu Observatory
-EE 2444 Estonia E-mail: uus@obs.ee
+EE 2444 Estonia
+
+E-mail: uus@obs.ee
 
 Dr. Keith Sutherland, Publisher
 Journal of Consciousness Studies

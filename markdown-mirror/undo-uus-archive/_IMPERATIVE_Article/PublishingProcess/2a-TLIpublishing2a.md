@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/2a-TLIpublishing2a.pdf`
 - SHA256: `6b3662cd1ec4165b54398b928f606a57e830173dcd01df5227369f10e18c03d2`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:19 UTC`
+- Generated: `2026-02-25 09:12:03 UTC`
 - Original file: `[2a-TLIpublishing2a.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/2a-TLIpublishing2a.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
@@ -22,7 +22,9 @@ This copy contains extracted text from 6 page(s).
 ```text
 Dr. Undo Uus
 Tartu Observatory
-Estonia E-mail: uus@obs.ee
+Estonia
+
+E-mail: uus@obs.ee
 
 Dr. Keith Sutherland
 Imprint Academic
@@ -68,11 +70,25 @@ From: jcs <jcs@imprint.co.uk>
 Subject: Re: submission
 
 In message <199706040953.MAA05846@cathy.obs.ee>, Undo Uus <uus@obs.ee>
-writes >June 4, 1997 > >Dear Sirs, > >I have completed an article on the free will problem "The Libertarian >Imperative and its implications for consciousness studies" and should >like to submit it for publication in the Journal of Consciousness >Studies. Could you please tell me to whom of the editors of JCS you >recommend to send the manuscript of this article?
+writes
+
+> June 4, 1997
+>
+> Dear Sirs,
+>
+> I have completed an article on the free will problem "The Libertarian
+> Imperative and its implications for consciousness studies" and should
+> like to submit it for publication in the Journal of Consciousness
+> Studies. Could you please tell me to whom of the editors of JCS you
+> recommend to send the manuscript of this article?
 
 I'd be quite interested in seeing it myself (address below).
 
->I should like to send the text of my article to you also in an >ordinary (ascii) email. Could you plese send me by email an example >(template) of such a file (e.g. an article already published in JCS; >I subscribe for JCS) so that I could indicate captions, quotations, >references, different fonts, etc in the way most advantageous for you.
+> I should like to send the text of my article to you also in an
+> ordinary (ascii) email. Could you plese send me by email an example
+> (template) of such a file (e.g. an article already published in JCS;
+> I subscribe for JCS) so that I could indicate captions, quotations,
+> references, different fonts, etc in the way most advantageous for you.
 
 The thing is we need it in a form that's suitable for peer review, rather than pre-coded for typesetting. This is why we encourage rtf or encoded submissions of original wordprocessor files, rather than plain ascii --
 Keith Sutherland
@@ -96,7 +112,9 @@ Yours, Undo Uus
 From:
 Dr. Undo Uus
 Tartu Observatory
-Estonia E-mail: uus@obs.ee Dr. Keith Sutherland, Publisher
+Estonia
+
+E-mail: uus@obs.ee Dr. Keith Sutherland, Publisher
 Journal of Consciousness Studies
 Imprint Academic
 PO Box 1

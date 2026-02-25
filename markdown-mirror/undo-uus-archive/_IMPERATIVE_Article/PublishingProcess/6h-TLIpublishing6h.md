@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6h-TLIpublishing6h.pdf`
 - SHA256: `71df9397e9f88f044ccc0e02edb8cd1fab20974fedbe7e6c92443851faf9176d`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:29 UTC`
+- Generated: `2026-02-25 09:12:12 UTC`
 - Original file: `[6h-TLIpublishing6h.pdf](../../../../undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/6h-TLIpublishing6h.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
@@ -25,7 +25,18 @@ From: Anthony Freeman <Anthony@imprint.co.uk>
 Subject: Re: Proofs
 
 In message <37E08EAF.EE007696@neti.ee>, Undo Uus <undo.uus@neti.ee>
-writes >Dear Anthony, > >I received your letter with the page proofs of my article >"The Libertarian Imperative" yesterday (in fact, the letter >had arrived in Estonia already 5 days ago). I will check the >proofs and will notify you about the results this afternoon. > >Yours sincerely, > >Undo >
+writes
+
+> Dear Anthony,
+>
+> I received your letter with the page proofs of my article
+> "The Libertarian Imperative" yesterday (in fact, the letter
+> had arrived in Estonia already 5 days ago). I will check the
+> proofs and will notify you about the results this afternoon.
+>
+> Yours sincerely,
+>
+> Undo >
 
 Thanks. Please could you include a short note for the "about authors" section.
 
@@ -125,9 +136,29 @@ From: Anthony Freeman <Anthony@imprint.co.uk>
 Subject: Re: Proofs
 
 In message <37E12255.2EA8C9DC@neti.ee>, Undo Uus <undo.uus@neti.ee>
-writes >Dear Anthony, > >Please find below a short note which you can use for >preparing an entry for the "about authors" section. > >I signed, and will post tomorrow, the Copyright >Transfer Agreement. > >Thanking once more, >Undo > >------ >Undo Uus graduated from Tartu University, Estonia, in 1964, >and received his PhD in astrophysics from Moscow State >University in 1971. He is currently a research associate >in methodology of science at Tartu Observatory. He has >written a book Blindness of Modern Science. >------
+writes
+
+> Dear Anthony,
+>
+> Please find below a short note which you can use for
+> preparing an entry for the "about authors" section.
+>
+> I signed, and will post tomorrow, the Copyright
+> Transfer Agreement.
+>
+> Thanking once more,
+> Undo
+>
+> ------
+> Undo Uus graduated from Tartu University, Estonia, in 1964,
+> and received his PhD in astrophysics from Moscow State
+> University in 1971. He is currently a research associate
+> in methodology of science at Tartu Observatory. He has
+> written a book Blindness of Modern Science.
+> ------
 >Undo Uus
-> >
+>
+>
 
 Thanks.
 
@@ -142,7 +173,25 @@ From: Anthony Freeman <Anthony@imprint.co.uk>
 Subject: Re: correction 1
 
 In message <37E101D3.D022262D@neti.ee>, Undo Uus <undo.uus@neti.ee>
-writes >Dear Anthony, > >I just finished checking the page proofs of my >article "The Libertarian Imperative". > >First of all I would like to thank you very >much for editing my paper. > >There are 4 places in the paper where some corrections >could be made, but these are of rather cosmetic character, >so that please feel free in deciding whether to make them >or not. I will point to these possible corrections by >sending you small graphic files with the text of the paper. >To avoid confusion, I will send them in separate messages. > >Yours sincerely, >Undo
+writes
+
+> Dear Anthony,
+>
+> I just finished checking the page proofs of my
+> article "The Libertarian Imperative".
+>
+> First of all I would like to thank you very
+> much for editing my paper.
+>
+> There are 4 places in the paper where some corrections
+> could be made, but these are of rather cosmetic character,
+> so that please feel free in deciding whether to make them
+> or not. I will point to these possible corrections by
+> sending you small graphic files with the text of the paper.
+> To avoid confusion, I will send them in separate messages.
+>
+> Yours sincerely,
+> Undo
 
 I have entered all the corrections.
 
@@ -159,7 +208,17 @@ From: Anthony Freeman <Anthony@imprint.co.uk>
 Subject: Re: Proofs
 
 In message <37E72789.47485DB@neti.ee>, Undo Uus <undo.uus@neti.ee>
-writes >Dear Anthony, > >Many thanks for entering all the corrections to my >article (The Libertarian Imperative). > >Could you tell me please should I return to you the >(printed output of) page proofs, corrected and signed? > >Undo >
+writes
+
+> Dear Anthony,
+>
+> Many thanks for entering all the corrections to my
+> article (The Libertarian Imperative).
+>
+> Could you tell me please should I return to you the
+> (printed output of) page proofs, corrected and signed?
+>
+> Undo >
 
 There is no need. Your signed copyright transfer came this morning.
 

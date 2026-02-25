@@ -5,9 +5,9 @@ Preservation note: this is a readability-first markdown mirror generated from th
 - Source type: `pdf`
 - Source path: `undo-uus-archive/1997_Libertaarimperatiiv/Yleskutse.pdf`
 - SHA256: `e2f4c6e3ef1b248a73a0a5d6e96a837c9e7955c5b206b2bd65a6089658fd6b4a`
-- Mirror format version: `readability-v6`
+- Mirror format version: `readability-v13`
 - Mirror profile: `readability-first`
-- Generated: `2026-02-22 18:42:19 UTC`
+- Generated: `2026-02-25 09:12:02 UTC`
 - Original file: `[Yleskutse.pdf](../../../undo-uus-archive/1997_Libertaarimperatiiv/Yleskutse.pdf)`
 - OCR mode: `enabled(lang=eng)`
 - OCR provenance: `tesseract 5.5.0`
