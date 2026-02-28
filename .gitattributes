@@ -1,0 +1,19 @@
+# Archival repo: keep canonical source artifacts byte-stable across checkouts.
+# In particular, disable EOL normalization on text artifacts that are included in
+# fixity manifests (so a Windows checkout doesn't silently change their bytes).
+
+undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/*.txt -text
+undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/*.[tT][eE][xX] -text
+
+# Explicitly mark common binary formats as non-text.
+undo-uus-archive/**/*.pdf -text
+undo-uus-archive/**/*.[jJ][pP][gG] -text
+undo-uus-archive/**/*.[jJ][pP][eE][gG] -text
+undo-uus-archive/**/*.[pP][nN][gG] -text
+
+# Manifests are curator-authored text; keep them LF for portability.
+undo-uus-archive/manifest-sha256.txt text eol=lf
+markdown-mirror/manifest-sha256.txt text eol=lf
+
+# Curator-authored markdown should be normalized for cross-platform diffs.
+*.md text eol=lf

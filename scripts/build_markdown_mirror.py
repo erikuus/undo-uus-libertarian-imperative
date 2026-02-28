@@ -22,8 +22,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from pypdf import PdfReader
-
 try:
     from PIL import Image
 except Exception:  # pragma: no cover
@@ -734,6 +732,15 @@ def extract_pdf_pages(
     tesseract_cmd: str | None,
     ocr_lang: str,
 ) -> tuple[int, list[tuple[int, str]], list[dict[str, Any]]]:
+    # Lazy import so `--check` can run without optional PDF/OCR dependencies.
+    try:
+        from pypdf import PdfReader  # type: ignore
+    except ModuleNotFoundError as e:
+        raise SystemExit(
+            "Missing dependency: pypdf. Install dependencies with: "
+            "`python3 -m pip install -r requirements.txt`"
+        ) from e
+
     reader = PdfReader(str(path))
     pages: list[tuple[int, str]] = []
     ocr_used: list[dict[str, Any]] = []
@@ -1057,11 +1064,20 @@ def main() -> None:
         raise SystemExit("No archival source files found.")
     files = iter_mirror_sources(artifacts)
 
-    ocr_enabled = not args.no_ocr
-    tesseract_cmd = find_tesseract_command() if ocr_enabled else None
-    tess_version = tesseract_version(tesseract_cmd) if ocr_enabled else None
+    # In `--check` mode, default behavior should be pure-validation and should not
+    # require OCR tooling or PDF parsing libraries. OCR environment matching is
+    # only relevant when explicitly requested via `--strict-ocr-check`.
+    if args.check and not args.strict_ocr_check:
+        ocr_enabled = False
+        tesseract_cmd = None
+        tess_version = None
+    else:
+        ocr_enabled = not args.no_ocr
+        tesseract_cmd = find_tesseract_command() if ocr_enabled else None
+        tess_version = tesseract_version(tesseract_cmd) if ocr_enabled else None
 
-    DEST_ROOT.mkdir(parents=True, exist_ok=True)
+    if not args.check:
+        DEST_ROOT.mkdir(parents=True, exist_ok=True)
 
     generated = 0
     checked = 0
@@ -1069,13 +1085,14 @@ def main() -> None:
 
     for src in files:
         dest = dest_for(src)
-        dest.parent.mkdir(parents=True, exist_ok=True)
+        if not args.check:
+            dest.parent.mkdir(parents=True, exist_ok=True)
 
         checksum = file_sha256(src)
         ext = src.suffix.lower()
 
         expected_ocr_mode = None
-        if ext in PDF_EXTS:
+        if ext in PDF_EXTS and (not args.check or args.strict_ocr_check):
             expected_ocr_mode = format_ocr_mode(
                 ocr_enabled=ocr_enabled,
                 tesseract_cmd=tesseract_cmd,

@@ -46,6 +46,8 @@ Validation-only mode:
 python3 scripts/build_markdown_mirror.py --check
 ```
 
+Note: `--check` validates headers and manifests and can run without installing `requirements.txt`.
+
 Portable behavior:
 - By default, `--check` validates stable fields (source path/hash, mirror format/profile, manifests) and does **not** fail due to local OCR engine/version differences.
 - Use strict OCR environment matching only when needed:
