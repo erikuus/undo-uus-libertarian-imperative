@@ -35,3 +35,4 @@
 The archive also preserves an Estonian-language publication context (secondary to the English article corpus):
 
 - `undo-uus-archive/1997_Libertaarimperatiiv/README.md`
+- Reader editions + translation: `markdown-reader/undo-uus-archive/1997_Libertaarimperatiiv/README.md`

@@ -22,4 +22,6 @@ The **canonical, primary reading path** for the argument in this archive remains
 - Fixity for canonical artifacts is recorded in `../manifest-sha256.txt`.
 - Readability-first markdown mirrors (including OCR when applicable) are generated under:
   `../../markdown-mirror/undo-uus-archive/1997_Libertaarimperatiiv/`.
+- Human-edited reader editions (including an English translation) live under:
+  `../../markdown-reader/undo-uus-archive/1997_Libertaarimperatiiv/`.
 - For this Estonian corpus, mirrors also apply a small, explicit repair pass to correct a common PDF/DOCX extraction artifact where diacritics appear as separate characters (e.g. `¨U`/`U¨` → `Ü`, `˜o`/`o˜` → `õ`). This changes representation only, not meaning, and is tracked in mirror headers.

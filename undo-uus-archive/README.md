@@ -23,6 +23,7 @@ This folder is a curator-level wrapper that groups the original files received f
 
 - Curatorial docs: [`../docs/`](../docs/)
 - Markdown browsing copies: [`../markdown-mirror/`](../markdown-mirror/)
+- Human-edited reader editions: [`../markdown-reader/`](../markdown-reader/)
 - Mirror generation script: [`../scripts/build_markdown_mirror.py`](../scripts/build_markdown_mirror.py)
 - Rights statement: [`../RIGHTS.md`](../RIGHTS.md)
 - Citation guidance: [`../CITE.md`](../CITE.md)
