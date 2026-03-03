@@ -77,11 +77,7 @@ Consciousness research is at an impasse because, not daring to abandon the thesi
 
 ## Possible mechanisms of conscious causal influence
 
-Consciousness can be causally effective in two very different ways. Consciousness may be an immaterial field of some kind that interacts with the physical world (via the brains of conscious beings), so that together they constitute a combined physico-mental reality whose dynamics is subject to some set of laws of nature. Such a physico-mental joint world is of the same type as a purely material world, in the sense that its dynamics, too, is fully governed by laws of nature.
-
-The second possibility for consciousness to be causally effective would be for it to be the basis or milieu of voluntary (free-will) activity.
-
-## First option — the world as a physico-mental joint reality
+Consciousness can be causally effective in two very different ways. Consciousness may be an immaterial field of some kind that interacts with the physical world (via the brains of conscious beings), so that together they constitute a combined physico-mental reality whose dynamics is subject to some set of laws of nature. Such a physico-mental joint world is of the same type as a purely material world, in the sense that its dynamics, too, is fully governed by laws of nature. The second possibility for consciousness to be causally effective would be for it to be the basis or milieu of voluntary (free-will) activity.
 
 First option — the world as a physico-mental joint reality — is logically unproblematic, but there are no facts in its support. Surprisingly, there is considerable reason to believe the second possibility—consciousness as the basis of voluntary activity—despite the fact that the concept of free will is “supernatural,” difficult to analyze, and logically problematic.
 
