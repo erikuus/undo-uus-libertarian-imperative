@@ -295,17 +295,137 @@ _(Drawn from actual correspondence with philosophers, editors, and referees. Eac
 
 ---
 
-## Sources & versions (optional section)
+## Why this argument is easy to misunderstand
 
-- **Original essay** (long form)
-- **Journal of Consciousness Studies version** (with explicit comparisons to Pascal’s Wager and James; and scope clarifications)
-- **Responses & correspondence** (threads showing real-world misunderstandings)
+Even though the logic of the Libertarian Imperative is simple, readers often drift away from it.
+The reason is largely psychological.
 
-[Button: View the archive repository →]
+### Our normal rule: judge first, act afterwards
+
+In most areas of life we must decide **before acting** whether something is true.
+
+Examples from everyday life:
+
+- Before stepping onto a bridge we ask: **Will it carry my weight?**
+- Before eating a fruit we ask: **Is it poisonous?**
+- Before stepping forward we ask: **Is there danger ahead?**
+
+The same structure governs moral and legal reasoning:
+
+- We listen to testimony.
+- We examine evidence.
+- Only then do we judge whether someone is guilty or innocent.
+
+In both the **physical world** and the **moral world**, acting first and discovering the truth later would be reckless.
+Therefore we develop a deeply ingrained habit:
+
+> **Act in accord with a thesis only after we have reason to believe that the thesis is true.**
+
+### A rare but real logical exception
+
+It is usually assumed that it is reasonable to behave in accordance with a thesis **A** only if we know—or at least have some grounds to assume—that **A** is true.
+
+It may therefore seem unbelievable that there could be situations in which it is unquestionably reasonable to **act in accord with a thesis A** without having the slightest reason to think that **A**, rather than **not-A**, is true.
+
+Yet such situations do exist.
+
+### An illustrative example
+
+Imagine that a scientific expedition is sent to an alien planet with the task of studying the planet’s ionosphere.
+
+Upon landing, however, all measuring equipment is destroyed. The researchers are therefore unable to learn anything about the physical properties of the planet’s ionosphere.
+
+Nevertheless, the expedition is justified in sending the following type of report to Earth:
+
+> “The planet’s ionosphere lets through radio waves at the frequency used to transmit this message.”
+
+Sending such reports is justified because they **cannot reach their destination if they are false**.
+
+Attempts to send such messages can therefore do only epistemic good:
+
+- If the statement is true, knowledge is gained.
+- If the statement is false, the message simply never arrives.
+
+### The structural lesson
+
+This example shows that in some special situations the **logical structure of the situation itself** can justify acting in accordance with a thesis, even when we have no prior reason to believe that the thesis is true.
+
+The Libertarian Imperative belongs to this rare class of cases.
+
+The question concerns the nature of **one’s own present act of trying**.
+Because the situation is self-referential, the asymmetry between **avoidable** and **unavoidable** error makes it rational to
+
+> **try to act in accord with the thesis that one is not a law-governed creature.**
+
+The argument therefore feels unusual not because it is logically obscure, but because it **reverses our ordinary habit of judging first and acting afterwards**.
 
 ---
 
-## Footer (short, minimal)
+## A possible objection: rejecting truth-seeking itself
 
-- Contact / attribution (optional)
-- License (optional, if needed)
+The Libertarian Imperative rests on one fundamental premise:
+
+> **In the question of our own freedom of will, we ought to seek the truth.**
+
+The argument then shows that, under this commitment, the only rational stance is to
+
+> **try to act in accord with the thesis that one is not a law-governed creature.**
+
+However, one could challenge the Imperative at a deeper level by rejecting its starting point.
+
+### A radical alternative
+
+One might argue that seeking the truth about the nature of reality is **not always reasonable**.
+
+Undo Uus himself later considered this possibility in a speculative discussion about the metaphysical implications of free will and consciousness.
+
+If free will and phenomenal experience ultimately point toward a radically non-materialist picture of the world — perhaps involving a “Creator of Experiences” and a merely virtual physical reality — then it might be argued that discovering this truth could undermine the very structure of the world we inhabit.
+
+In such a scenario, cooperating with the hidden structure of reality might require the opposite stance:
+
+> **Do not seek the truth about consciousness and free will.**
+
+Instead, one should publicly defend a materialist picture of the mind and avoid inquiries that could reveal the deeper structure of reality.
+
+As Uus put it provocatively:
+
+> “It is primitive to think that pursuing the truth is always reasonable.”
+
+### What this objection implies
+
+If someone accepts this radical position, the Libertarian Imperative loses its force.
+
+The Imperative does not attempt to prove that truth-seeking must always prevail over every other possible goal.
+It simply shows that **if one is committed to truth-seeking in the free-will question**, then the Imperative logically follows.
+
+Rejecting that commitment is therefore the only genuine escape from the argument.
+
+But doing so requires adopting a stance that is itself extraordinary:
+
+> **that the truth about our own freedom of will ought to be deliberately avoided.**
+
+---
+
+If we are committed to seeking the truth about our own freedom of will, then the Libertarian Imperative follows.
+The only way to escape it is to abandon truth-seeking itself.
+
+---
+
+## Sources and further material
+
+The ideas summarized on this page originate from:
+
+**Undo Uus**
+_The Libertarian Imperative_
+Journal of Consciousness Studies, 1999.
+
+The repository below contains the original articles, drafts, correspondence with philosophers, and related materials documenting the development and reception of the argument.
+
+→ **Project repository:** [GitHub link]
+
+---
+
+## Footer
+
+© Material reproduced for educational and research purposes.
+Original texts by **Undo Uus** remain the intellectual work of the author.
