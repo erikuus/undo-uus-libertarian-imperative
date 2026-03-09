@@ -1,0 +1,82 @@
+---
+import type { ContentSection } from "../types/content";
+
+interface Props {
+  id: string;
+  heading: string;
+  description?: string;
+  items: ContentSection[];
+}
+
+const { id, heading, description, items } = Astro.props;
+---
+
+<section id={id} class="accordion-group" aria-labelledby={`${id}-heading`}>
+  <h3 id={`${id}-heading`}>{heading}</h3>
+  {description && <p class="section-note">{description}</p>}
+  <div class="accordion-list" data-accordion-group={id}>
+    {
+      items.map((item) => {
+        const buttonId = `${id}-${item.id}-button`;
+        const panelId = `${id}-${item.id}-panel`;
+
+        return (
+          <article class="accordion-item" id={`${id}-${item.id}`}>
+            <h4>
+              <button
+                id={buttonId}
+                class="accordion-toggle"
+                aria-controls={panelId}
+                aria-expanded="false"
+                type="button"
+              >
+                {item.title}
+              </button>
+            </h4>
+            <div
+              id={panelId}
+              class="accordion-panel"
+              role="region"
+              aria-labelledby={buttonId}
+              hidden
+            >
+              <div set:html={item.body} />
+            </div>
+          </article>
+        );
+      })
+    }
+  </div>
+</section>
+
+<script>
+  const groups = document.querySelectorAll("[data-accordion-group]");
+
+  for (const group of groups) {
+    const toggles = group.querySelectorAll(".accordion-toggle");
+
+    for (const toggle of toggles) {
+      toggle.addEventListener("click", () => {
+        const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+
+        for (const peer of toggles) {
+          const panelId = peer.getAttribute("aria-controls");
+          if (!panelId) continue;
+
+          const panel = document.getElementById(panelId);
+          peer.setAttribute("aria-expanded", "false");
+          if (panel) panel.hidden = true;
+        }
+
+        if (!isExpanded) {
+          const panelId = toggle.getAttribute("aria-controls");
+          if (!panelId) return;
+
+          const panel = document.getElementById(panelId);
+          toggle.setAttribute("aria-expanded", "true");
+          if (panel) panel.hidden = false;
+        }
+      });
+    }
+  }
+</script>

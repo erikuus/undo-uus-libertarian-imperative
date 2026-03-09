@@ -1,0 +1,23 @@
+---
+import type { ContentSection } from "../types/content";
+
+interface Props {
+  heading?: string;
+  items: ContentSection[];
+}
+
+const { heading, items } = Astro.props;
+---
+
+<section aria-labelledby={heading ? "core-lemma-heading" : undefined}>
+  {heading && <h2 id="core-lemma-heading">{heading}</h2>}
+  <ol class="lemma-list">
+    {
+      items.map((item) => (
+        <li id={item.id}>
+          <div set:html={item.body} />
+        </li>
+      ))
+    }
+  </ol>
+</section>

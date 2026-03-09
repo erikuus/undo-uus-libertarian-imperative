@@ -31,6 +31,14 @@ This moves the debate from only metaphysical speculation toward a methodological
 - Process and influence graph: [`docs/process-map.md`](docs/process-map.md)
 - File-by-file catalog: [`docs/file-catalog.md`](docs/file-catalog.md)
 
+## Website App
+
+- Website code is isolated in [`site/`](site/README.md) to keep it separate from archival materials.
+- Live site: [https://erikuus.github.io/undo-uus-libertarian-imperative/](https://erikuus.github.io/undo-uus-libertarian-imperative/)
+- Local run:
+  `cd site && npm install && npm run dev`
+- GitHub Pages deployment builds from `site/` via [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+
 ## Archive Navigation
 
 - Author-supplied source archive wrapper: [`undo-uus-archive/README.md`](undo-uus-archive/README.md)

@@ -1,0 +1,28 @@
+---
+interface Props {
+  author: string;
+  title: string;
+  repoUrl: string;
+  repoLabel?: string;
+  description?: string;
+}
+
+const {
+  author,
+  title,
+  repoUrl,
+  repoLabel = "View the archive repository",
+  description
+} = Astro.props;
+---
+
+<header class="hero" aria-labelledby="page-title">
+  <p class="hero-author">{author}</p>
+  <h1 id="page-title" class="hero-title">{title}</h1>
+  <p>
+    <a class="hero-cta" href={repoUrl} rel="noopener noreferrer" target="_blank">
+      {repoLabel} <span aria-hidden="true">→</span>
+    </a>
+  </p>
+  {description && <p class="hero-description">{description}</p>}
+</header>
