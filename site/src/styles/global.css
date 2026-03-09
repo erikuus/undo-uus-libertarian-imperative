@@ -68,8 +68,6 @@ h4 {
 
 h2 {
   margin-top: 3rem;
-  padding-top: 0.3rem;
-  border-top: 1px solid var(--line);
   font-size: clamp(1.6rem, 1.28rem + 1vw, 2.1rem);
 }
 
@@ -164,13 +162,14 @@ main {
 
 .lemma-list {
   margin-top: 1rem;
-  padding-left: 1.2rem;
   display: grid;
   gap: 1rem;
 }
 
-.lemma-list > li {
-  padding-left: 0.4rem;
+.lemma-item {
+  padding: 0.85rem 0.95rem;
+  border-radius: 10px;
+  background: #f9f3e9;
 }
 
 .accordion-group {
@@ -262,12 +261,6 @@ main {
 .toc a:hover {
   color: var(--accent);
   text-decoration: underline;
-}
-
-.rule {
-  margin: 2rem 0;
-  border: 0;
-  border-top: 1px solid var(--line);
 }
 
 footer {

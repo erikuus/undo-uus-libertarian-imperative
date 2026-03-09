@@ -11,13 +11,13 @@ const { heading, items } = Astro.props;
 
 <section aria-labelledby={heading ? "core-lemma-heading" : undefined}>
   {heading && <h2 id="core-lemma-heading">{heading}</h2>}
-  <ol class="lemma-list">
+  <div class="lemma-list" role="list">
     {
       items.map((item) => (
-        <li id={item.id}>
+        <article id={item.id} role="listitem" class="lemma-item">
           <div set:html={item.body} />
-        </li>
+        </article>
       ))
     }
-  </ol>
+  </div>
 </section>
