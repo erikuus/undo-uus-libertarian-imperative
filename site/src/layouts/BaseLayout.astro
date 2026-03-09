@@ -23,6 +23,9 @@ const { title, description, toc } = Astro.props;
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="paper-backdrop" aria-hidden="true"></div>
     <div class="page-shell">
+      <main id="main-content" tabindex="-1">
+        <slot />
+      </main>
       <nav class="toc" aria-label="Section navigation">
         <p class="toc-label">On this page</p>
         <ol>
@@ -35,9 +38,6 @@ const { title, description, toc } = Astro.props;
           }
         </ol>
       </nav>
-      <main id="main-content" tabindex="-1">
-        <slot />
-      </main>
     </div>
   </body>
 </html>

@@ -130,16 +130,11 @@ export const objectionItems = [
   description="A structured editorial landing page for Undo Uus's Libertarian Imperative argument and archive."
   toc={toc}
 >
-  <Hero
-    author="Undo Uus"
-    title="The Libertarian Imperative"
-    repoUrl={repoUrl}
-    description="Repo contains articles, publication versions, peer/editor correspondence, and related material."
-  />
+  <Hero author="Undo Uus" title="The Libertarian Imperative" />
 
-  <h2 id="imperative">The Imperative (concise formulation)</h2>
-
-  <CalloutQuote quote="One must always try to act in accord with the thesis that one is not a law-governed creature." />
+  <div id="imperative">
+    <CalloutQuote quote="One must always try to act in accord with the thesis that one is not a law-governed creature." />
+  </div>
 
   <h3>What this means in practice</h3>
 
@@ -157,37 +152,35 @@ export const objectionItems = [
 
   Because the Imperative applies only to **one’s own present act of trying**, it does not logically compel claims about other minds or about the metaphysical structure of the universe. It governs only how one must engage in **this act of volitional effort now**.
 
-  <h2 id="core-lemma">The Core Lemma (the whole argument in one place)</h2>
+  <h2 id="core-lemma">The Core Lemma</h2>
 
   <NumberedLemma heading="" items={lemmaItems} />
 
   <h2 id="substitutions">Mental substitutions that make the Imperative look wrong</h2>
 
-  <CalloutQuote quote="If you find yourself thinking one of the following, you have already shifted the problem." />
-
   The Libertarian Imperative is often misunderstood because the mind automatically replaces its narrow target with a more familiar question.
+
+  If you find yourself thinking one of the following, you have already shifted the problem.
 
   <AccordionGroup
     id="substitutions-accordion"
-    heading="Common substitutions that misread the target"
+    heading=""
     items={substitutionItems}
   />
 
-  <h2 id="objections">Common objections and misunderstandings (from real life)</h2>
+  <h2 id="objections">Common objections and misunderstandings</h2>
 
-  _(Drawn from actual correspondence with philosophers, editors, and referees. Each item links the misread to the specific substitution above.)_
+  Drawn from actual correspondence with philosophers, editors, and referees.
 
   <AccordionGroup
     id="objections-accordion"
-    heading="Objections as they actually appear"
+    heading=""
     items={objectionItems}
   />
 
   <h2 id="misunderstood">Why this argument is easy to misunderstand</h2>
 
   Even though the logic of the Libertarian Imperative is simple, readers often drift away from it. The reason is largely psychological.
-
-  <h3>Our normal rule: judge first, act afterwards</h3>
 
   In most areas of life we must decide **before acting** whether something is true.
 
@@ -207,13 +200,9 @@ export const objectionItems = [
 
   <CalloutQuote quote="Act in accord with a thesis only after we have reason to believe that the thesis is true." />
 
-  <h3>A rare but real logical exception</h3>
+  Even though exceptions to this rule are rare, we can still imagine cases in ordinary physical reality where the structure of the situation itself justifies acting in accordance with a thesis before independently establishing that it is true.
 
-  It is usually assumed that it is reasonable to behave in accordance with a thesis **A** only if we know, or at least have some grounds to assume, that **A** is true.
-
-  It may therefore seem unbelievable that there could be situations in which it is unquestionably reasonable to **act in accord with a thesis A** without having the slightest reason to think that **A**, rather than **not-A**, is true.
-
-  Yet such situations do exist.
+  The following example helps make that kind of exception clearer, and in turn makes the Libertarian Imperative easier to understand.
 
   <h3>An illustrative example</h3>
 
@@ -244,7 +233,7 @@ export const objectionItems = [
 
   The argument therefore feels unusual not because it is logically obscure, but because it **reverses our ordinary habit of judging first and acting afterwards**.
 
-  <h2 id="truth-seeking">A possible objection: rejecting truth-seeking itself</h2>
+  <h2 id="truth-seeking">Rejecting truth-seeking itself</h2>
 
   The Libertarian Imperative rests on one fundamental premise:
 
@@ -272,19 +261,11 @@ export const objectionItems = [
 
   <CalloutQuote quote="It is primitive to think that pursuing the truth is always reasonable." />
 
-  <h3>What this objection implies</h3>
-
   If someone accepts this radical position, the Libertarian Imperative loses its force.
 
   The Imperative does not attempt to prove that truth-seeking must always prevail over every other possible goal. It simply shows that **if one is committed to truth-seeking in the free-will question**, then the Imperative logically follows.
 
   Rejecting that commitment is therefore the only genuine escape from the argument.
-
-  But doing so requires adopting a stance that is itself extraordinary:
-
-  <CalloutQuote quote="That the truth about our own freedom of will ought to be deliberately avoided." />
-
-  If we are committed to seeking the truth about our own freedom of will, then the Libertarian Imperative follows. The only way to escape it is to abandon truth-seeking itself.
 
   <h2 id="sources">Sources and further material</h2>
 
@@ -296,7 +277,11 @@ export const objectionItems = [
 
   The repository below contains the original articles, drafts, correspondence with philosophers, and related materials documenting the development and reception of the argument.
 
-  → **Project repository:** [https://github.com/erikuus/undo-uus-libertarian-imperative](https://github.com/erikuus/undo-uus-libertarian-imperative)
+  <div class="sources-cta">
+    <a class="hero-cta" href={repoUrl} rel="noopener noreferrer" target="_blank">
+      Archival repository
+    </a>
+  </div>
 
   <footer>
     <p>© Material reproduced for educational and research purposes.</p>

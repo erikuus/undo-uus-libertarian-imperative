@@ -9,7 +9,10 @@ interface Props {
 const { heading, items } = Astro.props;
 ---
 
-<section aria-labelledby={heading ? "core-lemma-heading" : undefined}>
+<section
+  class:list={["numbered-lemma", { "numbered-lemma--with-heading": Boolean(heading) }]}
+  aria-labelledby={heading ? "core-lemma-heading" : undefined}
+>
   {heading && <h2 id="core-lemma-heading">{heading}</h2>}
   <div class="lemma-list" role="list">
     {

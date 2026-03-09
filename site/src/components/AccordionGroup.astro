@@ -3,7 +3,7 @@ import type { ContentSection } from "../types/content";
 
 interface Props {
   id: string;
-  heading: string;
+  heading?: string;
   description?: string;
   items: ContentSection[];
 }
@@ -11,8 +11,12 @@ interface Props {
 const { id, heading, description, items } = Astro.props;
 ---
 
-<section id={id} class="accordion-group" aria-labelledby={`${id}-heading`}>
-  <h3 id={`${id}-heading`}>{heading}</h3>
+<section
+  id={id}
+  class:list={["accordion-group", { "accordion-group--with-heading": Boolean(heading) }]}
+  aria-labelledby={heading ? `${id}-heading` : undefined}
+>
+  {heading && <h3 id={`${id}-heading`}>{heading}</h3>}
   {description && <p class="section-note">{description}</p>}
   <div class="accordion-list" data-accordion-group={id}>
     {

@@ -1,11 +1,17 @@
 :root {
-  --bg: #f6f1e7;
-  --panel: #fdfaf4;
-  --ink: #17130f;
-  --ink-soft: #3f352c;
-  --line: #d5c9b5;
-  --accent: #8f3e12;
-  --accent-soft: #f0d9c8;
+  --bg: #efe5d2;
+  --panel: #fbf7ef;
+  --panel-strong: #f2eadc;
+  --ink: #18120f;
+  --ink-soft: #52453a;
+  --line: #cfbfab;
+  --accent: #8a3a1a;
+  --accent-soft: #ead3c2;
+  --shadow: 0 24px 60px rgb(49 31 16 / 12%);
+  --space-after-h2: 0.8rem;
+  --space-after-h3: 0.45rem;
+  --space-section: 3rem;
+  --space-subsection: 1.5rem;
   --font-body: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   --font-display: "Baskerville", "Goudy Old Style", Garamond, serif;
   --font-ui: "Gill Sans", "Trebuchet MS", Verdana, sans-serif;
@@ -22,7 +28,9 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(circle at 12% 6%, #fffef8 0%, var(--bg) 46%, #ede1cd 100%);
+  background:
+    radial-gradient(circle at top left, rgb(255 251 242 / 88%) 0%, transparent 36%),
+    linear-gradient(135deg, #f5ecdc 0%, var(--bg) 52%, #e4d4bc 100%);
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.65;
@@ -67,48 +75,92 @@ h4 {
 }
 
 h2 {
-  margin-top: 3rem;
+  margin-top: var(--space-section);
   font-size: clamp(1.6rem, 1.28rem + 1vw, 2.1rem);
+  line-height: 1.1;
 }
 
 h3 {
-  margin-top: 1.5rem;
+  margin-top: var(--space-subsection);
   font-size: clamp(1.3rem, 1.18rem + 0.5vw, 1.65rem);
+  color: color-mix(in srgb, #1a1511 74%, white 26%);
 }
 
 h4 {
   font-size: 1.15rem;
 }
 
+h2 + p,
+h2 + ul,
+h2 + ol,
+h2 + blockquote,
+h2 + div,
+h2 + section,
+h3 + p,
+h3 + ul,
+h3 + ol,
+h3 + blockquote,
+h3 + div,
+h3 + section,
+h4 + p,
+h4 + ul,
+h4 + ol,
+h4 + blockquote,
+h4 + div,
+h4 + section {
+  margin-top: var(--space-after-h3);
+}
+
+h2 + p,
+h2 + ul,
+h2 + ol,
+h2 + blockquote,
+h2 + div,
+h2 + section {
+  margin-top: var(--space-after-h2);
+}
+
 .page-shell {
-  width: min(1160px, 100% - 2rem);
+  width: min(1180px, 100% - 2rem);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem 0 4rem;
+  gap: 1.2rem;
+  padding: 1.25rem 0 4rem;
 }
 
 main {
-  width: min(100%, 72ch);
+  width: min(100%, 76ch);
   margin: 0 auto;
-  padding: 2rem clamp(1rem, 2vw, 2rem);
-  background: color-mix(in srgb, var(--panel) 92%, white 8%);
+  padding: 2.15rem clamp(1rem, 2vw, 2.1rem);
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 40%) 0%, transparent 9%),
+    color-mix(in srgb, var(--panel) 90%, white 10%);
   border: 1px solid var(--line);
-  border-radius: 16px;
-  box-shadow: 0 10px 35px rgb(45 29 12 / 8%);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.4rem;
+  border-radius: 22px 22px 0 0;
+  background: linear-gradient(90deg, #b45a2d 0%, #d69d69 45%, #f0d9c8 100%);
 }
 
 .hero {
-  padding-bottom: 1.4rem;
-  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.4rem;
 }
 
 .hero-author {
   font-family: var(--font-ui);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.77rem;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--ink-soft);
 }
@@ -116,6 +168,7 @@ main {
 .hero-title {
   margin-top: 0.25rem;
   font-size: clamp(2rem, 1.3rem + 2.6vw, 3.25rem);
+  line-height: 1.05;
 }
 
 .hero-cta {
@@ -131,6 +184,10 @@ main {
   font-family: var(--font-ui);
   font-weight: 700;
   text-decoration: none;
+}
+
+.sources-cta {
+  margin-top: 1rem;
 }
 
 .hero-description {
@@ -161,9 +218,13 @@ main {
 }
 
 .lemma-list {
-  margin-top: 1rem;
+  margin-top: 0;
   display: grid;
   gap: 1rem;
+}
+
+.numbered-lemma--with-heading .lemma-list {
+  margin-top: 1rem;
 }
 
 .lemma-item {
@@ -172,18 +233,26 @@ main {
   background: #f9f3e9;
 }
 
+.lemma-item blockquote {
+  margin-top: 0.8rem;
+}
+
 .accordion-group {
-  margin-top: 1.4rem;
+  margin-top: 0.9rem;
 }
 
 .accordion-list {
-  margin-top: 0.9rem;
+  margin-top: 0;
   display: grid;
   gap: 0.6rem;
 }
 
+.accordion-group--with-heading .accordion-list {
+  margin-top: 0.9rem;
+}
+
 .accordion-item {
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--line) 72%, white 28%);
   border-radius: 10px;
   background: #fffdf7;
   overflow: clip;
@@ -192,6 +261,10 @@ main {
 .accordion-toggle {
   appearance: none;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -202,6 +275,18 @@ main {
   color: var(--ink);
   padding: 0.9rem 1rem;
   cursor: pointer;
+}
+
+.accordion-toggle::after {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border-right: 2px solid color-mix(in srgb, var(--ink-soft) 52%, white 48%);
+  border-bottom: 2px solid color-mix(in srgb, var(--ink-soft) 52%, white 48%);
+  transform: rotate(45deg) translateY(-0.1rem);
+  transform-origin: center;
+  transition: transform 160ms ease;
 }
 
 .accordion-toggle:hover {
@@ -220,8 +305,12 @@ main {
   background: #f9ecdf;
 }
 
+.accordion-toggle[aria-expanded="true"]::after {
+  transform: rotate(225deg) translateY(-0.02rem);
+}
+
 .accordion-panel {
-  padding: 0 1rem 1rem;
+  padding: 0.25rem 1rem 1rem;
 }
 
 .accordion-panel > * + * {
@@ -256,6 +345,8 @@ main {
 .toc a {
   color: var(--ink-soft);
   text-decoration: none;
+  display: inline-block;
+  padding: 0.2rem 0;
 }
 
 .toc a:hover {
@@ -289,19 +380,23 @@ footer {
 
 @media (width >= 1024px) {
   .page-shell {
-    grid-template-columns: minmax(0, 18rem) minmax(0, 72ch);
+    grid-template-columns: minmax(0, 76ch) minmax(15rem, 19rem);
     align-items: start;
-    gap: 1.7rem;
+    gap: 2rem;
+    justify-content: center;
   }
 
   .toc {
     display: block;
     position: sticky;
     top: 1.4rem;
-    padding: 1rem;
+    padding: 1.15rem 1.1rem;
     border: 1px solid var(--line);
-    border-radius: 12px;
-    background: color-mix(in srgb, var(--panel) 94%, white 6%);
+    border-radius: 18px;
+    background:
+      linear-gradient(180deg, rgb(255 255 255 / 45%) 0%, transparent 20%),
+      color-mix(in srgb, var(--panel-strong) 94%, white 6%);
+    box-shadow: 0 16px 36px rgb(55 35 18 / 10%);
   }
 
   main {
