@@ -100,13 +100,27 @@ Drawn from actual correspondence with philosophers, editors, and referees.
 
 ### If determinism holds, both you and the determinist are unavoidable, so your conclusion does not follow.
 
-**What it sounds like:** If determinism is true, then both libertarian and determinist beliefs are unavoidable, so the claim that a fallacious free-will thesis could not have been avoided by anybody does not follow.
+**What it sounds like:**
+If determinism is true, the libertarian cannot avoid believing in free will, and the determinist cannot avoid rejecting it.
+So there are people who do avoid the libertarian belief (namely determinists).
+Therefore the claim that the fallacious free-will thesis "could not have been avoided" cannot be correct.
 
-**What actually happened:** This treats **unavoidable wrongness under determinism** as if it were an objection.
+**What actually happened:**
+The objection interprets the statement "the fallacious free-will thesis could not have been avoided" as meaning that **no person in the world could avoid believing it**.
 
-**Why it’s a misreading:** The Imperative explicitly relies on this very point. If the world is nomic, then any mistaken belief about free will is **unavoidable**, and therefore not something a truth-seeker could have been required to avoid.
+**Why it's a misreading:**
+The Imperative is not making a claim about the distribution of beliefs across different people.
+It concerns the avoidability of **one's own mistaken belief**.
 
-**Correct understanding:** The Imperative does **not** claim that others must reach the same conclusion. It only states that, for one’s own present trying, the stance "act as non-nomic" is truth-aligned if freedom is real and unavoidably wrong if nomism is true.
+If the world is nomic and the libertarian belief is false, then the person who holds that belief **could not have avoided holding it**, because their trying and believing are themselves products of the causal order.
+
+**Correct understanding:**
+The Imperative therefore relies on this very point.
+Under nomism, a mistaken libertarian stance is **unavoidable for the agent who holds it**.
+
+This is why adopting the stance "act as non-nomic" cannot be condemned as a failure to avoid avoidable error.
+
+The argument concerns the **avoidable or unavoidable status of one's own present trying**, not whether different people in the world hold different beliefs.
 
 ### You are stuck in infinite regress: the decision to try is caused unless it is free.
 
