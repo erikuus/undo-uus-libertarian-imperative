@@ -1,85 +1,58 @@
 # The Libertarian Imperative Archive
 
-This repository is an archival edition of Undo Uus's philosophical project **The Libertarian Imperative**: its core argument, manuscript evolution, editorial process, publication pathway, and post-publication reception.
+This repository preserves the archival record of Undo Uus's philosophical project **The Libertarian Imperative** and publishes a reader-facing site built from that archive.
 
-## What The Libertarian Imperative Is
+The repo has a clear split:
 
-At its core, the argument is a practical imperative about how one should act under uncertainty about free will:
-
-1. If libertarian free will is true, acting as free is correct.
-2. If libertarian free will is false and behavior is law-governed, acting as free was unavoidable anyway.
-3. Therefore one should try to act in accord with incompatibilist free volition (the Libertarian Imperative).
-
-This moves the debate from only metaphysical speculation toward a methodological stance for lived action and inquiry.
-
-### Key Terms (Plain-Language)
-
-- **Libertarian free will / incompatibilism**: the thesis that at least some human actions are *not* fully fixed by prior states and laws (not merely “freedom from external coercion”).
-- **Acting as free**: treating one’s deliberation and commitments as *genuinely up to oneself* (a stance for inquiry and conduct), not claiming to possess metaphysical certainty about how the world is.
-
-## Why It Is Original And Time-Relevant
-
-- It reframes free will as a normative imperative, not only a descriptive thesis.
-- It links consciousness studies and agency: if consciousness is causally meaningful, free action is a central test case.
-- It remains relevant across eras because it addresses a stable problem: how to orient action when first-person agency and third-person science appear in tension.
+- the **archive itself**: original article files, publication variants, correspondence, and related material
+- the **public presentation layer**: the Astro site in `site/` and the mirrored narrative text in [`docs/argument-map.md`](docs/argument-map.md)
 
 ## Start Here
 
-- Concept and originality: [`docs/concept-and-originality.md`](docs/concept-and-originality.md)
-- One-page argument map: [`docs/argument-map.md`](docs/argument-map.md)
-- Development timeline (1995-1999): [`docs/timeline.md`](docs/timeline.md)
-- Process and influence graph: [`docs/process-map.md`](docs/process-map.md)
-- File-by-file catalog: [`docs/file-catalog.md`](docs/file-catalog.md)
+- Public site: [https://erikuus.github.io/undo-uus-libertarian-imperative/](https://erikuus.github.io/undo-uus-libertarian-imperative/)
+- Site-text mirror / argument map: [`docs/argument-map.md`](docs/argument-map.md)
+- Documentation index: [`docs/README.md`](docs/README.md)
+- Development timeline: [`docs/timeline.md`](docs/timeline.md)
+- Process map: [`docs/process-map.md`](docs/process-map.md)
+- File catalog: [`docs/file-catalog.md`](docs/file-catalog.md)
 
-## Website App
+## Repository Structure
 
-- Website code is isolated in [`site/`](site/README.md) to keep it separate from archival materials.
-- Live site: [https://erikuus.github.io/undo-uus-libertarian-imperative/](https://erikuus.github.io/undo-uus-libertarian-imperative/)
-- Local run:
-  `cd site && npm install && npm run dev`
-- GitHub Pages deployment builds from `site/` via [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+- [`undo-uus-archive/`](undo-uus-archive/README.md): canonical archival wrapper for original materials
+- [`markdown-mirror/`](markdown-mirror/README.md): script-generated markdown mirrors of core texts
+- [`markdown-reader/`](markdown-reader/README.md): hand-edited reader copies for more difficult source material
+- [`site/`](site/README.md): Astro site source for the public presentation
+- [`docs/`](docs/README.md): interpretive and navigational documentation
 
-## Archive Navigation
+## Main Archive Entry Points
 
-- Author-supplied source archive wrapper: [`undo-uus-archive/README.md`](undo-uus-archive/README.md)
 - Original article corpus: [`undo-uus-archive/_IMPERATIVE_Article/README.md`](undo-uus-archive/_IMPERATIVE_Article/README.md)
 - Publishing workflow records: [`undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/README.md`](undo-uus-archive/_IMPERATIVE_Article/PublishingProcess/README.md)
 - Responses dossier: [`undo-uus-archive/_IMPERATIVE_Responses/README.md`](undo-uus-archive/_IMPERATIVE_Responses/README.md)
-- Secondary-language publication (Estonian, *Akadeemia*): [`undo-uus-archive/1997_Libertaarimperatiiv/README.md`](undo-uus-archive/1997_Libertaarimperatiiv/README.md)
-- Reader editions (Estonian + English translation): [`markdown-reader/undo-uus-archive/1997_Libertaarimperatiiv/README.md`](markdown-reader/undo-uus-archive/1997_Libertaarimperatiiv/README.md)
-- Script-generated markdown mirrors (core texts): [`markdown-mirror/README.md`](markdown-mirror/README.md)
-- Human-edited reader editions (messy secondary material): [`markdown-reader/README.md`](markdown-reader/README.md)
+- Estonian publication materials: [`undo-uus-archive/1997_Libertaarimperatiiv/README.md`](undo-uus-archive/1997_Libertaarimperatiiv/README.md)
 
-## Archival Principles Used
+## Website
 
-- **Originals preserved as-is** in `undo-uus-archive/_IMPERATIVE_Article/*` and `undo-uus-archive/_IMPERATIVE_Responses/*`.
-- **Readability-first markdown mirrors** are generated under `markdown-mirror/*`.
-- **Twofold principle**: originals are authoritative; markdown prioritizes clean machine/human readability while preserving content.
-- **Traceability**: each markdown copy records source path and SHA256 checksum.
-- **Reproducibility**: markdown copies are generated by [`scripts/build_markdown_mirror.py`](scripts/build_markdown_mirror.py).
+- App source: [`site/README.md`](site/README.md)
+- Local run: `cd site && npm install && npm run dev`
+- Deployment workflow: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+
+## Preservation Principles
+
+- Originals are preserved as-is in `undo-uus-archive/`.
+- Markdown mirrors prioritize readability while preserving traceability.
+- Fixity manifests record checksums for both canonical and mirrored files.
+- Mirror generation is reproducible via [`scripts/build_markdown_mirror.py`](scripts/build_markdown_mirror.py).
 
 ## Rights and Citation
 
-- Rights/permissions statement: [`RIGHTS.md`](RIGHTS.md)
-- Citation guidance and article record: [`CITE.md`](CITE.md)
+- Rights statement: [`RIGHTS.md`](RIGHTS.md)
+- Citation guidance: [`CITE.md`](CITE.md)
 - Machine-readable citation metadata: [`CITATION.cff`](CITATION.cff)
 - Curator intervention log: [`CURATOR_LOG.md`](CURATOR_LOG.md)
 
-## Preservation Integrity
+## Integrity Checks
 
 - Canonical source fixity: `undo-uus-archive/manifest-sha256.txt`
 - Mirror fixity: `markdown-mirror/manifest-sha256.txt`
-- Validation command (portable across OCR environments; `--check` does not require OCR/PDF dependencies):
-  `python3 scripts/build_markdown_mirror.py --check`
-
-## Recommended Reading Paths
-
-- First-time reader (fast orientation):
-  1. [`docs/concept-and-originality.md`](docs/concept-and-originality.md)
-  2. [`undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf`](undo-uus-archive/_IMPERATIVE_Article/_TheLibertarianImperative.pdf)
-  3. [`docs/timeline.md`](docs/timeline.md)
-
-- Historical/process reader (deep path):
-  1. Draft chain in order: `1b -> 2b -> 3b -> 4b -> 5b -> 6b/6d`
-  2. Interleave correspondence: `1a -> 2a -> 3a -> 4a -> 5a -> 6a/6c/6e/6g/6h`
-  3. Reception dossier: [`undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf`](undo-uus-archive/_IMPERATIVE_Responses/Responses-to-Imperative.pdf)
+- Validation command: `python3 scripts/build_markdown_mirror.py --check`
