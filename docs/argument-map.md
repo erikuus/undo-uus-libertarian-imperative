@@ -58,9 +58,11 @@ If you find yourself thinking one of the following, you have already shifted the
 
 **What it feels like:** "But is the claim true? What evidence do we have? What metaphysical theory supports it?"
 
-**Why it’s a shift:** The Imperative is not a command about belief. It is a directive about **trying** under uncertainty.
+**Why it's a shift:** The Imperative is not primarily a theoretical command about what belief to adopt on the basis of evidence, probabilities, or a completed metaphysical theory. It is a directive about **trying** under uncertainty.
 
-**Correct target:** The question is not _What should I believe about free will?_ but **What must I try to do now if I seek truth?**
+**Correct target:** The question is not simply _What should I believe about free will in general?_ but **What must I try to do now if I seek truth?**
+
+In that practical sense, the Imperative can include **affirming and defending the libertarian thesis**, and thus even trying to believe that one is free. But this is not belief adopted as the outcome of evidential weighing or probabilistic calculation. It is belief as part of one's present act of trying to act in accord with freedom.
 
 ### Replacing first-person dominance with public debate victory
 
