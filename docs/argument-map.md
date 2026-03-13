@@ -100,7 +100,7 @@ In that practical sense, the Imperative can include **affirming and defending th
 
 Drawn from actual correspondence with philosophers, editors, and referees.
 
-### If determinism holds, both you and the determinist are unavoidable, so your conclusion does not follow.
+### If determinists avoid the wrong belief in freedom, your conclusion does not follow.
 
 **What it sounds like:**
 If determinism is true, the libertarian cannot avoid believing in free will, and the determinist cannot avoid rejecting it.
@@ -108,7 +108,7 @@ So there are people who do avoid the libertarian belief (namely determinists).
 Therefore the claim that the fallacious free-will thesis "could not have been avoided" cannot be correct.
 
 **What actually happened:**
-The objection interprets the statement "the fallacious free-will thesis could not have been avoided" as meaning that **no person in the world could avoid believing it**.
+The objection interprets the statement "the fallacious free-will thesis could not have been avoided" as meaning that **no person in the world could end up not believing it**.
 
 **Why it's a misreading:**
 The Imperative is not making a claim about the distribution of beliefs across different people.
