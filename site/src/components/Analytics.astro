@@ -1,0 +1,39 @@
+---
+const provider =
+  import.meta.env.PUBLIC_ANALYTICS_PROVIDER?.trim().toLowerCase() ||
+  "goatcounter";
+
+const plausibleDomain =
+  import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN?.trim() || Astro.site?.hostname;
+const plausibleApiHost =
+  import.meta.env.PUBLIC_PLAUSIBLE_API_HOST?.trim() || "https://plausible.io";
+
+const goatcounterEndpoint =
+  import.meta.env.PUBLIC_GOATCOUNTER_ENDPOINT?.trim() ||
+  "https://erikuus.goatcounter.com/count";
+
+const usePlausible = provider === "plausible" && plausibleDomain;
+const useGoatCounter = provider === "goatcounter" && goatcounterEndpoint;
+---
+
+{
+  usePlausible && (
+    <script
+      is:inline
+      defer
+      data-domain={plausibleDomain}
+      src={`${plausibleApiHost}/js/script.js`}
+    ></script>
+  )
+}
+
+{
+  useGoatCounter && (
+    <script
+      is:inline
+      async
+      data-goatcounter={goatcounterEndpoint}
+      src="//gc.zgo.at/count.js"
+    ></script>
+  )
+}
