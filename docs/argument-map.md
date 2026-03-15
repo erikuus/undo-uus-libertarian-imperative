@@ -2,6 +2,8 @@
 
 # The Libertarian Imperative
 
+_The Libertarian Imperative is a philosophical argument proposed by Undo Uus (Journal of Consciousness Studies, 1999). The argument does not attempt to prove that libertarian free will exists. Instead it shows that, when we consider our own present act of volitional effort, a truth-seeker must adopt the following stance:_
+
 > **One must always try to act in accord with the thesis that one is not a law-governed creature.**
 
 ## What this means in practice
