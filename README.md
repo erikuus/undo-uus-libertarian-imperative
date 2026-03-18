@@ -9,7 +9,7 @@ The repo has a clear split:
 
 ## Start Here
 
-- Public site: [https://erikuus.github.io/undo-uus-libertarian-imperative/](https://erikuus.github.io/undo-uus-libertarian-imperative/)
+- Public site: [https://libertarianimperative.org/](https://libertarianimperative.org/)
 - Site-text mirror / argument map: [`docs/argument-map.md`](docs/argument-map.md)
 - Documentation index: [`docs/README.md`](docs/README.md)
 - Development timeline: [`docs/timeline.md`](docs/timeline.md)
