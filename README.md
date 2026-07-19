@@ -9,7 +9,7 @@ The repo has a clear split:
 
 ## Start Here
 
-- Public site: [https://libertarianimperative.org/](https://libertarianimperative.org/)
+- Public site: [https://www.libertarianimperative.org/](https://www.libertarianimperative.org/)
 - Site-text mirror / argument map: [`docs/argument-map.md`](docs/argument-map.md)
 - Documentation index: [`docs/README.md`](docs/README.md)
 - Development timeline: [`docs/timeline.md`](docs/timeline.md)
