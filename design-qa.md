@@ -23,6 +23,11 @@ final result: passed
 - User refinement: foldouts now use a light gray `#f2f4f7` surface, 6.4px corners, 10.4px gaps, and a slightly darker hover surface. Open and closed states remain visually distinct.
 - Annotation refinement: removed the darker hover surface from foldout buttons. Hover now keeps the same `#f2f4f7` background and changes only the text color.
 - Annotation refinement: restored the blue left rule on highlighted quotations and reduced their scale. General callouts now top out at 27.2px and the primary Imperative callout at 31.2px, keeping both clearly below nearby section-title sizes.
+- Annotation refinement: increased the archival repository action to 18px with a light gray padded surface and small rounded corners.
+- Annotation refinement: narrowed the large-screen shell to 1180px and the article column to 900px, adding horizontal breathing room and shortening long lines while retaining the simple right-side menu.
+- Annotation refinement: removed manual line breaks from the first objection and formatted the lead labels consistently as short blocks across all objection foldouts. Every sentence and label remains unchanged.
+- Annotation correction: label styling is now applied only to recognized foldout labels during rendering. Bold emphasis within ordinary sentences stays inline, preventing commas and following clauses from being pushed onto new lines.
+- Final foldout refinement: removed forced label breaks so every foldout body uses normal paragraph flow, tightened paragraph spacing to `0.7rem`, and kept adjacent punctuation inside emphasized text without changing the visible copy.
 - No remaining actionable P0/P1/P2 findings.
 - Intentional adaptation: the retained desktop menu takes an understated right sidebar, so the article is narrower than the menu-free reference. At smaller widths the same menu labels wrap above the article. All article sections retain their original sequence.
 
@@ -45,6 +50,8 @@ final result: passed
 - `npm run build`: passed.
 - `git diff --check`: passed.
 - September 8 refinement: opening layout and expanded foldout visually inspected after hot reload; `npm run check` and `npm run build` passed again.
+- Later annotation pass: the first expanded objection and the Sources section were visually inspected after hot reload. The repository action, label hierarchy, paragraph flow, and large-screen column constraints match the requested changes.
+- Final foldout pass: the first objection was reopened after hot reload. Labels flow inline with their paragraphs, paragraph gaps are tighter, and both emphasized phrases keep their following commas attached.
 
 ## Implementation checklist
 

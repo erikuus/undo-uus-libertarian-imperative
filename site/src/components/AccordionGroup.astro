@@ -9,6 +9,9 @@ interface Props {
 }
 
 const { id, heading, description, items } = Astro.props;
+
+const formatBody = (body: string) =>
+  body.replace(/<\/(strong|em)>([.,;:!?])/g, "$2</$1>");
 ---
 
 <section
@@ -44,7 +47,7 @@ const { id, heading, description, items } = Astro.props;
               aria-labelledby={buttonId}
               hidden
             >
-              <div set:html={item.body} />
+              <div set:html={formatBody(item.body)} />
             </div>
           </article>
         );
