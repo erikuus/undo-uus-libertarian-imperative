@@ -24,8 +24,8 @@ body {
   background: var(--bg);
   color: var(--ink-soft);
   font-family: var(--font-body);
-  font-size: 1.375rem;
-  line-height: 1.6;
+  font-size: 1.125rem;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -80,7 +80,7 @@ h2 {
   margin-top: 5rem;
   padding-top: 2rem;
   border-top: 1px solid var(--line);
-  font-size: clamp(2.25rem, 3.7vw, 3.5rem);
+  font-size: clamp(2.1rem, 3.4vw, 3.15rem);
   line-height: 1.12;
   text-wrap: balance;
 }
@@ -126,7 +126,7 @@ main:focus {
 
 .hero-title {
   margin-top: 1rem;
-  font-size: clamp(4rem, 8.8vw, 8.2rem);
+  font-size: clamp(4rem, 8vw, 7.4rem);
   line-height: 0.98;
   letter-spacing: -0.045em;
 }
@@ -145,18 +145,18 @@ main:focus {
 
 .callout-quote {
   margin: 2rem 0;
-  padding: 0.15rem 0 0.15rem 1.6rem;
-  border-left: 4px solid var(--accent);
+  padding: 0.15rem 0 0.15rem 1.2rem;
+  border-left: 3px solid var(--accent);
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: clamp(1.55rem, 2.8vw, 2.4rem);
-  line-height: 1.22;
+  font-size: clamp(1.3rem, 1.8vw, 1.7rem);
+  line-height: 1.32;
   letter-spacing: -0.02em;
 }
 
 #imperative .callout-quote {
   margin-top: 2.5rem;
-  font-size: clamp(2rem, 3.5vw, 3.15rem);
+  font-size: clamp(1.45rem, 2.1vw, 1.95rem);
 }
 
 .callout-quote cite {
@@ -181,7 +181,7 @@ main:focus {
 }
 
 .lemma-item + .lemma-item {
-  border-top: 1px solid var(--line);
+  padding-top: 0.6rem;
 }
 
 .lemma-item blockquote {
@@ -201,11 +201,14 @@ main:focus {
 }
 
 .accordion-list {
-  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.65rem;
 }
 
 .accordion-item {
-  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  border-radius: 0.4rem;
+  background: #f2f4f7;
 }
 
 .accordion-toggle {
@@ -215,7 +218,7 @@ main:focus {
   justify-content: space-between;
   width: 100%;
   gap: 1.5rem;
-  padding: 1.4rem 0;
+  padding: 1.05rem 1.15rem;
   border: 0;
   background: transparent;
   color: var(--ink);
@@ -246,7 +249,7 @@ main:focus {
 }
 
 .accordion-panel {
-  padding: 0 1.8rem 1.6rem 0;
+  padding: 0 1.15rem 1.25rem;
 }
 
 .accordion-panel > * + * {
@@ -337,7 +340,7 @@ footer p + p {
 
 @media (width < 1200px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1.075rem;
   }
 
   .page-shell {
@@ -368,7 +371,7 @@ footer p + p {
   }
 
   .hero-title {
-    font-size: clamp(4rem, 10.6vw, 7.2rem);
+    font-size: clamp(3.75rem, 9.8vw, 6.6rem);
   }
 
 }
@@ -424,7 +427,7 @@ footer p + p {
 
   .callout-quote {
     padding-left: 1rem;
-    border-left-width: 3px;
+    border-left-width: 2px;
   }
 
   h2 {
@@ -440,12 +443,12 @@ footer p + p {
 
   .accordion-toggle {
     font-size: 1rem;
-    padding: 1.15rem 0;
+    padding: 1rem;
     gap: 1rem;
   }
 
   .accordion-panel {
-    padding-right: 0;
+    padding: 0 1rem 1.1rem;
   }
 
 }
